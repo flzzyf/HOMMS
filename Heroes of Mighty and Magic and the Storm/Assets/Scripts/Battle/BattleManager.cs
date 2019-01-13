@@ -50,7 +50,7 @@ public class BattleManager : Singleton<BattleManager>
         public Color color;
     }
 
-    public GameObject cam;
+    public Camera cam;
 
     public Button button_wait;
 
@@ -135,12 +135,7 @@ public class BattleManager : Singleton<BattleManager>
     {
         battleObjectParent.SetActive(_enter);
 
-        if (_enter)
-        {
-            cam.tag = "MainCamera";
-        }
-
-        cam.SetActive(_enter);
+		cam.enabled = _enter;
 
         map.parent.gameObject.SetActive(_enter);
     }

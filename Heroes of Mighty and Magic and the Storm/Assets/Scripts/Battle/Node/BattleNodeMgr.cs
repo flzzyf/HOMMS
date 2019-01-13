@@ -160,7 +160,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
             if (UnitActionMgr.IsRangeAttack(BattleManager.currentActionUnit))
                 return;
 
-            Vector2 mousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePoint = BattleManager.instance.cam.ScreenToWorldPoint(Input.mousePosition);
             Vector3 dir = mousePoint - (Vector2)_node.transform.position;
             dir.y -= 0.9f;
             //计算鼠标和节点角度

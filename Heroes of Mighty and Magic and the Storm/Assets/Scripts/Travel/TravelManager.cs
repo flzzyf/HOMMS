@@ -19,7 +19,7 @@ public class TravelManager : Singleton<TravelManager>
 
     public MapManager_Travel map;
 
-    public GameObject cam;
+    public Camera cam;
     public GameObject parent_travelObject;
 
     public void Init()
@@ -31,17 +31,13 @@ public class TravelManager : Singleton<TravelManager>
         {
             InitPlayer(PlayerManager.instance.players[i]);
         }
-
     }
 
     public void EnterTravelMode(bool _enter = true)
     {
-        if (_enter)
-        {
-            cam.tag = "MainCamera";
-        }
+		cam.enabled = _enter;
 
-        parent_travelObject.SetActive(_enter);
+		parent_travelObject.SetActive(_enter);
     }
 
     //玩家初始化，生成城镇和英雄
