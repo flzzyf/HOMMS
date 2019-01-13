@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a0936d33f8b4cdbba7137f15d68540, type: 3}
+  m_Name: Kerrigan_Upgrade
+  m_EditorClassIdentifier: 
+  tab: 2
+  icon: {fileID: 21300000, guid: 15da9a31a7cf02a48b99e04353883b5e, type: 3}
+  race: {fileID: 11400000, guid: 94beb023347b34d39b07197a33ecabbe, type: 2}
+  animControl: {fileID: 22100000, guid: f49d92953bc4a1c4aa12287e896f59e4, type: 2}
+  level: 1
+  att: 10
+  def: 10
+  hp: 40
+  damage: {x: 5, y: 8}
+  speed: 9
+  attackType: 0
+  traits:
+  - {fileID: 11400000, guid: c91ca56fb2784463a96c3ffdc01a4318, type: 2}
+  - {fileID: 11400000, guid: 8d29db8314585433086022487b87e65b, type: 2}
+  - {fileID: 11400000, guid: 79574837f5ff64e96b19de9a248af39d, type: 2}
+  - {fileID: 11400000, guid: c7a55d3adf04041fca9c7ec94d875042, type: 2}
+  growth: 4
+  AIValue: 783
+  cost: 500
+  size: 1
+  armorType: 0
+  isTwoHexsUnit: 0
+  ammo: 12
+  missile: {fileID: 0}
+  launchPos: {x: 0, y: 0}
+  sound_attack: {fileID: 0}
+  sound_attackImpact: {fileID: 0}
+  sound_walk: {fileID: 0}
+  sound_hit: {fileID: 11400000, guid: e873e361aa1cb4d47829cfc5ab7118e8, type: 2}
+  sound_death: {fileID: 11400000, guid: f432ad5825146ea48a0d1b15cb59c517, type: 2}

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a0936d33f8b4cdbba7137f15d68540, type: 3}
+  m_Name: Medivh_Upgrade
+  m_EditorClassIdentifier: 
+  tab: 2
+  icon: {fileID: 21300000, guid: d823454efe9a0d74589810357047143d, type: 3}
+  race: {fileID: 11400000, guid: 830952885b93a426a8cf308f26070ed9, type: 2}
+  animControl: {fileID: 22100000, guid: 5c23de08b8a1d7d4da2f90a6640c3dbf, type: 2}
+  level: 1
+  att: 12
+  def: 10
+  hp: 30
+  damage: {x: 10, y: 12}
+  speed: 7
+  attackType: 1
+  traits:
+  - {fileID: 11400000, guid: e0909c4d6f8084d8c915e27a67f1ff28, type: 2}
+  growth: 3
+  AIValue: 126
+  cost: 100
+  size: 1
+  armorType: 0
+  isTwoHexsUnit: 0
+  ammo: 12
+  missile: {fileID: 1828026133859336, guid: af78f90a030be86438834bcfaa9c1b6a, type: 2}
+  launchPos: {x: 1.3, y: 2.35}
+  sound_attack: {fileID: 0}
+  sound_attackImpact: {fileID: 0}
+  sound_walk: {fileID: 11400000, guid: fe955b8763d6f3545b58ca2009680b16, type: 2}
+  sound_hit: {fileID: 11400000, guid: 81e7d5e795dc9fc4cbe75b4b2f141812, type: 2}
+  sound_death: {fileID: 11400000, guid: fe955b8763d6f3545b58ca2009680b16, type: 2}
