@@ -22,6 +22,7 @@ tpsheetFileNames:
 - Assets/Resources/Textures/Units/Castle/DH/DH_Flip.tpsheet
 - Assets/Resources/Textures/Units/Castle/DH/DH_Hit.tpsheet
 - Assets/Resources/Textures/Units/Castle/DH/DH_Stand.tpsheet
+- Assets/Resources/Textures/Units/Castle/DH/DH_Update_Stand.tpsheet
 - Assets/Resources/Textures/Units/Castle/DH/DH_Walk.tpsheet
 - Assets/Resources/Textures/Units/Castle/Medivh/Medivh_Attack.tpsheet
 - Assets/Resources/Textures/Units/Castle/Medivh/Medivh_Death.tpsheet
@@ -89,6 +90,7 @@ textureFileNames:
 - Assets/Resources/Textures/Units/Castle/DH/DH_Flip.png
 - Assets/Resources/Textures/Units/Castle/DH/DH_Hit.png
 - Assets/Resources/Textures/Units/Castle/DH/DH_Stand.png
+- Assets/Resources/Textures/Units/Castle/DH/DH_Update_Stand.png
 - Assets/Resources/Textures/Units/Castle/DH/DH_Walk.png
 - Assets/Resources/Textures/Units/Castle/Medivh/Medivh_Attack.png
 - Assets/Resources/Textures/Units/Castle/Medivh/Medivh_Death.png
@@ -136,6 +138,7 @@ textureFileNames:
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Walk.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
 - 
 - 
 - 
