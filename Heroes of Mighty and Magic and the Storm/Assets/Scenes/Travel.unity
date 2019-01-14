@@ -24119,6 +24119,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1028389473}
     m_Modifications:
+    - target: {fileID: 1203808215804698, guid: 194088968437feb469c082069df5ea0a, type: 3}
+      propertyPath: m_Name
+      value: HeroUI_PocketUnit
+      objectReference: {fileID: 0}
     - target: {fileID: 224818838561691466, guid: 194088968437feb469c082069df5ea0a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24157,6 +24161,21 @@ PrefabInstance:
     - target: {fileID: 224818838561691466, guid: 194088968437feb469c082069df5ea0a,
         type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224818838561691466, guid: 194088968437feb469c082069df5ea0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224818838561691466, guid: 194088968437feb469c082069df5ea0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224818838561691466, guid: 194088968437feb469c082069df5ea0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224818838561691466, guid: 194088968437feb469c082069df5ea0a,
@@ -24209,12 +24228,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114346750043427506, guid: 194088968437feb469c082069df5ea0a,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3a79757c62a1d064da1d6ad7d5b642c5,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 194088968437feb469c082069df5ea0a, type: 3}
 --- !u!114 &1033400645 stripped
@@ -28375,7 +28388,7 @@ PrefabInstance:
     - target: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
         type: 3}
       propertyPath: pocketUnits.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
         type: 3}
@@ -28443,6 +28456,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 9408235d15743ef45a532e7241bae581,
         type: 2}
+    - target: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
+        type: 3}
+      propertyPath: pocketUnits.Array.data[5].type
+      value: 
+      objectReference: {fileID: 11400000, guid: 9408235d15743ef45a532e7241bae581,
+        type: 2}
+    - target: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
+        type: 3}
+      propertyPath: pocketUnits.Array.data[5].num
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
+        type: 3}
+      propertyPath: pocketUnits.Array.data[6].type
+      value: 
+      objectReference: {fileID: 11400000, guid: 9408235d15743ef45a532e7241bae581,
+        type: 2}
+    - target: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
+        type: 3}
+      propertyPath: pocketUnits.Array.data[6].num
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.7
@@ -52230,7 +52265,7 @@ PrefabInstance:
     - target: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
         type: 3}
       propertyPath: pocketUnits.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
         type: 3}
@@ -52534,12 +52569,11 @@ PrefabInstance:
         type: 3}
       propertyPath: pocketUnits.Array.data[6].type
       value: 
-      objectReference: {fileID: 11400000, guid: 0778e37c5e17e4edc8f0acf90292f59b,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
         type: 3}
       propertyPath: pocketUnits.Array.data[6].num
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
       propertyPath: m_RootOrder
