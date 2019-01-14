@@ -29,7 +29,10 @@ public class LocalizationText : MonoBehaviour
         if (key == "")
             return;
 
-        text.font = LocalizationMgr.instance.font;
+		if (text == null)
+			text = GetComponent<Text>();
+		//
+		text.font = LocalizationMgr.instance.font;
 
         if (args.Length == 0)
         {

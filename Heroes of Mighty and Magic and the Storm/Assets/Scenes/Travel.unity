@@ -1789,6 +1789,8 @@ MonoBehaviour:
     startingPoint: {x: 35, y: 19}
     heroes:
     - {fileID: 559914029}
+    - {fileID: 284897469}
+    - {fileID: 1134631093}
     gold: 2
 --- !u!4 &53222761
 Transform:
@@ -43958,7 +43960,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 758565401
+  m_SortingLayerID: 130792145
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &1768974314 stripped

@@ -7,16 +7,16 @@ public class Hero : NodeObject
     public int player;
 
     public HeroType heroType;
-    public PocketUnit[] pocketUnits;
+    public PocketUnit[] pocketUnits = new PocketUnit[7];
 
     public int pocketUnitNum
     {
         get
         {
             int a = 0;
-            for (int i = 0; i < pocketUnits.Length; i++)
+            for (int i = 0; i < 7; i++)
             {
-                if (pocketUnits[i] != null)
+                if (pocketUnits[i].type != null)
                     a++;
             }
 

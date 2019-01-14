@@ -50,9 +50,9 @@ public class Panel_HeroUI : Singleton<Panel_HeroUI>
         moraleAndLuck.SetLuck(_hero.luck);
 
         //更新单位信息
-        for (int i = 0; i < _hero.pocketUnits.Length; i++)
+        for (int i = 0; i < 7; i++)
         {
-            if(_hero.pocketUnits[i] != null)
+            if(_hero.pocketUnits[i] != null && _hero.pocketUnits[i].type != null)
                 pocketUnits[i].Set(_hero.pocketUnits[i]);
             else
                 pocketUnits[i].Clear();

@@ -32,10 +32,10 @@ public class Panel_HeroInfo : Singleton<Panel_HeroInfo>
         portraitBorder.sprite = portraitBorders[Mathf.Min(_hero.level / 5, 3)];
 
         //更新英雄携带单位信息
-        for (int i = 0; i < _hero.pocketUnits.Length; i++)
+        for (int i = 0; i < 7; i++)
         {
-            if(_hero.pocketUnits[i] != null)
-                pocketUnits[i].Set(_hero.pocketUnits[i]);
+			if (_hero.pocketUnits[i] != null && _hero.pocketUnits[i].type != null)
+				pocketUnits[i].Set(_hero.pocketUnits[i]);
             else
                 pocketUnits[i].Clear();
         }
