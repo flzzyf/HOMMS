@@ -1,0 +1,847 @@
+fileFormatVersion: 2
+guid: e219c17dddb59b34599dfd4b6a9125f4
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Orphea_Ad_3_Walk
+    21300002: Orphea_Ad_3_Walk00
+    21300004: Orphea_Ad_3_Walk01
+    21300006: Orphea_Ad_3_Walk02
+    21300008: Orphea_Ad_3_Walk03
+    21300010: Orphea_Ad_3_Walk04
+    21300012: Orphea_Ad_3_Walk05
+    21300014: Orphea_Ad_3_Walk06
+    21300016: Orphea_Ad_3_Walk07
+    21300018: Orphea_Ad_3_Walk08
+    21300020: Orphea_Ad_3_Walk09
+    21300022: Orphea_Ad_3_Walk10
+    21300024: Orphea_Ad_3_Walk11
+    21300026: Orphea_Ad_3_Walk12
+    21300028: Orphea_Ad_3_Walk13
+    21300030: Orphea_Ad_3_Walk14
+    21300032: Orphea_Ad_3_Walk15
+    21300034: Orphea_Ad_3_Walk16
+    21300036: Orphea_Ad_3_Walk17
+    21300038: Orphea_Ad_3_Walk18
+    21300040: Orphea_Ad_3_Walk19
+    21300042: Orphea_Ad_3_Walk20
+    21300044: Orphea_Ad_3_Walk21
+    21300046: Orphea_Ad_3_Walk22
+    21300048: Orphea_Ad_3_Walk23
+    21300050: Orphea_Ad_3_Walk24
+    21300052: Orphea_Ad_3_Walk25
+    21300054: Orphea_Ad_3_Walk26
+    21300056: Orphea_Ad_3_Walk27
+    21300058: Orphea_Ad_3_Walk28
+    21300060: Orphea_Ad_3_Walk29
+    21300062: Orphea_Ad_3_Walk30
+    21300064: Orphea_Ad_3_Walk31
+    21300066: Orphea_Ad_3_Walk32
+    21300068: Orphea_Ad_3_Walk33
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk00
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 3236
+        width: 519
+        height: 415
+      alignment: 9
+      pivot: {x: 0.54816955, y: -0.053012047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f45227a6906b574684f12c6a871bc23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk01
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 3652
+        width: 521
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5422265, y: -0.072234765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1182d772914662b4eb957b9c114e0518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk02
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 2741
+        width: 512
+        height: 483
+      alignment: 9
+      pivot: {x: 0.5361328, y: -0.024844721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a634985b4b6fa354688b8dda2be58f8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk03
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2306
+        width: 511
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5508806, y: -0.11512415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4cc36676a3a064a8c8a138dd3696b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk04
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 39
+        width: 464
+        height: 479
+      alignment: 9
+      pivot: {x: 0.54633623, y: -0.012526096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4b8c37454dc8a47908e9c9df3a3d23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk05
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 516
+        width: 465
+        height: 433
+      alignment: 9
+      pivot: {x: 0.5172043, y: -0.032332562}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee3e0a29f2485b4b800ba42f034413f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk06
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 944
+        width: 484
+        height: 420
+      alignment: 9
+      pivot: {x: 0.5320248, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c573d67818d736c47ad925a31e5a78ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk07
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 2284
+        width: 503
+        height: 459
+      alignment: 9
+      pivot: {x: 0.5238569, y: -0.05882353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98002f6abc5972d4aa2c9f04f9563572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1366
+        width: 495
+        height: 470
+      alignment: 9
+      pivot: {x: 0.5181818, y: -0.0787234}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091e5f894c0dfe64aaef54d62268f287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk09
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1438
+        width: 494
+        height: 450
+      alignment: 9
+      pivot: {x: 0.541498, y: -0.10222222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54fecdd01c40214b89aadc4d1501f83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk10
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1828
+        width: 497
+        height: 457
+      alignment: 9
+      pivot: {x: 0.5482897, y: -0.03501094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d846226aa5d06b42a0db80ba8b734ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2751
+        width: 512
+        height: 416
+      alignment: 9
+      pivot: {x: 0.5673828, y: -0.043269232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e109cdc9918ea4a8638663bc692ff6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk12
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 3653
+        width: 520
+        height: 442
+      alignment: 9
+      pivot: {x: 0.53942305, y: -0.0520362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfba342762cf494c97d6326ce5f8ba7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3169
+        width: 515
+        height: 472
+      alignment: 9
+      pivot: {x: 0.5388349, y: -0.048728812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b424c9c9cb50943ad40fbe3447849b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk14
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 2785
+        width: 514
+        height: 449
+      alignment: 9
+      pivot: {x: 0.5515564, y: -0.1091314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4968d456a8047e6418c2bcd0d71c2c5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk15
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2287
+        width: 503
+        height: 452
+      alignment: 9
+      pivot: {x: 0.5477137, y: -0.084070794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e4b2f5c6c009a40918fcda6a871a33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk16
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 53
+        width: 454
+        height: 461
+      alignment: 9
+      pivot: {x: 0.54735684, y: -0.021691974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88673a324587dde4ebb1e040adcf0226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk17
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1863
+        width: 495
+        height: 419
+      alignment: 9
+      pivot: {x: 0.53232324, y: -0.040572792}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d704aeac9cff47546884857367fd4817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk18
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 3203
+        width: 475
+        height: 441
+      alignment: 9
+      pivot: {x: 0.51473683, y: -0.054421768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f79e5d119386d4983ff02ff3a57b01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk19
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 928
+        width: 481
+        height: 473
+      alignment: 9
+      pivot: {x: 0.51871103, y: -0.067653276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81662acfa21d584aa0c9889876584d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk20
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 996
+        width: 489
+        height: 440
+      alignment: 9
+      pivot: {x: 0.54703474, y: -0.12727273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a1d09207672b54c90d0d04c04a7548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk21
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2745
+        width: 487
+        height: 456
+      alignment: 9
+      pivot: {x: 0.56160164, y: -0.06140351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6d1e50425baaa4a982a4ee1d914a77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk22
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 2356
+        width: 507
+        height: 427
+      alignment: 9
+      pivot: {x: 0.5670611, y: -0.044496488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717a332b49948b94598188bd3aeb77ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk23
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 3226
+        width: 517
+        height: 424
+      alignment: 9
+      pivot: {x: 0.5541586, y: -0.058962263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a0f9a5708fd8f43b522a00cdd2695e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3643
+        width: 522
+        height: 452
+      alignment: 9
+      pivot: {x: 0.52203065, y: -0.07743363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f0c43d7b8031447a7931087ed530cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1838
+        width: 499
+        height: 466
+      alignment: 9
+      pivot: {x: 0.5300601, y: -0.07081545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8e14e8a18eed5498df14d98474abc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk26
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1890
+        width: 499
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5340681, y: -0.077586204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b359c5b0a7f2048a961f4b54d3934b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk27
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 51
+        width: 451
+        height: 463
+      alignment: 9
+      pivot: {x: 0.5399113, y: -0.019438446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834d297a732a9254cb4ec2ed2e3bde51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 520
+        width: 465
+        height: 422
+      alignment: 9
+      pivot: {x: 0.52795696, y: -0.04028436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5affcccaf94a25429c51cd902248d6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk29
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 3646
+        width: 477
+        height: 449
+      alignment: 9
+      pivot: {x: 0.5083857, y: -0.053452116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deaa9b60a3c587d49a2eb62abec1358f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk30
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1403
+        width: 491
+        height: 458
+      alignment: 9
+      pivot: {x: 0.50814664, y: -0.072052404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae023cb25bf45474db5feec34063a39b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk31
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 554
+        width: 480
+        height: 440
+      alignment: 9
+      pivot: {x: 0.53229165, y: -0.12727273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df57588962181814e96abf08a44378f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk32
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1392
+        width: 492
+        height: 434
+      alignment: 9
+      pivot: {x: 0.5436992, y: -0.13824885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bfa6443f96081c4888d31ea2724ae3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Ad_3_Walk33
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 951
+        width: 488
+        height: 439
+      alignment: 9
+      pivot: {x: 0.5481557, y: -0.13667426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82245df53dbf1db49bc88939df5d439b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f4526ee83eaff8f489cbef66da0d330c
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
