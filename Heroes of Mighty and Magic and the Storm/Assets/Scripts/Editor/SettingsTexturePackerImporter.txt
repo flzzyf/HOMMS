@@ -51,6 +51,7 @@ tpsheetFileNames:
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Attack.tpseet.tpsheet
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Death.tpseet.tpsheet
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Flip.tpseet.tpsheet
+- Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Hit.tpsheet
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Stand.tpseet.tpsheet
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Walk.tpseet.tpsheet
 - Assets/Resources/Textures/Units/Necro/Malthael/Malthael_2_Stand.tpsheet
@@ -121,6 +122,7 @@ textureFileNames:
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Attack.tpseet.png
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Death.tpseet.png
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Flip.tpseet.png
+- Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Hit.png
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Stand.tpseet.png
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Walk.tpseet.png
 - Assets/Resources/Textures/Units/Necro/Malthael/Malthael_2_Stand.png
@@ -142,6 +144,7 @@ textureFileNames:
 - Assets/Resources/Textures/Units/OrpheaCampaign/Orphea/Orphea_Stand.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
 - 
 - 
 - 

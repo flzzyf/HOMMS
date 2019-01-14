@@ -121,12 +121,9 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
             {
                 UnitInfoPanelMgr.instance.UpdatePanel(_node.unit);
 
-                Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector3 pos = BattleManager.instance.cam.ScreenToWorldPoint(Input.mousePosition);
                 pos.z = 0;
                 UnitInfoPanelMgr.instance.panel.transform.position = pos;
-                pos = UnitInfoPanelMgr.instance.panel.transform.localPosition;
-                pos.z = 0;
-                UnitInfoPanelMgr.instance.panel.transform.localPosition = pos;
             }
 
             return;

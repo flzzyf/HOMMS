@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tab: 1
   icon: {fileID: 21300000, guid: ead393b7301e7544eb1df76c0aeadb6c, type: 3}
-  race: {fileID: 0}
+  race: {fileID: 11400000, guid: 707c4c4af392c9f4ca8173f11e1e6f84, type: 2}
   animControl: {fileID: 22100000, guid: 41cba46fc7d14a14aa1edff0afb51a96, type: 2}
   level: 1
   att: 6
