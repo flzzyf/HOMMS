@@ -53,6 +53,7 @@ tpsheetFileNames:
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Flip.tpseet.tpsheet
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Stand.tpseet.tpsheet
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Walk.tpseet.tpsheet
+- Assets/Resources/Textures/Units/Necro/Malthael/Malthael_2_Stand.tpsheet
 - Assets/Resources/Textures/Units/Necro/Malthael/Malthael_Attack.tpsheet
 - Assets/Resources/Textures/Units/Necro/Malthael/Malthael_Attack_Down.tpsheet
 - Assets/Resources/Textures/Units/Necro/Malthael/Malthael_Attack_Up.tpsheet
@@ -68,6 +69,7 @@ tpsheetFileNames:
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Hit.tpsheet
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Stand.tpsheet
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Walk.tpsheet
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea/Orphea_Stand.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 - Assets/Resources/Textures/FX/FrostBolt_Impact.png
@@ -121,6 +123,7 @@ textureFileNames:
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Flip.tpseet.png
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Stand.tpseet.png
 - Assets/Resources/Textures/Units/Necro/Leoric/Leoric_Walk.tpseet.png
+- Assets/Resources/Textures/Units/Necro/Malthael/Malthael_2_Stand.png
 - Assets/Resources/Textures/Units/Necro/Malthael/Malthael_Attack.png
 - Assets/Resources/Textures/Units/Necro/Malthael/Malthael_Attack_Down.png
 - Assets/Resources/Textures/Units/Necro/Malthael/Malthael_Attack_Up.png
@@ -136,8 +139,11 @@ textureFileNames:
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Hit.png
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Stand.png
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Walk.png
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea/Orphea_Stand.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
 - 
 - 
 - 

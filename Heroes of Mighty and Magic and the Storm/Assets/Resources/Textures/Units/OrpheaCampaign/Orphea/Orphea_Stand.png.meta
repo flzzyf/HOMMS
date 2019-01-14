@@ -1,0 +1,1780 @@
+fileFormatVersion: 2
+guid: 67d4af3a1a9c42b45af7449fea8ba6d8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Orphea_Stand00
+    21300002: Orphea_Stand01
+    21300004: Orphea_Stand02
+    21300006: Orphea_Stand03
+    21300008: Orphea_Stand04
+    21300010: Orphea_Stand05
+    21300012: Orphea_Stand06
+    21300014: Orphea_Stand07
+    21300016: Orphea_Stand08
+    21300018: Orphea_Stand09
+    21300020: Orphea_Stand10
+    21300022: Orphea_Stand11
+    21300024: Orphea_Stand12
+    21300026: Orphea_Stand13
+    21300028: Orphea_Stand14
+    21300030: Orphea_Stand15
+    21300032: Orphea_Stand16
+    21300034: Orphea_Stand17
+    21300036: Orphea_Stand18
+    21300038: Orphea_Stand19
+    21300040: Orphea_Stand20
+    21300042: Orphea_Stand21
+    21300044: Orphea_Stand22
+    21300046: Orphea_Stand23
+    21300048: Orphea_Stand24
+    21300050: Orphea_Stand25
+    21300052: Orphea_Stand26
+    21300054: Orphea_Stand27
+    21300056: Orphea_Stand28
+    21300058: Orphea_Stand29
+    21300060: Orphea_Stand30
+    21300062: Orphea_Stand31
+    21300064: Orphea_Stand32
+    21300066: Orphea_Stand33
+    21300068: Orphea_Stand34
+    21300070: Orphea_Stand35
+    21300072: Orphea_Stand36
+    21300074: Orphea_Stand37
+    21300076: Orphea_Stand38
+    21300078: Orphea_Stand39
+    21300080: Orphea_Stand40
+    21300082: Orphea_Stand41
+    21300084: Orphea_Stand42
+    21300086: Orphea_Stand43
+    21300088: Orphea_Stand44
+    21300090: Orphea_Stand45
+    21300092: Orphea_Stand46
+    21300094: Orphea_Stand47
+    21300096: Orphea_Stand48
+    21300098: Orphea_Stand49
+    21300100: Orphea_Stand50
+    21300102: Orphea_Stand51
+    21300104: Orphea_Stand52
+    21300106: Orphea_Stand53
+    21300108: Orphea_Stand54
+    21300110: Orphea_Stand55
+    21300112: Orphea_Stand56
+    21300114: Orphea_Stand57
+    21300116: Orphea_Stand58
+    21300118: Orphea_Stand59
+    21300120: Orphea_Stand60
+    21300122: Orphea_Stand61
+    21300124: Orphea_Stand62
+    21300126: Orphea_Stand63
+    21300128: Orphea_Stand64
+    21300130: Orphea_Stand65
+    21300132: Orphea_Stand66
+    21300134: Orphea_Stand67
+    21300136: Orphea_Stand68
+    21300138: Orphea_Stand69
+    21300140: Orphea_Stand70
+    21300142: Orphea_Stand71
+    21300144: Orphea_Stand72
+    21300146: Orphea_Stand73
+    21300148: Orphea_Stand74
+    21300150: Orphea_Stand75
+    21300152: Orphea_Stand76
+    21300154: Orphea_Stand77
+    21300156: Orphea_Stand78
+    21300158: Orphea_Stand79
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Orphea_Stand00
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 2916
+        width: 203
+        height: 292
+      alignment: 9
+      pivot: {x: 0.8004926, y: -0.37328768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9dfa8421ffbaf4fb1130cf42f26e93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand01
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2050
+        width: 199
+        height: 290
+      alignment: 9
+      pivot: {x: 0.8165829, y: -0.37586206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288506d18541dcd40824a070fd54e0c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand02
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 2335
+        width: 198
+        height: 290
+      alignment: 9
+      pivot: {x: 0.8207071, y: -0.36551723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3216c206cd964754aadf43baf11df9fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand03
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 2604
+        width: 202
+        height: 291
+      alignment: 9
+      pivot: {x: 0.80445546, y: -0.3539519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ccc172966798d449e53468f26aa9f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand04
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 2018
+        width: 197
+        height: 298
+      alignment: 9
+      pivot: {x: 0.8096447, y: -0.32550335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1489bc9dc8f8e7c4eb1768a70975be56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand05
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 2073
+        width: 195
+        height: 287
+      alignment: 9
+      pivot: {x: 0.8128205, y: -0.35191637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86807c92481536648808fe8d1d3c86be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand06
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 2632
+        width: 196
+        height: 285
+      alignment: 9
+      pivot: {x: 0.8035714, y: -0.3508772}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1913c3ce17494e42a014ee1f7057e3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand07
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 2646
+        width: 201
+        height: 287
+      alignment: 9
+      pivot: {x: 0.78855723, y: -0.33101046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f706224deeaeaa48889dccc51bb6133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand08
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2577
+        width: 201
+        height: 285
+      alignment: 9
+      pivot: {x: 0.7835821, y: -0.3263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50b5748c66812449bb9ad810b363b9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand09
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 2318
+        width: 201
+        height: 284
+      alignment: 9
+      pivot: {x: 0.7835821, y: -0.3309859}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d261c4b1451d88347a913ba427b4538a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand10
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 2362
+        width: 199
+        height: 282
+      alignment: 9
+      pivot: {x: 0.78643215, y: -0.34751773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428c1502c1767ee4ca4130a31c4696f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand11
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 2924
+        width: 205
+        height: 286
+      alignment: 9
+      pivot: {x: 0.7585366, y: -0.34265736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a111e05037cfad4fa7d784714322a24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand12
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 2627
+        width: 201
+        height: 287
+      alignment: 9
+      pivot: {x: 0.7736318, y: -0.34494773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5784fa36233f5774394e1e8e1c78caaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand13
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 2636
+        width: 204
+        height: 286
+      alignment: 9
+      pivot: {x: 0.75735295, y: -0.34615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4795dc8fa0aeb1a42a23151de5daddd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand14
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2342
+        width: 202
+        height: 291
+      alignment: 9
+      pivot: {x: 0.759901, y: -0.34364262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5d7ce05dcafe64ab43eb9d26d31c73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1789
+        width: 199
+        height: 286
+      alignment: 9
+      pivot: {x: 0.77135676, y: -0.34965035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9122058d0794d9b4db393780aaaec772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand16
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 2271
+        width: 197
+        height: 304
+      alignment: 9
+      pivot: {x: 0.7690355, y: -0.32894737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9be5e3d6693de499dc9e17af5abbf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1457
+        width: 192
+        height: 297
+      alignment: 9
+      pivot: {x: 0.7890625, y: -0.34006733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d631a5248a8b4534ab922ce93d566af6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand18
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1973
+        width: 193
+        height: 296
+      alignment: 9
+      pivot: {x: 0.7797927, y: -0.3445946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9cc737f8c2a89468927c1d5eee01c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1745
+        width: 188
+        height: 308
+      alignment: 9
+      pivot: {x: 0.79521275, y: -0.32467532}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7dacdfa905b1ff4580188f2ea138002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand20
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1420
+        width: 186
+        height: 315
+      alignment: 9
+      pivot: {x: 0.7983871, y: -0.3015873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ba9eaddb0aeb04499ca759a8bfdaf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand21
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1137
+        width: 184
+        height: 318
+      alignment: 9
+      pivot: {x: 0.8070652, y: -0.28301886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab40b7a56e103fd438add09a1896ef5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 904
+        width: 182
+        height: 322
+      alignment: 9
+      pivot: {x: 0.8104396, y: -0.27018633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ca5e192b721f64fb54c8c0b175e81d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand23
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1727
+        width: 180
+        height: 325
+      alignment: 9
+      pivot: {x: 0.8194444, y: -0.2676923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb05f22d2a257542942362e6638b26e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand24
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1428
+        width: 179
+        height: 315
+      alignment: 9
+      pivot: {x: 0.82402235, y: -0.2857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9821a462076d5054abd119b013a262e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand25
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1089
+        width: 178
+        height: 329
+      alignment: 9
+      pivot: {x: 0.82865167, y: -0.23708206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dcd4dd8898527e40a6b6b4dc1339f97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand26
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 817
+        width: 177
+        height: 318
+      alignment: 9
+      pivot: {x: 0.8333333, y: -0.30503145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6970a946c3a7dcb489f6bf450f58fb29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 586
+        width: 177
+        height: 316
+      alignment: 9
+      pivot: {x: 0.83898306, y: -0.31012657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a91e9d26f5d5bd4bb1610f48eed94bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand28
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 2000
+        width: 176
+        height: 309
+      alignment: 9
+      pivot: {x: 0.84375, y: -0.29449838}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2384b7afd54ec4cafc502bb59bec55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand29
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 2010
+        width: 182
+        height: 311
+      alignment: 9
+      pivot: {x: 0.8489011, y: -0.3118971}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 593ebcb43fd08d24499161cc92af3f9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand30
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1374
+        width: 179
+        height: 301
+      alignment: 9
+      pivot: {x: 0.84636873, y: -0.34551495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542af88e46dcc29449df621a8b13d2dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand31
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1474
+        width: 180
+        height: 305
+      alignment: 9
+      pivot: {x: 0.84166664, y: -0.3180328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928114304ea549a488a33c4b52296133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand32
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 2311
+        width: 191
+        height: 323
+      alignment: 9
+      pivot: {x: 0.80890054, y: -0.26006192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d5d45321d082e448dfae6087ee5563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand33
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 2323
+        width: 191
+        height: 307
+      alignment: 9
+      pivot: {x: 0.8193717, y: -0.34527686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a593a3e8a8c6046a4af7529423c50d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand34
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1677
+        width: 187
+        height: 294
+      alignment: 9
+      pivot: {x: 0.842246, y: -0.40136054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d392337052817c64f9cede462d6999c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand35
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 2054
+        width: 189
+        height: 292
+      alignment: 9
+      pivot: {x: 0.83862436, y: -0.42123288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32bc07102f30e7a44aeb1b6821e0f4c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand36
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1781
+        width: 189
+        height: 290
+      alignment: 9
+      pivot: {x: 0.8492063, y: -0.45517242}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b415d210ff5e2d44da649010271d9da6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1228
+        width: 192
+        height: 282
+      alignment: 9
+      pivot: {x: 0.8463542, y: -0.4929078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5998867b578cd6243a24f94d75c5dafb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand38
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1737
+        width: 193
+        height: 279
+      alignment: 9
+      pivot: {x: 0.84715027, y: -0.5197133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c390b1b21b3075540bcba93319e3cd29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1512
+        width: 197
+        height: 275
+      alignment: 9
+      pivot: {x: 0.83502537, y: -0.52363634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885ebe3f48638434a8b3b9a21bfc9691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand40
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 2055
+        width: 194
+        height: 278
+      alignment: 9
+      pivot: {x: 0.8582474, y: -0.5143885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9cd1e8bd70d0c44907d0bb993be094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand41
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 2348
+        width: 195
+        height: 289
+      alignment: 9
+      pivot: {x: 0.85897434, y: -0.48442906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a5169aa714bfd488345d4b9f58f8b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand42
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1756
+        width: 197
+        height: 292
+      alignment: 9
+      pivot: {x: 0.8604061, y: -0.4520548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8287d4b2e40c6447af09772c685511a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand43
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 2639
+        width: 199
+        height: 285
+      alignment: 9
+      pivot: {x: 0.8567839, y: -0.48421052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9438328f30694a94b9db9af5e7e381fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand44
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2077
+        width: 202
+        height: 284
+      alignment: 9
+      pivot: {x: 0.8589109, y: -0.5105634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147d8aacdf6cc564e8b2854743c0e636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand45
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 2935
+        width: 204
+        height: 275
+      alignment: 9
+      pivot: {x: 0.8455882, y: -0.52363634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e03894a39b66b488668bc9aa1381f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand46
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2363
+        width: 206
+        height: 275
+      alignment: 9
+      pivot: {x: 0.85679615, y: -0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad881b02281693408a0509fb26ab731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand47
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 2897
+        width: 209
+        height: 286
+      alignment: 9
+      pivot: {x: 0.8492823, y: -0.48601398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdfae89533e7844ea700d77d420caf7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand48
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 3516
+        width: 215
+        height: 278
+      alignment: 9
+      pivot: {x: 0.83023256, y: -0.49280575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06244bacde2fa164a88888782615651a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand49
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 3517
+        width: 216
+        height: 284
+      alignment: 9
+      pivot: {x: 0.8263889, y: -0.46478873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5ff8e016e9f9b4283b9fdc35ff574f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand50
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 3515
+        width: 215
+        height: 282
+      alignment: 9
+      pivot: {x: 0.8395349, y: -0.46453902}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3b1ec0564dcdf428e70de297e8f29b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand51
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3217
+        width: 224
+        height: 284
+      alignment: 9
+      pivot: {x: 0.79241073, y: -0.45422536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33b62ba209f69340a7fb3967ef2e168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand52
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 3230
+        width: 229
+        height: 286
+      alignment: 9
+      pivot: {x: 0.79257643, y: -0.44755244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6182dd5b9d9843b4fa12187edb8cd09b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand53
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3807
+        width: 237
+        height: 288
+      alignment: 9
+      pivot: {x: 0.7700422, y: -0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57dedecd7b8cdf04c98b301a8ceae473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand54
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 3518
+        width: 240
+        height: 287
+      alignment: 9
+      pivot: {x: 0.75625, y: -0.44947734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e35f2065233fe42bfef86485772f0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand55
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 3803
+        width: 235
+        height: 292
+      alignment: 9
+      pivot: {x: 0.7723404, y: -0.4280822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb0ea7129c8d8f48934ae296f82fc36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand56
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3503
+        width: 238
+        height: 297
+      alignment: 9
+      pivot: {x: 0.7457983, y: -0.4107744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461804316daf59342aa801568b9f2745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand57
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 3802
+        width: 240
+        height: 293
+      alignment: 9
+      pivot: {x: 0.7395833, y: -0.4334471}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c8197a77729914fb9c7615d408bc83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand58
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 3807
+        width: 242
+        height: 288
+      alignment: 9
+      pivot: {x: 0.7376033, y: -0.46180555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f7bd9cf7a1dfa4e8691fc42a7b65cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand59
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3504
+        width: 233
+        height: 301
+      alignment: 9
+      pivot: {x: 0.76609445, y: -0.40199336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed730fd5007c66c40894512d9828e89d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand60
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 3496
+        width: 229
+        height: 304
+      alignment: 9
+      pivot: {x: 0.7751092, y: -0.39473686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80360472558a5d46a4f491ec6c3f312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand61
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 3185
+        width: 222
+        height: 309
+      alignment: 9
+      pivot: {x: 0.786036, y: -0.36245954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d1a608f17ff3d44817b230ba1eb083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand62
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 2934
+        width: 222
+        height: 294
+      alignment: 9
+      pivot: {x: 0.777027, y: -0.42517006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3071a6278d0fb914f9c52eaf375c463d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand63
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3802
+        width: 242
+        height: 293
+      alignment: 9
+      pivot: {x: 0.7252066, y: -0.42320818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0fb39be5fd53448a7239536b49d46a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand64
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 3802
+        width: 237
+        height: 293
+      alignment: 9
+      pivot: {x: 0.7320675, y: -0.4129693}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a017b67e52c00524884b5e8e77ae9448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand65
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 3484
+        width: 222
+        height: 316
+      alignment: 9
+      pivot: {x: 0.786036, y: -0.30063292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e31fdbcbc6e73b428b39dabb8f0ff71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand66
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 3799
+        width: 215
+        height: 296
+      alignment: 9
+      pivot: {x: 0.7976744, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d24a98ca600b1b4eba55031fc588116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand67
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 3212
+        width: 214
+        height: 303
+      alignment: 9
+      pivot: {x: 0.8107477, y: -0.34323433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e896fb0df45ba8c4ea93467935a9860d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand68
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 3225
+        width: 213
+        height: 289
+      alignment: 9
+      pivot: {x: 0.814554, y: -0.38408303}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244c3d7216f4ae146b8668c3a74ffdeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand69
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 3170
+        width: 211
+        height: 312
+      alignment: 9
+      pivot: {x: 0.8175355, y: -0.30769232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06df4fb337e2bb4b95eca008f48b59c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand70
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 3210
+        width: 212
+        height: 292
+      alignment: 9
+      pivot: {x: 0.8089623, y: -0.35958904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0311d6fe78c0e489ffc2db21b9b084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand71
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2640
+        width: 206
+        height: 288
+      alignment: 9
+      pivot: {x: 0.82281554, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c2ec2e593f0ef4ab3c56849ffe55b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand72
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 2635
+        width: 207
+        height: 297
+      alignment: 9
+      pivot: {x: 0.8236715, y: -0.33670035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0429e37f4b0778d4290d42460caf8b05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand73
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 3796
+        width: 217
+        height: 299
+      alignment: 9
+      pivot: {x: 0.7764977, y: -0.33110368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e5edccb6c61a643aa624047bc48cd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand74
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 3212
+        width: 204
+        height: 301
+      alignment: 9
+      pivot: {x: 0.82598037, y: -0.3156146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9574d237b1cad489dfc6cbc51de68d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand75
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 2864
+        width: 202
+        height: 304
+      alignment: 9
+      pivot: {x: 0.8292079, y: -0.31907895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783fc962f2f324e41a60dec2c61539d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand76
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2930
+        width: 219
+        height: 285
+      alignment: 9
+      pivot: {x: 0.77397263, y: -0.39649123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97a9e913faa19d4ca62513033580cc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand77
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 2926
+        width: 205
+        height: 297
+      alignment: 9
+      pivot: {x: 0.8121951, y: -0.34680134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e7df577071ad14ab9d39abcb01f915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand78
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 3214
+        width: 205
+        height: 299
+      alignment: 9
+      pivot: {x: 0.8073171, y: -0.34448162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0dca2e09d3a984fa624323d92412b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orphea_Stand79
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 2919
+        width: 205
+        height: 293
+      alignment: 9
+      pivot: {x: 0.8073171, y: -0.37201366}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8485061094204aa44b5b51f312a256be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9c9b25b6c324ae64c97371c175b40c06
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

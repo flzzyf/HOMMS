@@ -1,0 +1,3229 @@
+fileFormatVersion: 2
+guid: 9b941e2a8fb869a429c6566198a48a38
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Malthael_2_Stand
+    21300002: Malthael_2_Stand000
+    21300004: Malthael_2_Stand001
+    21300006: Malthael_2_Stand002
+    21300008: Malthael_2_Stand003
+    21300010: Malthael_2_Stand004
+    21300012: Malthael_2_Stand005
+    21300014: Malthael_2_Stand006
+    21300016: Malthael_2_Stand007
+    21300018: Malthael_2_Stand008
+    21300020: Malthael_2_Stand009
+    21300022: Malthael_2_Stand010
+    21300024: Malthael_2_Stand011
+    21300026: Malthael_2_Stand012
+    21300028: Malthael_2_Stand013
+    21300030: Malthael_2_Stand014
+    21300032: Malthael_2_Stand015
+    21300034: Malthael_2_Stand016
+    21300036: Malthael_2_Stand017
+    21300038: Malthael_2_Stand018
+    21300040: Malthael_2_Stand019
+    21300042: Malthael_2_Stand020
+    21300044: Malthael_2_Stand021
+    21300046: Malthael_2_Stand022
+    21300048: Malthael_2_Stand023
+    21300050: Malthael_2_Stand024
+    21300052: Malthael_2_Stand025
+    21300054: Malthael_2_Stand026
+    21300056: Malthael_2_Stand027
+    21300058: Malthael_2_Stand028
+    21300060: Malthael_2_Stand029
+    21300062: Malthael_2_Stand030
+    21300064: Malthael_2_Stand031
+    21300066: Malthael_2_Stand032
+    21300068: Malthael_2_Stand033
+    21300070: Malthael_2_Stand034
+    21300072: Malthael_2_Stand035
+    21300074: Malthael_2_Stand036
+    21300076: Malthael_2_Stand037
+    21300078: Malthael_2_Stand038
+    21300080: Malthael_2_Stand039
+    21300082: Malthael_2_Stand040
+    21300084: Malthael_2_Stand041
+    21300086: Malthael_2_Stand042
+    21300088: Malthael_2_Stand043
+    21300090: Malthael_2_Stand044
+    21300092: Malthael_2_Stand045
+    21300094: Malthael_2_Stand046
+    21300096: Malthael_2_Stand047
+    21300098: Malthael_2_Stand048
+    21300100: Malthael_2_Stand049
+    21300102: Malthael_2_Stand050
+    21300104: Malthael_2_Stand051
+    21300106: Malthael_2_Stand052
+    21300108: Malthael_2_Stand053
+    21300110: Malthael_2_Stand054
+    21300112: Malthael_2_Stand055
+    21300114: Malthael_2_Stand056
+    21300116: Malthael_2_Stand057
+    21300118: Malthael_2_Stand058
+    21300120: Malthael_2_Stand059
+    21300122: Malthael_2_Stand060
+    21300124: Malthael_2_Stand061
+    21300126: Malthael_2_Stand062
+    21300128: Malthael_2_Stand063
+    21300130: Malthael_2_Stand064
+    21300132: Malthael_2_Stand065
+    21300134: Malthael_2_Stand066
+    21300136: Malthael_2_Stand067
+    21300138: Malthael_2_Stand068
+    21300140: Malthael_2_Stand069
+    21300142: Malthael_2_Stand070
+    21300144: Malthael_2_Stand071
+    21300146: Malthael_2_Stand072
+    21300148: Malthael_2_Stand073
+    21300150: Malthael_2_Stand074
+    21300152: Malthael_2_Stand075
+    21300154: Malthael_2_Stand076
+    21300156: Malthael_2_Stand077
+    21300158: Malthael_2_Stand078
+    21300160: Malthael_2_Stand079
+    21300162: Malthael_2_Stand080
+    21300164: Malthael_2_Stand081
+    21300166: Malthael_2_Stand082
+    21300168: Malthael_2_Stand083
+    21300170: Malthael_2_Stand084
+    21300172: Malthael_2_Stand085
+    21300174: Malthael_2_Stand086
+    21300176: Malthael_2_Stand087
+    21300178: Malthael_2_Stand088
+    21300180: Malthael_2_Stand089
+    21300182: Malthael_2_Stand090
+    21300184: Malthael_2_Stand091
+    21300186: Malthael_2_Stand092
+    21300188: Malthael_2_Stand093
+    21300190: Malthael_2_Stand094
+    21300192: Malthael_2_Stand095
+    21300194: Malthael_2_Stand096
+    21300196: Malthael_2_Stand097
+    21300198: Malthael_2_Stand098
+    21300200: Malthael_2_Stand099
+    21300202: Malthael_2_Stand100
+    21300204: Malthael_2_Stand101
+    21300206: Malthael_2_Stand102
+    21300208: Malthael_2_Stand103
+    21300210: Malthael_2_Stand104
+    21300212: Malthael_2_Stand105
+    21300214: Malthael_2_Stand106
+    21300216: Malthael_2_Stand107
+    21300218: Malthael_2_Stand108
+    21300220: Malthael_2_Stand109
+    21300222: Malthael_2_Stand110
+    21300224: Malthael_2_Stand111
+    21300226: Malthael_2_Stand112
+    21300228: Malthael_2_Stand113
+    21300230: Malthael_2_Stand114
+    21300232: Malthael_2_Stand115
+    21300234: Malthael_2_Stand116
+    21300236: Malthael_2_Stand117
+    21300238: Malthael_2_Stand118
+    21300240: Malthael_2_Stand119
+    21300242: Malthael_2_Stand120
+    21300244: Malthael_2_Stand121
+    21300246: Malthael_2_Stand122
+    21300248: Malthael_2_Stand123
+    21300250: Malthael_2_Stand124
+    21300252: Malthael_2_Stand125
+    21300254: Malthael_2_Stand126
+    21300256: Malthael_2_Stand127
+    21300258: Malthael_2_Stand128
+    21300260: Malthael_2_Stand129
+    21300262: Malthael_2_Stand130
+    21300264: Malthael_2_Stand131
+    21300266: Malthael_2_Stand132
+    21300268: Malthael_2_Stand133
+    21300270: Malthael_2_Stand134
+    21300272: Malthael_2_Stand135
+    21300274: Malthael_2_Stand136
+    21300276: Malthael_2_Stand137
+    21300278: Malthael_2_Stand138
+    21300280: Malthael_2_Stand139
+    21300282: Malthael_2_Stand140
+    21300284: Malthael_2_Stand141
+    21300286: Malthael_2_Stand142
+    21300288: Malthael_2_Stand143
+    21300290: Malthael_2_Stand144
+    21300292: Malthael_2_Stand145
+    21300294: Malthael_2_Stand146
+    21300296: Malthael_2_Stand147
+    21300298: Malthael_2_Stand148
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Malthael_2_Stand000
+      rect:
+        serializedVersion: 2
+        x: 3774
+        y: 2979
+        width: 251
+        height: 367
+      alignment: 9
+      pivot: {x: 0.59163344, y: -0.051771116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e7a54ff3ac4bb47998f637566ccd5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand001
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1688
+        width: 252
+        height: 393
+      alignment: 9
+      pivot: {x: 0.60119045, y: -0.0050890585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f014c8123f48d4aa320d67358f568c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand002
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 3709
+        width: 254
+        height: 386
+      alignment: 9
+      pivot: {x: 0.6082677, y: -0.04404145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5031cab9448c6244eaa3d2b380d20923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand003
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 214
+        width: 251
+        height: 379
+      alignment: 9
+      pivot: {x: 0.6115538, y: -0.026385223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def9571e7c040b347a3259a81ff926e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand004
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 2505
+        width: 257
+        height: 392
+      alignment: 9
+      pivot: {x: 0.58949417, y: -0.028061224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3150dfed4c1f5db45b190abf1370f92b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand005
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 2945
+        width: 249
+        height: 380
+      alignment: 9
+      pivot: {x: 0.61646587, y: -0.042105265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219e4daffed08714088b64092ec52912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand006
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 1044
+        width: 252
+        height: 377
+      alignment: 9
+      pivot: {x: 0.62103176, y: -0.04774536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ef13c962ed37341b1613c0b42c96f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand007
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 3340
+        width: 256
+        height: 376
+      alignment: 9
+      pivot: {x: 0.6230469, y: -0.045212764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b71539ff5c5cad42ae8874fd73709a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand008
+      rect:
+        serializedVersion: 2
+        x: 2003
+        y: 612
+        width: 248
+        height: 379
+      alignment: 9
+      pivot: {x: 0.63508064, y: -0.050131924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5c5de16c3b42140976b9ce72813528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand009
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 2221
+        width: 257
+        height: 368
+      alignment: 9
+      pivot: {x: 0.6206226, y: -0.05706522}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef645ff5fa670204eb492b1b64a50ba5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand010
+      rect:
+        serializedVersion: 2
+        x: 3018
+        y: 2209
+        width: 248
+        height: 374
+      alignment: 9
+      pivot: {x: 0.63508064, y: -0.05882353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddbd48e22eb15fb4480b69bda41dc44e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand011
+      rect:
+        serializedVersion: 2
+        x: 2512
+        y: 2183
+        width: 247
+        height: 379
+      alignment: 9
+      pivot: {x: 0.64979756, y: -0.058047492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce1664ec4b27764288b8a7184761958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand012
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 1830
+        width: 253
+        height: 374
+      alignment: 9
+      pivot: {x: 0.61857706, y: -0.05882353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71280837526784c4a92835575593346b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand013
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 150
+        width: 262
+        height: 384
+      alignment: 9
+      pivot: {x: 0.6316794, y: -0.0546875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99dd32bab05f0774396e73a6a83064cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand014
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 659
+        width: 257
+        height: 377
+      alignment: 9
+      pivot: {x: 0.6284047, y: -0.061007958}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a5fd71c921224438b55a6cd6b48528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand015
+      rect:
+        serializedVersion: 2
+        x: 2680
+        y: 1418
+        width: 258
+        height: 378
+      alignment: 9
+      pivot: {x: 0.62984496, y: -0.06084656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3f38b1a5489024d872568b61c5df6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand016
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 3325
+        width: 249
+        height: 383
+      alignment: 9
+      pivot: {x: 0.624498, y: -0.06005222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c3e427648f440458c1502ca5a10d14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand017
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1398
+        width: 255
+        height: 379
+      alignment: 9
+      pivot: {x: 0.6372549, y: -0.060686015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35e8fabaa06b6e47b225e7947f433c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand018
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 2583
+        width: 255
+        height: 376
+      alignment: 9
+      pivot: {x: 0.62941176, y: -0.05851064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bc0ee7b3010b6341a97af197ed0eb9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand019
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 2930
+        width: 248
+        height: 386
+      alignment: 9
+      pivot: {x: 0.6270161, y: -0.031088082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f724151dfe85d42a2f9d684ddd7b44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand020
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 2924
+        width: 247
+        height: 387
+      alignment: 9
+      pivot: {x: 0.6336032, y: -0.056847546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a11829edecb034dbce53159b31c6a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand021
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 1017
+        width: 248
+        height: 379
+      alignment: 9
+      pivot: {x: 0.6310484, y: -0.060686015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f7fc7878358ab4eb373da464845cd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand022
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 2528
+        width: 251
+        height: 387
+      alignment: 9
+      pivot: {x: 0.62749004, y: -0.056847546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953aeedf937813f4292737b390507bad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand023
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 923
+        width: 244
+        height: 388
+      alignment: 9
+      pivot: {x: 0.625, y: -0.028350515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75e30c4b6abfc84d94221d18551830f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand024
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 3321
+        width: 232
+        height: 386
+      alignment: 9
+      pivot: {x: 0.64439654, y: -0.049222797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64f93ec358ba26409461eb1d5d5a86b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand025
+      rect:
+        serializedVersion: 2
+        x: 3505
+        y: 2591
+        width: 247
+        height: 373
+      alignment: 9
+      pivot: {x: 0.6376518, y: -0.048257373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636cc7a6b2c8ae844b2eb5aec693e1f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand026
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 3702
+        width: 238
+        height: 393
+      alignment: 9
+      pivot: {x: 0.63235295, y: -0.050890584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a5193d51758c34dbf455b972ffbf65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand027
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 903
+        width: 245
+        height: 390
+      alignment: 9
+      pivot: {x: 0.6265306, y: -0.04871795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e1ec42faa252049a102846ab83dfe2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand028
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 1705
+        width: 244
+        height: 390
+      alignment: 9
+      pivot: {x: 0.63729507, y: -0.046153847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7260c28de3d5426489f1fc7abb617997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand029
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 565
+        width: 242
+        height: 383
+      alignment: 9
+      pivot: {x: 0.63429755, y: -0.023498695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576e346b81dc0f747b8a3f4e7d677bb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand030
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3690
+        width: 236
+        height: 405
+      alignment: 9
+      pivot: {x: 0.625, y: -0.024691358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee3039dab8844343beba47a00471c2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand031
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 3700
+        width: 246
+        height: 395
+      alignment: 9
+      pivot: {x: 0.6280488, y: -0.032911394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1a0cc93a7ee2e4aad978170308db74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand032
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 636
+        width: 243
+        height: 379
+      alignment: 9
+      pivot: {x: 0.6234568, y: -0.036939315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db605b2a9b530fa4b8676c99e246baf8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand033
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 536
+        width: 241
+        height: 385
+      alignment: 9
+      pivot: {x: 0.6286307, y: -0.046753246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6eebfd62def2d243b04f8d60eacb57f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand034
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 1744
+        width: 238
+        height: 385
+      alignment: 9
+      pivot: {x: 0.62815124, y: -0.04935065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d929ae8acd26bcf49abe4f83ecabc555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand035
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 898
+        width: 236
+        height: 391
+      alignment: 9
+      pivot: {x: 0.6334746, y: -0.017902814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25233608b37539b4192939c95dc250c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand036
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 649
+        width: 240
+        height: 378
+      alignment: 9
+      pivot: {x: 0.63958335, y: -0.05820106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a161ed130e153044896d186e23d0bcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand037
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 2554
+        width: 241
+        height: 382
+      alignment: 9
+      pivot: {x: 0.63692945, y: -0.057591625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d30158ef85fe6d4493de38a59ac0c56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand038
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 1842
+        width: 238
+        height: 369
+      alignment: 9
+      pivot: {x: 0.6407563, y: -0.059620596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bf5f4a8a04133499e8156fb7c60c0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand039
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 993
+        width: 233
+        height: 380
+      alignment: 9
+      pivot: {x: 0.6244635, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c4ad253f8d7694fa318441482bda80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand040
+      rect:
+        serializedVersion: 2
+        x: 3047
+        y: 2964
+        width: 240
+        height: 375
+      alignment: 9
+      pivot: {x: 0.6354167, y: -0.053333335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac2f313a2f10244ba1afabc14f41328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand041
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1358
+        width: 241
+        height: 384
+      alignment: 9
+      pivot: {x: 0.6327801, y: -0.0390625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d270a725531114fb0e2bb54a99ab75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand042
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 2899
+        width: 240
+        height: 393
+      alignment: 9
+      pivot: {x: 0.6354167, y: -0.015267176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d3cfe38f12bfe41bf2a5fcce303e92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand043
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1721
+        width: 238
+        height: 390
+      alignment: 9
+      pivot: {x: 0.62815124, y: -0.017948719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a67a44a8e137b349ae9721c0cfb6be8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand044
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 500
+        width: 239
+        height: 392
+      alignment: 9
+      pivot: {x: 0.6297071, y: -0.0051020407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917cf6162d8a03241b27dd19aef962e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand045
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1295
+        width: 234
+        height: 391
+      alignment: 9
+      pivot: {x: 0.6388889, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5757896716e39b84ab81296a9472b4bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand046
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 3719
+        width: 241
+        height: 376
+      alignment: 9
+      pivot: {x: 0.62033194, y: -0.05319149}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af712c36fb767d74c8cb8e1e10dd39a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand047
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 106
+        width: 237
+        height: 392
+      alignment: 9
+      pivot: {x: 0.613924, y: -0.04336735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9a8d356b6c6ab45956ffef3d2bd41c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand048
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 2113
+        width: 244
+        height: 390
+      alignment: 9
+      pivot: {x: 0.62090164, y: -0.020512821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09972134534987b47af4b3457fbd8af4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand049
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 173
+        width: 246
+        height: 383
+      alignment: 9
+      pivot: {x: 0.61178863, y: -0.044386424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6508cae3acc592488011be92129fd35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand050
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 231
+        width: 246
+        height: 379
+      alignment: 9
+      pivot: {x: 0.6199187, y: -0.047493402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3537bda590949af4cb2edc9be711c4e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand051
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1289
+        width: 237
+        height: 395
+      alignment: 9
+      pivot: {x: 0.6392405, y: -0.025316456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5f6e671e4d128429937279ad3f769e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand052
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 944
+        width: 241
+        height: 385
+      alignment: 9
+      pivot: {x: 0.6410788, y: -0.028571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f5042eb1733ad498888778e6f3d416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand053
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 3710
+        width: 254
+        height: 385
+      alignment: 9
+      pivot: {x: 0.61220473, y: -0.031168832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffaa9006e58676468885c4651230996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand054
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 1423
+        width: 238
+        height: 378
+      alignment: 9
+      pivot: {x: 0.6365546, y: -0.02116402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4404176bbb43c4eb53722660541dbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand055
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 3313
+        width: 248
+        height: 388
+      alignment: 9
+      pivot: {x: 0.6270161, y: -0.025773196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9b6637c3ef07c43945f375feb09cf6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand056
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 3318
+        width: 242
+        height: 387
+      alignment: 9
+      pivot: {x: 0.62603307, y: -0.051679585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26bdc5141d14964fb213c7627b8bd02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand057
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2484
+        width: 245
+        height: 398
+      alignment: 9
+      pivot: {x: 0.63061225, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e225ce7aabd80e45bceff3224917775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand058
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 558
+        width: 260
+        height: 384
+      alignment: 9
+      pivot: {x: 0.59807694, y: -0.03125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6829fb0d6fa444d4ba446031d50b0afe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand059
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 2887
+        width: 250
+        height: 397
+      alignment: 9
+      pivot: {x: 0.618, y: -0.020151133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0366d0e5a2ec53046a336d1f014ce701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand060
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1331
+        width: 241
+        height: 388
+      alignment: 9
+      pivot: {x: 0.63692945, y: -0.030927835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460db288a7df16146b3765d9c738b7fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand061
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1291
+        width: 253
+        height: 393
+      alignment: 9
+      pivot: {x: 0.61857706, y: -0.027989822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da513373dfd64f644b3eaf01aad1df60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand062
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 3294
+        width: 245
+        height: 397
+      alignment: 9
+      pivot: {x: 0.63061225, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1104658b0d9824487d593ef2b17bce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand063
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 950
+        width: 256
+        height: 384
+      alignment: 9
+      pivot: {x: 0.6152344, y: -0.020833334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28027012256bbd2498a64925855fafa9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand064
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 2089
+        width: 244
+        height: 393
+      alignment: 9
+      pivot: {x: 0.6454918, y: -0.017811704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891008b60eee4b247bf20518245814c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand065
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 1791
+        width: 255
+        height: 379
+      alignment: 9
+      pivot: {x: 0.6254902, y: -0.058047492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a9bdd3c80956744b493451749296e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand066
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 1410
+        width: 248
+        height: 379
+      alignment: 9
+      pivot: {x: 0.6229839, y: -0.058047492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044dfe28f4aef744d96d7b437fe3049e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand067
+      rect:
+        serializedVersion: 2
+        x: 2461
+        y: 1798
+        width: 248
+        height: 379
+      alignment: 9
+      pivot: {x: 0.6189516, y: -0.05540897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eefa58c3f793474786303bfc929abcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand068
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 119
+        width: 245
+        height: 385
+      alignment: 9
+      pivot: {x: 0.6265306, y: -0.04935065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00aeeeaa4f64b1e4fa2014c42c8865a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand069
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 977
+        width: 243
+        height: 381
+      alignment: 9
+      pivot: {x: 0.63580245, y: -0.057742782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbe86edbc8e15c4893da55768c1a1cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand070
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 3344
+        width: 243
+        height: 374
+      alignment: 9
+      pivot: {x: 0.63580245, y: -0.056149732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b74dcc3dd2109468488e1dd9531445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand071
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 3341
+        width: 243
+        height: 376
+      alignment: 9
+      pivot: {x: 0.63580245, y: -0.05319149}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8916446a7a61a46ba0be64fd4322f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand072
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 3693
+        width: 247
+        height: 402
+      alignment: 9
+      pivot: {x: 0.6417004, y: -0.0099502485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a3d9598e0cb8a4e90c82c76e7fad76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand073
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2917
+        width: 243
+        height: 389
+      alignment: 9
+      pivot: {x: 0.6399177, y: -0.028277636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5dcbd7665096845b9a467c6803d012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand074
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 3305
+        width: 239
+        height: 393
+      alignment: 9
+      pivot: {x: 0.6338912, y: -0.030534351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011abbb40f59e24468d282d4600ee449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand075
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1313
+        width: 241
+        height: 390
+      alignment: 9
+      pivot: {x: 0.6327801, y: -0.0076923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23ed3d371b025f4f933c1c7163fad24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand076
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1686
+        width: 246
+        height: 395
+      alignment: 9
+      pivot: {x: 0.6443089, y: -0.02278481}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c77322728742e840b2cadfbd9497ae7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand077
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2884
+        width: 244
+        height: 400
+      alignment: 9
+      pivot: {x: 0.6454918, y: -0.0025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbb8042dbf1fb94d9f304993ab7bc99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand078
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 3721
+        width: 242
+        height: 374
+      alignment: 9
+      pivot: {x: 0.65082645, y: -0.053475935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca6856b93b675c4cbe73e987cd1c093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand079
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 3703
+        width: 242
+        height: 392
+      alignment: 9
+      pivot: {x: 0.64669424, y: -0.05102041}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93386755755bd4f489176e546b0a9baf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand080
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 2113
+        width: 234
+        height: 390
+      alignment: 9
+      pivot: {x: 0.63461536, y: -0.035897437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619f5c628436f084187e76445471cb3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand081
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 1360
+        width: 240
+        height: 383
+      alignment: 9
+      pivot: {x: 0.63958335, y: -0.036553524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfbd769e0b431dd4ead22469383d6003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand082
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2483
+        width: 237
+        height: 399
+      alignment: 9
+      pivot: {x: 0.6434599, y: -0.0050125313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe6627913c780f4b9eb66a9aa71b7c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand083
+      rect:
+        serializedVersion: 2
+        x: 3253
+        y: 3720
+        width: 231
+        height: 375
+      alignment: 9
+      pivot: {x: 0.6298701, y: -0.056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3380dcbe2c155e49b6580b901719937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand084
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 1336
+        width: 239
+        height: 385
+      alignment: 9
+      pivot: {x: 0.6380753, y: -0.051948052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6042ce67b059f0244a635ca3e6a74e78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand085
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2097
+        width: 233
+        height: 393
+      alignment: 9
+      pivot: {x: 0.65450644, y: -0.020356234}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ee97e159d47dc4e815ddc83721162b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand086
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 3339
+        width: 228
+        height: 377
+      alignment: 9
+      pivot: {x: 0.63377196, y: -0.050397877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612c4eab2d0fb4c48a0b80921e13c9eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand087
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 1375
+        width: 228
+        height: 381
+      alignment: 9
+      pivot: {x: 0.64254385, y: -0.057742782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3248f5316ff21ca4d9a51ddb1ff87b3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand088
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1723
+        width: 232
+        height: 388
+      alignment: 9
+      pivot: {x: 0.64008623, y: -0.020618556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfa9795530d5bc488601667156a8dd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand089
+      rect:
+        serializedVersion: 2
+        x: 3535
+        y: 2969
+        width: 237
+        height: 373
+      alignment: 9
+      pivot: {x: 0.6476793, y: -0.058981232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cf7e11f1352a14397ed1664e31a163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand090
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 3724
+        width: 251
+        height: 371
+      alignment: 9
+      pivot: {x: 0.6673307, y: -0.06199461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13dd995972c9aa4d90984448353f400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand091
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 3342
+        width: 232
+        height: 375
+      alignment: 9
+      pivot: {x: 0.64008623, y: -0.058666665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c9820f3410a4d4d854398458632ed6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand092
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 208
+        width: 236
+        height: 380
+      alignment: 9
+      pivot: {x: 0.6461864, y: -0.044736844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc7705ad527d974690e3d9387408254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand093
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 1038
+        width: 240
+        height: 378
+      alignment: 9
+      pivot: {x: 0.62708336, y: -0.052910052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0481ebd0018229343822653c8fe2449e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand094
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 595
+        width: 235
+        height: 380
+      alignment: 9
+      pivot: {x: 0.62340426, y: -0.036842104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12afcb84ccf2874380141f0e0612d6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand095
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 1745
+        width: 237
+        height: 384
+      alignment: 9
+      pivot: {x: 0.6308017, y: -0.0234375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3381b44ddcc3fc40bea0be01ee19e1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand096
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 501
+        width: 243
+        height: 391
+      alignment: 9
+      pivot: {x: 0.627572, y: -0.025575448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d7a17fd2b28ed4b8991c14fca449b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand097
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 1803
+        width: 243
+        height: 378
+      alignment: 9
+      pivot: {x: 0.6316872, y: -0.04232804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a022aed35959d9498a6f0492b258f0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand098
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 2966
+        width: 244
+        height: 374
+      alignment: 9
+      pivot: {x: 0.6168033, y: -0.04812834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be370dbcc41516d43b1a092c6ac3bbd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand099
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 2492
+        width: 244
+        height: 393
+      alignment: 9
+      pivot: {x: 0.6331967, y: -0.022900764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9f47aa2de7c164484f761071338381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand100
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 3707
+        width: 248
+        height: 388
+      alignment: 9
+      pivot: {x: 0.6310484, y: -0.023195876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d919fad5c4ee0e4dbb0889f8071175e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand101
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 2520
+        width: 248
+        height: 389
+      alignment: 9
+      pivot: {x: 0.6310484, y: -0.03084833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237bb96ffa637374bbec692500bb0dd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand102
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 2588
+        width: 248
+        height: 374
+      alignment: 9
+      pivot: {x: 0.6391129, y: -0.053475935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c5b8bfbc4801d49b2994c7743ee83d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand103
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 2545
+        width: 255
+        height: 383
+      alignment: 9
+      pivot: {x: 0.6254902, y: -0.05221932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb98847abe6a134ba1a6ae44cfec8f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand104
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 3719
+        width: 256
+        height: 376
+      alignment: 9
+      pivot: {x: 0.6269531, y: -0.05319149}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ad04831cc7e7a44b73761339339476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand105
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 107
+        width: 257
+        height: 391
+      alignment: 9
+      pivot: {x: 0.6206226, y: -0.035805628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc24782334941684d896c77f6adf27a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand106
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 2585
+        width: 249
+        height: 375
+      alignment: 9
+      pivot: {x: 0.6204819, y: -0.053333335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc57d091a38e6044a2cfcff5151615a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand107
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 2206
+        width: 255
+        height: 375
+      alignment: 9
+      pivot: {x: 0.62941176, y: -0.032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f495488b99b57bd458328692fc5dab1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand108
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 3323
+        width: 256
+        height: 385
+      alignment: 9
+      pivot: {x: 0.6269531, y: -0.031168832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0b5ea9139c6c3438bbd26757dc0dbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand109
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 2131
+        width: 254
+        height: 387
+      alignment: 9
+      pivot: {x: 0.62795275, y: -0.03617571}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d03f5fee1b25f42970e3d284369e61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand110
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 2179
+        width: 254
+        height: 379
+      alignment: 9
+      pivot: {x: 0.62401575, y: -0.058047492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de625edd88863b14caccec4c7abfd4df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand111
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 2560
+        width: 251
+        height: 380
+      alignment: 9
+      pivot: {x: 0.62749004, y: -0.057894737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb85647c2eba7d48b76456e45cbde25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand112
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2083
+        width: 251
+        height: 398
+      alignment: 9
+      pivot: {x: 0.6195219, y: -0.025125628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b231725fce530f43a427441a081167a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand113
+      rect:
+        serializedVersion: 2
+        x: 2999
+        y: 665
+        width: 247
+        height: 377
+      alignment: 9
+      pivot: {x: 0.6295546, y: -0.061007958}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31caba183260ea64ab5bc00fd9290514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand114
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 2938
+        width: 252
+        height: 383
+      alignment: 9
+      pivot: {x: 0.62103176, y: -0.057441253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da43b0c399c32be4eab095f09a204bf7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand115
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 3308
+        width: 252
+        height: 392
+      alignment: 9
+      pivot: {x: 0.62103176, y: -0.028061224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbfbe7f587a4ce340900e7c49688d335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand116
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 590
+        width: 253
+        height: 381
+      alignment: 9
+      pivot: {x: 0.6304348, y: -0.05511811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486a5d93aa0d5ef42aade30490884b15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand117
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 973
+        width: 242
+        height: 383
+      alignment: 9
+      pivot: {x: 0.6301653, y: -0.054830287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a7c56aae55e71499907f00ef09a42c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand118
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 2161
+        width: 258
+        height: 382
+      alignment: 9
+      pivot: {x: 0.5988372, y: -0.054973822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e13cc3ce204ef438ec2bc08342b8c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand119
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 119
+        width: 243
+        height: 385
+      alignment: 9
+      pivot: {x: 0.627572, y: -0.054545455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1354013f5515b94d9e13f09c9cbec62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand120
+      rect:
+        serializedVersion: 2
+        x: 3207
+        y: 1082
+        width: 243
+        height: 371
+      alignment: 9
+      pivot: {x: 0.63580245, y: -0.056603774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73af9eff9fe41c429b917400ca8578a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand121
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 1758
+        width: 240
+        height: 383
+      alignment: 9
+      pivot: {x: 0.6354167, y: -0.054830287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d45b662f9872a547ac76e795908cad1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand122
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 2554
+        width: 242
+        height: 382
+      alignment: 9
+      pivot: {x: 0.63842976, y: -0.057591625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14751dea80560134b8f94b88bcabc779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand123
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 3718
+        width: 242
+        height: 377
+      alignment: 9
+      pivot: {x: 0.6301653, y: -0.055702917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa855ca59ee7a5c43b331c4f1ffb78b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand124
+      rect:
+        serializedVersion: 2
+        x: 2467
+        y: 1029
+        width: 242
+        height: 379
+      alignment: 9
+      pivot: {x: 0.6301653, y: -0.058047492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410e3d85271c92b499bae52f50463a49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand125
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 286
+        width: 244
+        height: 377
+      alignment: 9
+      pivot: {x: 0.625, y: -0.061007958}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8caea2f46c3fb1042a72e85ac10fd4b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand126
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 2564
+        width: 253
+        height: 379
+      alignment: 9
+      pivot: {x: 0.61067194, y: -0.058047492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20970551f55183e469ed911c8081b6ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand127
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1779
+        width: 258
+        height: 380
+      alignment: 9
+      pivot: {x: 0.5949612, y: -0.060526315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d479fd3dafa6ec4c9134260800a2ac9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand128
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 2962
+        width: 255
+        height: 376
+      alignment: 9
+      pivot: {x: 0.58235294, y: -0.055851065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ad82b4cc401174baa125f0005f7f9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand129
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 3348
+        width: 257
+        height: 371
+      alignment: 9
+      pivot: {x: 0.6050584, y: -0.06199461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3251a225458feba4f83ae73e9bdc5719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand130
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 3327
+        width: 261
+        height: 381
+      alignment: 9
+      pivot: {x: 0.59195405, y: -0.057742782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a99c36477bdd0244ab22338699ee36d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand131
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 2961
+        width: 262
+        height: 376
+      alignment: 9
+      pivot: {x: 0.58587784, y: -0.061170213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67475c049dd17694a8609d94d9094e02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand132
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3286
+        width: 263
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5912548, y: -0.019900497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11710d9573edb14eb203ef115bd6c84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand133
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 3710
+        width: 265
+        height: 385
+      alignment: 9
+      pivot: {x: 0.57924527, y: -0.04155844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d092c1576333a2c4fa4b93fada3af01d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand134
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 2143
+        width: 264
+        height: 383
+      alignment: 9
+      pivot: {x: 0.5776515, y: -0.04699739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f61c7a1edf90e4b9dd839ef4b9905d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand135
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 2942
+        width: 275
+        height: 381
+      alignment: 9
+      pivot: {x: 0.5327273, y: -0.06824147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5f1cd72f0a14c49a9f4b98af032883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand136
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 894
+        width: 258
+        height: 393
+      alignment: 9
+      pivot: {x: 0.56395346, y: -0.03816794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766531515d1d6194a8f8eb415ff40922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand137
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 3714
+        width: 257
+        height: 381
+      alignment: 9
+      pivot: {x: 0.5622568, y: -0.036745407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e30aba9a8b4524fb82278c00b7172b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand138
+      rect:
+        serializedVersion: 2
+        x: 3754
+        y: 2600
+        width: 256
+        height: 367
+      alignment: 9
+      pivot: {x: 0.5683594, y: -0.07084469}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4c869e303accc4e90f981c94e7b4a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand139
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 1455
+        width: 254
+        height: 373
+      alignment: 9
+      pivot: {x: 0.5807087, y: -0.06434316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed1fbb8768f17a43a609d863d0b1da2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand140
+      rect:
+        serializedVersion: 2
+        x: 3436
+        y: 1463
+        width: 256
+        height: 369
+      alignment: 9
+      pivot: {x: 0.5839844, y: -0.07046071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab461ef97dd653640a7b86cc2063b4be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand141
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 270
+        width: 266
+        height: 377
+      alignment: 9
+      pivot: {x: 0.56578946, y: -0.055702917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278b53eb943ba114ea8a261854a27007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand142
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 2172
+        width: 255
+        height: 380
+      alignment: 9
+      pivot: {x: 0.5862745, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15deb0529a848504586da8897f262605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand143
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 2911
+        width: 257
+        height: 392
+      alignment: 9
+      pivot: {x: 0.577821, y: -0.017857144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f25e6053b852d41aa29c4ce1c34d74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand144
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 506
+        width: 273
+        height: 390
+      alignment: 9
+      pivot: {x: 0.56593406, y: -0.046153847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615e6527caacc7e4cab0ef20fac1c436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand145
+      rect:
+        serializedVersion: 2
+        x: 3211
+        y: 1834
+        width: 253
+        height: 373
+      alignment: 9
+      pivot: {x: 0.5790514, y: -0.04557641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee07a10294af032488dcdec404b2fa7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand146
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 182
+        width: 255
+        height: 381
+      alignment: 9
+      pivot: {x: 0.5901961, y: -0.057742782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e29340743fb7c64bb4af32809b86fb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand147
+      rect:
+        serializedVersion: 2
+        x: 3268
+        y: 2213
+        width: 251
+        height: 373
+      alignment: 9
+      pivot: {x: 0.59163344, y: -0.056300268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb19c8089c7e6f545be7f347ac73e45a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malthael_2_Stand148
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 280
+        width: 250
+        height: 377
+      alignment: 9
+      pivot: {x: 0.594, y: -0.055702917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa42ff3320ba8c940a5967a7743bdd53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a00c3e60affaa9f43afd5b2543baf6b9
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
