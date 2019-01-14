@@ -71,6 +71,13 @@ tpsheetFileNames:
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Stand.tpsheet
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Walk.tpsheet
 - Assets/Resources/Textures/Units/OrpheaCampaign/Orphea/Orphea_Stand.tpsheet
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_0_Stand.tpsheet
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_0_Walk.tpsheet
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_1_Stand.tpsheet
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_1_Walk.tpsheet
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_2_Stand.tpsheet
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_2_Walk.tpsheet
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_3_Stand.tpsheet
 - Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_3_Walk.tpsheet
 - Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_4_Stand.tpsheet
 - Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_4_Walk.tpsheet
@@ -145,11 +152,25 @@ textureFileNames:
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Stand.png
 - Assets/Resources/Textures/Units/Necro/Stitches/Stitches_Walk.png
 - Assets/Resources/Textures/Units/OrpheaCampaign/Orphea/Orphea_Stand.png
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_0_Stand.png
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_0_Walk.png
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_1_Stand.png
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_1_Walk.png
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_2_Stand.png
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_2_Walk.png
+- Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_3_Stand.png
 - Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_3_Walk.png
 - Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_4_Stand.png
 - Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_4_Walk.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 
