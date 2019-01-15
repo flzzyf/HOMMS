@@ -13,7 +13,7 @@ public class MapManager : MonoBehaviour
     public bool autoCentered = false;
     public LayerMask layer_wall;
 
-    protected Node[,] nodes;
+    public Node[,] nodes;
     [HideInInspector]
     public NodeItem[,] nodeItems;
     Vector2 originGeneratePoint = Vector2.zero;

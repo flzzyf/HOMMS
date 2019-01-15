@@ -156,11 +156,18 @@ public class MapManager_Travel : MapManager
     {
         Hero hero = TravelManager.instance.currentHero;
 
-        //行动力不足停止移动
-        if (!hasMovementToReachNode(hero, _node))
+		//播放移动动画
+		hero.SetMovingDir(_node.transform.position - hero.transform.position);
+		hero.SetMovingStatus(1);
+
+		//行动力不足停止移动
+		if (!hasMovementToReachNode(hero, _node))
         {
             NodeMovingMgr.instance.StopMoving();
-        }
+
+			//停止移动动画
+			hero.SetMovingStatus(0);
+		}
 
         //英雄扣除移动力
         hero.movementRate -= GetNodeDistance(hero.nodeItem, _node);
@@ -195,14 +202,18 @@ public class MapManager_Travel : MapManager
         //清除路径
         ClearPath();
 
-        GameManager.gameState = GameState.playerControl;
+		//停止移动动画
+        Hero hero = TravelManager.instance.currentHero;
+		hero.SetMovingStatus(0);
+
+		hero.transform.position = _node.transform.position;
+
+		GameManager.gameState = GameState.playerControl;
 
         if (targetNodeObject != null)
         {
             NodeObject_Travel obj = (NodeObject_Travel)targetNodeObject;
             targetNodeObject = null;
-
-            Hero hero = TravelManager.instance.currentHero;
 
             obj.advantureObject.OnInteracted(hero);
 

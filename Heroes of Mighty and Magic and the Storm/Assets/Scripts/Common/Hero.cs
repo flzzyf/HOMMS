@@ -43,6 +43,9 @@ public class Hero : NodeObject
 	public int level;
 	public int exp;
 
+	public Animator animator;
+	public SpriteRenderer spriteRenderer;
+
     public void Init()
     {
         movementRate = returnMovementRate;
@@ -70,6 +73,22 @@ public class Hero : NodeObject
             return movementRateMapping[5];
         }
     }
+
+	public void SetMovingDir(Vector3 _dir)
+	{
+		int dir = Mathf.FloorToInt(Vector3.Angle(transform.forward, _dir) / 45);
+		animator.SetFloat("dir", dir);
+
+		if (_dir.x < 0)
+			spriteRenderer.flipX = true;
+		else
+			spriteRenderer.flipX = false;
+	}
+
+	public void SetMovingStatus(int _status)
+	{
+		animator.SetFloat("isMoving", _status);
+	}
 }
 
 [System.Serializable]
