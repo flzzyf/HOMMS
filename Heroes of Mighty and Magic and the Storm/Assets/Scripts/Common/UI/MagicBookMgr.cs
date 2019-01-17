@@ -36,6 +36,8 @@ public class MagicBookMgr : Singleton<MagicBookMgr>
 
     public Text text_info;
 
+	public CustomColor[] textColors;
+
     void Start()
     {
         //初始化魔法项的ID
@@ -151,12 +153,23 @@ public class MagicBookMgr : Singleton<MagicBookMgr>
 
         image_magicInfo.sprite = items[_index].magic.icon;
     }
-
+	//点击魔法按钮
     public void CastMagic(int _index)
     {
-        Hide();
+		Magic magic = items[_index].magic;
 
-        MagicManager.instance.CastMagic(currentHero, items[_index].magic);
+		//如果魔法不足，弹出警告
+		if(items[_index].noEnoughMana)
+		{
+			print("魔法不足");
+			return;
+		}
+
+		//否则释放魔法
+
+		Hide();
+
+        MagicManager.instance.PrepareMagic(currentHero, items[_index].magic);
     }
 
     //点击魔法学派按钮

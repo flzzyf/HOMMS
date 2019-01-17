@@ -10,19 +10,37 @@ public enum MagicTargetFliter { All, Ally, Enemy }
 [CreateAssetMenu(menuName = "Magic")]
 public class Magic : ScriptableObject
 {
-    public Sprite icon;
-    public MagicSchool school;
-    public MagicType type;
-    public int level = 1;
-    public int[] mana = new int[1];
+	public Sprite icon;
+	public MagicSchool school;
+	public MagicType type;
+	public int level = 1;
+	public int[] mana = new int[1];
 
-    //目标类型
-    public MagicTargetType[] targetType = new MagicTargetType[1];
-    public MagicTargetFliter[] targetFliter = new MagicTargetFliter[1];
+	//目标类型
+	public MagicTargetType[] targetType = new MagicTargetType[1];
+	public MagicTargetFliter[] targetFliter = new MagicTargetFliter[1];
 
-    public Effect[] effects;
+	public Effect[] effects;
 
-    public string magicName { get { return LocalizationMgr.instance.GetText(base.name); } }
-    public string magicInfo { get { return LocalizationMgr.instance.GetText(base.name + "_Info"); } }
-    public string magicEffect { get { return LocalizationMgr.instance.GetText(base.name + "_Effect"); } }
+	public string magicName { get { return LocalizationMgr.instance.GetText(base.name); } }
+	public string magicInfo { get { return LocalizationMgr.instance.GetText(base.name + "_Info"); } }
+	public string magicEffect { get { return LocalizationMgr.instance.GetText(base.name + "_Effect"); } }
+
+	//魔法学派对应技能
+	Skill SchoolToSkill(MagicSchool _school)
+	{
+		//如果是全派系通用魔法，则遍历所有派系选出等级最高的
+		//if(_school == MagicSchool.All)
+		return SkillManager.GetSkill("Magic_" + _school.ToString());
+	}
+	//获取英雄该魔法等级
+	public int GetMagicLevel(Hero _hero)
+	{
+		return SkillManager.LevelOfSkill(_hero, SchoolToSkill(school));
+	}
+	//获取该等级魔法值消耗
+	public int GetManaCost(Hero _hero)
+	{
+		return mana[Mathf.Min(mana.Length - 1, GetMagicLevel(_hero))];
+	}
 }

@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class MagicManager : Singleton<MagicManager>
 {
-    //魔法学派对应技能
-    Skill SchoolToSkill(MagicSchool _school)
-    {
-        //如果是全派系通用魔法，则遍历所有派系选出等级最高的
-        //if(_school == MagicSchool.All)
-        return SkillManager.GetSkill("Magic_" + _school.ToString());
-    }
+	//玩家当前准备释放的魔法
+	public static Magic currentMagic;
 
-    //释放魔法
-    public void CastMagic(Hero _hero, Magic _magic)
+    //准备释放魔法
+    public void PrepareMagic(Hero _hero, Magic _magic)
     {
         //判定魔法学派，根据英雄的相应学派等级释放不同效果
-        MagicSchool school = _magic.school;
-        int magicLevel = SkillManager.LevelOfSkill(_hero, SchoolToSkill(school));
+		int magicLevel = _magic.GetMagicLevel(_hero);
 
         MagicType type = _magic.type;
 
@@ -28,32 +22,44 @@ public class MagicManager : Singleton<MagicManager>
 
         //print(SchoolToSkill(school));
 
-        //魔法消耗
-        int manaLevel = Mathf.Min(_magic.mana.Length - 1, magicLevel);
-        int mana = _magic.mana[manaLevel];
 
-        if (_hero.mana < mana)
-        {
-            print("魔法值不足!");
-            return;
-        }
+		//目标类型：无目标直接释放
+		int targetType = Mathf.Min(_magic.targetType.Length - 1, magicLevel);
+		int effect = Mathf.Min(_magic.effects.Length - 1, magicLevel);
+		if (_magic.targetType[targetType] == MagicTargetType.Null)
+		{
+			CastMagic();
+		}
 
-        _hero.mana -= mana;
-        print("当前法力：" + _hero.mana);
+	}
 
-        //目标类型：无目标直接释放
-        //有目标，则选择目标
-        int targetType = Mathf.Min(_magic.targetType.Length - 1, magicLevel);
-        int effect = Mathf.Min(_magic.effects.Length - 1, magicLevel);
-        if (_magic.targetType[targetType] == MagicTargetType.Null)
-        {
-            _magic.effects[effect].originPlayer = _hero.player;
-            _magic.effects[effect].Invoke();
-        }
-    }
+	//释放魔法
+	public void CastMagic(NodeItem _nodeitem = null)
+	{
+		int magicLevel = currentMagic.GetMagicLevel(BattleManager.currentHero);
+		int mana = currentMagic.GetManaCost(BattleManager.currentHero);
+		//扣除魔法值
+		BattleManager.currentHero.mana -= mana;
 
-    //给英雄添加魔法
-    public static void AddMagic(Hero _hero, Magic _magic)
+		//界面暂停
+
+		//释放魔法
+		if(currentMagic.targetType[magicLevel] == MagicTargetType.Null)
+		{
+			//无目标直接释放
+			int effect = Mathf.Min(currentMagic.effects.Length - 1, magicLevel);
+			currentMagic.effects[effect].originPlayer = BattleManager.currentSide;
+			currentMagic.effects[effect].Invoke();
+		}
+		else
+		{
+			//有目标，则选择目标
+
+		}
+	}
+
+	//给英雄添加魔法
+	public static void AddMagic(Hero _hero, Magic _magic)
     {
         //如果没有该魔法才添加
         if (!_hero.magics.Contains(_magic))

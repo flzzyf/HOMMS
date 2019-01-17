@@ -31,6 +31,9 @@ public class BattleManager : Singleton<BattleManager>
     public List<Unit>[] units = { new List<Unit>(), new List<Unit>() };
 
     public static Unit currentActionUnit;
+	//当前行动的一方
+	public static int currentSide { get { return currentActionUnit.side; } }
+	public static Hero currentHero { get { return heroes[currentActionUnit.side]; } }
 
     public static int[] players;
     public static Hero[] heroes;
@@ -61,6 +64,7 @@ public class BattleManager : Singleton<BattleManager>
     public float unitSpeedOriginal = 6f;
     public float unitSpeedMultipler = 0.5f;
     public float flyingSpeedmultipler = 3f;
+
 
     public List<Unit> allUnits
     {

@@ -242,6 +242,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5862971}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &11230179 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1881121506}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520519294283a43ab93682e3bd2487ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &13767505
 GameObject:
   m_ObjectHideFlags: 0
@@ -30799,11 +30811,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hero_Orphea
       objectReference: {fileID: 0}
-    - target: {fileID: 114394594263890442, guid: 37ccb3bc95d1e477ba14c64877197e3d,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1374892221}
     - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.21
@@ -30862,12 +30869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520519294283a43ab93682e3bd2487ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &1374892221 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1374892221, guid: 37ccb3bc95d1e477ba14c64877197e3d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1374892216}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1375186146
 GameObject:
   m_ObjectHideFlags: 0
@@ -40515,7 +40516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testHeroes:
   - {fileID: 1374892217}
-  - {fileID: 0}
+  - {fileID: 11230179}
   player: 2
   scene: 0
 --- !u!4 &1858442778
@@ -41530,6 +41531,63 @@ MonoBehaviour:
   m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1881121506
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1952165180744556, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_Name
+      value: Hero_Orphea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 42.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 31.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
 --- !u!1 &1884090028
 GameObject:
   m_ObjectHideFlags: 0

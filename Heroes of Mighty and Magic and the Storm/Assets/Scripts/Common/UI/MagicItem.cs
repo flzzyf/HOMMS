@@ -19,13 +19,31 @@ public class MagicItem : MonoBehaviour, IPointerEnterHandler
     public string key_level;
     public string key_mana;
 
+	public bool noEnoughMana;
+
     public void Init()
     {
         icon.sprite = magic.icon;
         text_name.text = magic.magicName;
         text_level.text = string.Format(LocalizationMgr.instance.GetText(key_level), magic.level.ToString());
         text_mana.text = string.Format(LocalizationMgr.instance.GetText(key_mana), magic.mana[0].ToString());
-    }
+
+		//判定魔法量，不足以释放魔法
+		if(BattleManager.currentHero.mana < magic.GetManaCost(BattleManager.currentHero))
+		{
+			noEnoughMana = true;
+
+			//文本改为魔法量不足的颜色
+			text_level.color = MagicBookMgr.instance.textColors.GetColor("NoEnoughMana");
+			text_mana.color = MagicBookMgr.instance.textColors.GetColor("NoEnoughMana");
+		}
+		else
+		{
+			//文本改回白色
+			text_level.color = Color.white;
+			text_mana.color = Color.white;
+		}
+	}
 
     public void Init(Magic _magic)
     {

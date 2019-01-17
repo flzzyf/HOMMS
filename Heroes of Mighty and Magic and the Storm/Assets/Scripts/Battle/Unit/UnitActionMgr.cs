@@ -47,6 +47,7 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
         ActionEnd();
     }
 
+	//轮到玩家行动
     public void PlayerActionStart(Unit _unit)
     {
         GameManager.gameState = GameState.playerControl;
@@ -54,10 +55,11 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
         //将可交互节点标出
         int speed = _unit.GetComponent<Unit>().speed;
         NodeItem nodeItem = _unit.GetComponent<Unit>().nodeItem;
-        reachableNodes = BattleManager.instance.map.GetNodeItemsWithinRange(nodeItem, speed, false);
 
-        //修改节点为可到达，如果节点为空
-        foreach (var item in reachableNodes)
+		reachableNodes = TargetSelector.SelectWalkableNodes(nodeItem, speed);
+
+		//修改节点为可到达，如果节点为空
+		foreach (var item in reachableNodes)
         {
             if (item.nodeObject == null)
                 item.GetComponent<NodeItem_Battle>().ChangeNodeType(BattleNodeType.reachable);
@@ -66,8 +68,8 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
         //是近战，或者被近身的远程单位
         if (!IsRangeAttack(_unit))
         {
-            //可攻击节点
-            foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(nodeItem, speed + 1, false))
+			//可攻击节点
+			foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(nodeItem, speed + 1, false))
             {
                 //是单位而且是敌对
                 if (item.nodeObject != null &&
@@ -77,7 +79,8 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
                     item.GetComponent<NodeItem_Battle>().ChangeNodeType(BattleNodeType.attackable);
                 }
             }
-        }
+
+		}
         else
         {
             //远程攻击，直接选中所有敌人，将节点类型设为可攻击
