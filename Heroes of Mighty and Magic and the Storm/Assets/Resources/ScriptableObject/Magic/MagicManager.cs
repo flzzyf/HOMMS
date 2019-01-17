@@ -33,16 +33,26 @@ public class MagicManager : Singleton<MagicManager>
 		}
 		else
 		{
+			MagicTargetFliter fliter = _magic.targetFliter[Mathf.Min(_magic.targetFliter.Length - 1, magicLevel)];
+			List<Unit> targetUnits;
 			//否则选择目标
-			if (_magic.targetFliter[Mathf.Min(_magic.targetFliter.Length - 1, magicLevel)] == MagicTargetFliter.All)
+			if (fliter == MagicTargetFliter.All)
 			{
 				//选择所有单位
-				foreach (Unit item in BattleManager.instance.allUnits)
-				{
-					item.nodeItem.GetComponent<NodeItem_Battle>().ChangeNodeType(BattleNodeType.spellable);
+				targetUnits = BattleManager.instance.allUnits;
+			}
+			else
+			{
+				int side = (BattleManager.currentSide + (int)fliter) % 2;
 
-					spellableNodes.Add(item.nodeItem);
-				}
+				targetUnits = BattleManager.instance.units[side];
+			}
+
+			foreach (Unit item in targetUnits)
+			{
+				item.nodeItem.GetComponent<NodeItem_Battle>().ChangeNodeType(BattleNodeType.spellable);
+
+				spellableNodes.Add(item.nodeItem);
 			}
 		}
 	}

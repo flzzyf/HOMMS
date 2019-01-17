@@ -5,7 +5,7 @@ using UnityEngine;
 public enum MagicSchool { All, Earth, Fire, Air, Water }
 public enum MagicType { Battle, Travel, All }
 public enum MagicTargetType { Null, Unit, Node }
-public enum MagicTargetFliter { All, Ally, Enemy }
+public enum MagicTargetFliter { All = -1, Ally = 0, Enemy = 1 }
 
 [CreateAssetMenu(menuName = "Magic")]
 public class Magic : ScriptableObject
