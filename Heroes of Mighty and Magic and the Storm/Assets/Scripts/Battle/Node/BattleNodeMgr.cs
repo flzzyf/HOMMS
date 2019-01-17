@@ -79,12 +79,13 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
             BattleInfoMgr.instance.SetText_Attack(BattleManager.currentActionUnit, _node.unit);
 
         }
-        //不可到达点
-        // else if (_node.battleNodeType == BattleNodeType.empty)
-        // {
-        //     CursorManager.instance.ChangeCursor("stop");
-        // }
-    }
+
+		//不可到达点
+		// else if (_node.battleNodeType == BattleNodeType.empty)
+		// {
+		//     CursorManager.instance.ChangeCursor("stop");
+		// }
+	}
 
     public void OnNodeUnhovered(NodeItem_Battle _node)
     {
@@ -253,9 +254,14 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
                     }
                 }
             }
-        }
+		}
+		else if (_node.battleNodeType == BattleNodeType.spellable)
+		{
+			//施法
+			MagicManager.instance.CastMagic(_node);
+		}
 
-        if (_node.battleNodeType != BattleNodeType.empty)
+		if (_node.battleNodeType != BattleNodeType.empty)
         {
             if (path != null)
                 ClearPath();

@@ -6,6 +6,8 @@ public class MagicManager : Singleton<MagicManager>
 {
 	//玩家当前准备释放的魔法
 	public static Magic currentMagic;
+	[HideInInspector]
+	public List<NodeItem> spellableNodes;
 
     //准备释放魔法
     public void PrepareMagic(Hero _hero, Magic _magic)
@@ -24,12 +26,25 @@ public class MagicManager : Singleton<MagicManager>
 
 		//目标类型：无目标直接释放
 		int targetType = Mathf.Min(_magic.targetType.Length - 1, magicLevel);
-		int effect = Mathf.Min(_magic.effects.Length - 1, magicLevel);
+		//int effect = Mathf.Min(_magic.effects.Length - 1, magicLevel);
 		if (_magic.targetType[targetType] == MagicTargetType.Null)
 		{
 			CastMagic();
 		}
+		else
+		{
+			//否则选择目标
+			if (_magic.targetFliter[Mathf.Min(_magic.targetFliter.Length - 1, magicLevel)] == MagicTargetFliter.All)
+			{
+				//选择所有单位
+				foreach (Unit item in BattleManager.instance.allUnits)
+				{
+					item.nodeItem.GetComponent<NodeItem_Battle>().ChangeNodeType(BattleNodeType.spellable);
 
+					spellableNodes.Add(item.nodeItem);
+				}
+			}
+		}
 	}
 
 	//释放魔法
@@ -42,18 +57,25 @@ public class MagicManager : Singleton<MagicManager>
 
 		//界面暂停
 
+		int effect = Mathf.Min(currentMagic.effects.Length - 1, magicLevel);
+		currentMagic.effects[effect].originPlayer = BattleManager.currentSide;
 		//释放魔法
-		if(currentMagic.targetType[magicLevel] == MagicTargetType.Null)
+		if (_nodeitem == null)
 		{
 			//无目标直接释放
-			int effect = Mathf.Min(currentMagic.effects.Length - 1, magicLevel);
-			currentMagic.effects[effect].originPlayer = BattleManager.currentSide;
 			currentMagic.effects[effect].Invoke();
 		}
 		else
 		{
-			//有目标，则选择目标
-
+			if (currentMagic.targetType[Mathf.Min(currentMagic.targetType.Length - 1, magicLevel)] == MagicTargetType.Node)
+			{
+				currentMagic.effects[effect].targetNode = _nodeitem;
+			}
+			else
+			{
+				currentMagic.effects[effect].targetUnit = _nodeitem.nodeObject.GetComponent<Unit>();
+			}
+			currentMagic.effects[effect].Invoke();
 		}
 	}
 

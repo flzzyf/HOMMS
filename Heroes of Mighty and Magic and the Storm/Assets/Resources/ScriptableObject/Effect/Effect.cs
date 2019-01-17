@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum EffectTarget { origin, target }
+public enum EffectTargetType { Node, Unit }
 
 public class Effect : ScriptableObject
 {
@@ -14,6 +15,7 @@ public class Effect : ScriptableObject
     public int originPlayer;
 
     public EffectTarget target = EffectTarget.target;
+	public EffectTargetType targetType;
 
     public AnimationClip fx;
     public Sound sound;
@@ -40,10 +42,13 @@ public class Effect : ScriptableObject
     {
         if (fx != null)
         {
-            OneShotFXMgr.instance.Play(fx, targetUnit.transform.position);
-        }
+			if(targetType == EffectTargetType.Node)
+				OneShotFXMgr.instance.Play(fx, targetNode.transform.position);
+			else
+				OneShotFXMgr.instance.Play(fx, targetUnit.transform.position);
+		}
 
-        if (sound != null)
+		if (sound != null)
         {
             SoundManager.instance.PlaySound(sound);
         }
