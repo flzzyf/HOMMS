@@ -24,7 +24,7 @@ public class TargetSelector
 			else
 			{
 				//目标为玩家单位
-				int side = (BattleManager.playerSide[_player] + (int)_filter.allyOrEnemy) % 2;
+				int side = (_player + (int)_filter.allyOrEnemy) % 2;
 
 				targetUnits = BattleManager.instance.units[side];
 			}

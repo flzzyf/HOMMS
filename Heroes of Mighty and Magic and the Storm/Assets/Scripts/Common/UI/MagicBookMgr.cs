@@ -17,6 +17,8 @@ public class MagicBookMgr : Singleton<MagicBookMgr>
     public Image image_magicInfo;
     public Text text_magicInfo_name2;
 
+	public Text text_mana;
+
     //每页的魔法数量
     const int magicsPerPage = 12;
 
@@ -59,8 +61,14 @@ public class MagicBookMgr : Singleton<MagicBookMgr>
     {
         //根据旅行和战斗模式切换英雄
         //if(GameManager.instance.scene == GameScene.Travel)
-        SetMagics(BattleManager.heroes[0]);
+
+		//设置并显示魔法
+        SetMagics(BattleManager.currentHero);
         ShowMagics(MagicSchool.All, MagicType.Battle);
+
+		//更新魔法值
+		text_mana.text = BattleManager.currentHero.mana.ToString();
+
         ui.SetActive(true);
     }
     public void Hide()

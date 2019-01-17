@@ -33,7 +33,7 @@ public class BattleManager : Singleton<BattleManager>
     public static Unit currentActionUnit;
 	//当前行动的一方
 	public static int currentSide { get { return currentActionUnit.side; } }
-	public static Hero currentHero { get { return heroes[currentActionUnit.side]; } }
+	public static Hero currentHero { get { return heroes[currentSide]; } }
 
     public static int[] players;
     public static Hero[] heroes;
@@ -144,8 +144,6 @@ public class BattleManager : Singleton<BattleManager>
         map.parent.gameObject.SetActive(_enter);
     }
 
-    public static Dictionary<int, int> playerSide;
-
     public void BattleStart(Hero _attacker, Hero _defender)
     {
         EnterBattleMode();
@@ -155,10 +153,6 @@ public class BattleManager : Singleton<BattleManager>
 
         players[0] = _attacker.player;
         players[1] = _defender.player;
-
-        playerSide = new Dictionary<int, int>();
-        playerSide.Add(_attacker.player, 0);
-        playerSide.Add(_defender.player, 1);
 
         unitActionOrder = new LinkedList<Unit>();
         unitActionList = new LinkedList<Unit>();

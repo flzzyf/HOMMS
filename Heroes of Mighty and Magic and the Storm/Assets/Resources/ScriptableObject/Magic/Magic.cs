@@ -29,14 +29,28 @@ public class Magic : ScriptableObject
 	//魔法学派对应技能
 	Skill SchoolToSkill(MagicSchool _school)
 	{
-		//如果是全派系通用魔法，则遍历所有派系选出等级最高的
-		//if(_school == MagicSchool.All)
 		return SkillManager.GetSkill("Magic_" + _school.ToString());
 	}
 	//获取英雄该魔法等级
 	public int GetMagicLevel(Hero _hero)
 	{
-		return SkillManager.LevelOfSkill(_hero, SchoolToSkill(school));
+		//如果是全派系通用魔法，则遍历所有派系选出等级最高的
+		if(school == MagicSchool.All)
+		{
+			int maxLevel = 0;
+			//遍历除了所有（0）以外的魔法派系，选出等级最高的
+			for (int i = 1; i < System.Enum.GetValues(typeof(MagicSchool)).Length; i++)
+			{
+				if(SkillManager.LevelOfSkill(_hero, SchoolToSkill((MagicSchool)i)) > maxLevel)
+				{
+					maxLevel = SkillManager.LevelOfSkill(_hero, SchoolToSkill((MagicSchool)i));
+				}
+			}
+
+			return maxLevel;
+		}
+		else
+			return SkillManager.LevelOfSkill(_hero, SchoolToSkill(school));
 	}
 	//获取该等级魔法值消耗
 	public int GetManaCost(Hero _hero)

@@ -26,7 +26,7 @@ public class MagicItem : MonoBehaviour, IPointerEnterHandler
         icon.sprite = magic.icon;
         text_name.text = magic.magicName;
         text_level.text = string.Format(LocalizationMgr.instance.GetText(key_level), magic.level.ToString());
-        text_mana.text = string.Format(LocalizationMgr.instance.GetText(key_mana), magic.mana[0].ToString());
+        text_mana.text = string.Format(LocalizationMgr.instance.GetText(key_mana), magic.GetManaCost(BattleManager.currentHero).ToString());
 
 		//判定魔法量，不足以释放魔法
 		if(BattleManager.currentHero.mana < magic.GetManaCost(BattleManager.currentHero))

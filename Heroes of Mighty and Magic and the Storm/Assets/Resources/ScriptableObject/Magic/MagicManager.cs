@@ -20,8 +20,7 @@ public class MagicManager : Singleton<MagicManager>
 
         }
 
-        //print(SchoolToSkill(school));
-
+		currentMagic = _magic;
 
 		//目标类型：无目标直接释放
 		int targetType = Mathf.Min(_magic.targetType.Length - 1, magicLevel);
