@@ -71,13 +71,22 @@ public class MagicManager : Singleton<MagicManager>
 			}
 			currentMagic.effects[effect].Invoke();
 		}
+
+		StartCoroutine(CastingMagic());
+	}
+	//施法后2秒完成施法
+	IEnumerator CastingMagic()
+	{
+		yield return new WaitForSeconds(2);
+
+		OnFinishCastingMagic();
 	}
 
 	//施法完成后
 	public void OnFinishCastingMagic()
 	{
 		//重新开始单位行动
-		UnitActionMgr.instance.ActionStart(BattleManager.currentActionUnit);
+		UnitActionMgr.instance.PlayerActionStart(BattleManager.currentActionUnit);
 
 	}
 
