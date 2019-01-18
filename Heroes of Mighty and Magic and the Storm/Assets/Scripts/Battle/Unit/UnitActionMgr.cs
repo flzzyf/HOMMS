@@ -33,8 +33,9 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
 
         //发出指令后，开始执行命令
         UnitHaloMgr.instance.HaloFlashStop(_unit);
-
-        ResetNodes();
+		//重置所有可行动节点
+		NodeSelector.HideActionNodes();
+		//执行指令
         InvokeOrder();
 
         GameManager.gameState = GameState.canNotControl;
@@ -47,53 +48,18 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
         ActionEnd();
     }
 
-	//轮到玩家行动
+	//单位行动开始，显示移动范围，可攻击目标
     public void PlayerActionStart(Unit _unit)
     {
         GameManager.gameState = GameState.playerControl;
 
-        //将可交互节点标出
-        int speed = _unit.GetComponent<Unit>().speed;
-        NodeItem nodeItem = _unit.GetComponent<Unit>().nodeItem;
+		//获取并高亮单位可行动的节点
+		NodeSelector.GetUnitActionNodes(_unit);
+		NodeSelector.HighlightUnitActionNodes();
 
-		reachableNodes = TargetSelector.SelectWalkableNodes(nodeItem, speed);
 
-		//修改节点为可到达，如果节点为空
-		foreach (var item in reachableNodes)
-        {
-            if (item.nodeObject == null)
-                item.GetComponent<NodeItem_Battle>().ChangeNodeType(BattleNodeType.reachable);
-        }
-
-        //是近战，或者被近身的远程单位
-        if (!IsRangeAttack(_unit))
-        {
-			//可攻击节点
-			foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(nodeItem, speed + 1, false))
-            {
-                //是单位而且是敌对
-                if (item.nodeObject != null &&
-                    item.nodeObject.GetComponent<NodeObject>().nodeObjectType == NodeObjectType.unit &&
-                    !BattleManager.instance.isSamePlayer(item.nodeObject.GetComponent<Unit>(), _unit))
-                {
-                    item.GetComponent<NodeItem_Battle>().ChangeNodeType(BattleNodeType.attackable);
-                }
-            }
-
-		}
-        else
-        {
-            //远程攻击，直接选中所有敌人，将节点类型设为可攻击
-            int enemyHero = (_unit.side + 1) % 2;
-
-            foreach (Unit item in BattleManager.instance.units[enemyHero])
-            {
-                item.nodeItem.GetComponent<NodeItem_Battle>().ChangeNodeType(BattleNodeType.attackable);
-            }
-        }
-
-        //将当前鼠标高亮节点，触发高亮事件
-        MapManager_Battle map = BattleManager.instance.map;
+		//将当前鼠标高亮节点，触发高亮事件
+		MapManager_Battle map = BattleManager.instance.map;
         if (BattleNodeMgr.instance.playerHovered != null)
         {
             map.OnNodeHovered(BattleNodeMgr.instance.playerHovered);
@@ -234,39 +200,6 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
         RoundManager.instance.TurnEnd();
     }
 
-    void ResetNodes()
-    {
-        foreach (var item in BattleManager.instance.map.GetAllNodeItems)
-        {
-            if (item.GetComponent<NodeItem_Battle>().battleNodeType != BattleNodeType.empty)
-                item.GetComponent<NodeItem_Battle>().ChangeNodeType(BattleNodeType.empty);
-        }
-    }
-
-    //判定远程攻击：是远程攻击单位且没被近身
-    public static bool IsRangeAttack(Unit _unit)
-    {
-        if (_unit.type.attackType == AttackType.range && !UnitIsCloseToEnemy(_unit))
-            return true;
-        return false;
-    }
-    //单位临近节点中有敌人
-    static bool UnitIsCloseToEnemy(Unit _unit)
-    {
-        for (int i = 0; i < 6; i++)
-        {
-            if (BattleManager.instance.map.GetNearbyNodeItem(_unit.nodeItem, i) == null)
-                continue;
-
-            NodeObject obj = BattleManager.instance.map.GetNearbyNodeItem(_unit.nodeItem, i).nodeObject;
-            if (obj != null && obj.nodeObjectType == NodeObjectType.unit &&
-                !BattleManager.instance.isSamePlayer(obj.GetComponent<Unit>(), _unit))
-            {
-                return true;
-            }
-        }
-        return false;
-    }
 }
 
 public enum OrderType { move, attack, rangeAttack, wait, defend, cast }

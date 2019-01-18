@@ -64,7 +64,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
         }
         else if (_node.battleNodeType == BattleNodeType.attackable)
         {
-            if (UnitActionMgr.IsRangeAttack(BattleManager.currentActionUnit))
+            if (BattleManager.currentActionUnit.IsRangeAttack)
             {
                 //(有远程伤害不减的特质)，或者距离10以内
                 //TraitManager.PossessTrait(BattleManager.currentActionUnit, "No melee penalty") ||
@@ -155,7 +155,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
         if (_node.battleNodeType == BattleNodeType.attackable)
         {
             //如果是远程攻击，直接跳过
-            if (UnitActionMgr.IsRangeAttack(BattleManager.currentActionUnit))
+            if (BattleManager.currentActionUnit.IsRangeAttack)
                 return;
 
             Vector2 mousePoint = BattleManager.instance.cam.ScreenToWorldPoint(Input.mousePosition);
@@ -224,7 +224,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
         {
             Unit target = _node.unit;
 
-            if (UnitActionMgr.IsRangeAttack(BattleManager.currentActionUnit))
+            if (BattleManager.currentActionUnit.IsRangeAttack)
             {
                 UnitActionMgr.order = new Order(OrderType.rangeAttack,
                                         BattleManager.currentActionUnit, target);
@@ -257,6 +257,8 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 		}
 		else if (_node.battleNodeType == BattleNodeType.spellable)
 		{
+			//隐藏可施法节点
+			NodeSelector.HideSpellableNodes();
 			//施法
 			MagicManager.instance.CastMagic(_node);
 		}

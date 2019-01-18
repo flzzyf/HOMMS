@@ -7,7 +7,7 @@ public class AIActionMgr : Singleton<AIActionMgr>
     public void AIActionStart(Unit _unit)
     {
         int enemyHero = (_unit.side + 1) % 2;
-        bool isRangeAttack = UnitActionMgr.IsRangeAttack(_unit);
+		bool isRangeAttack = _unit.IsRangeAttack;
         List<Unit> enemyList = BattleManager.instance.units[enemyHero];
 
         //远程单位，且没有被近身

@@ -315,4 +315,35 @@ public class Unit : NodeObject, MovableNode
                         BattleManager.instance.flyingSpeedmultipler * speed;
         }
     }
+
+	//判定远程攻击：是远程攻击单位且没被近身
+	public bool IsRangeAttack
+	{
+		get
+		{
+			if (type.attackType == AttackType.range && !IsCloseToEnemy)
+				return true;
+			return false;
+		}
+	}
+	//单位临近节点中有敌人
+	public bool IsCloseToEnemy
+	{
+		get
+		{
+			for (int i = 0; i < 6; i++)
+			{
+				if (BattleManager.instance.map.GetNearbyNodeItem(this.nodeItem, i) == null)
+					continue;
+
+				NodeObject obj = BattleManager.instance.map.GetNearbyNodeItem(this.nodeItem, i).nodeObject;
+				if (obj != null && obj.nodeObjectType == NodeObjectType.unit &&
+					!BattleManager.instance.isSamePlayer(obj.GetComponent<Unit>(), this))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+	}
 }
