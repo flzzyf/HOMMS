@@ -39,7 +39,7 @@ public class NodeMovingMgr : Singleton<NodeMovingMgr>
 
     IEnumerator MoveObjectCor(GameObject _go, List<NodeItem> _path, float _speed, MapCoord _coord)
     {
-        for (int i = 1; i < _path.Count; i++)
+        for (int i = 0; i < _path.Count; i++)
         {
             //朝向下一节点
             //_go.GetComponent<MovableNode>().TowardNextNode(_path[i]);

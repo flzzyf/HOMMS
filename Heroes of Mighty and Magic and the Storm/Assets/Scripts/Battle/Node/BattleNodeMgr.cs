@@ -15,6 +15,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 
     NodeItem targetNode;
 
+	//鼠标进入节点
     public void OnNodeHovered(NodeItem_Battle _node)
     {
         _node.ChangeBackgoundColor("hover");
@@ -29,8 +30,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
             //是地面移动单位，则计算路径
             if (BattleManager.currentActionUnit.isWalker)
             {
-                NodeItem currentNode = BattleManager.currentActionUnit.GetComponent<Unit>().nodeItem;
-                FindPath(currentNode, _node);
+                FindPath(BattleManager.currentActionUnit, _node);
             }
         }
         else if (_node.battleNodeType == BattleNodeType.attackable)
@@ -94,6 +94,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 		// }
 	}
 
+	//鼠标移出
 	public void OnNodeUnhovered(NodeItem_Battle _node)
     {
         _node.RestoreBackgroundColor();
@@ -119,6 +120,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
         playerHovered = null;
     }
 
+	//鼠标移动
     public void OnMouseMoved(NodeItem_Battle _node)
     {
         //右键点击
@@ -196,10 +198,9 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
                     //是近战单位则显示路径
                     if (BattleManager.currentActionUnit.isWalker)
                     {
-                        NodeItem currentNode = BattleManager.currentActionUnit.GetComponent<Unit>().nodeItem;
-                        FindPath(currentNode, targetNode);
-                    }
-                }
+						FindPath(BattleManager.currentActionUnit, _node);
+					}
+				}
             }
             else
             {
@@ -209,7 +210,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
         }
     }
 
-
+	//节点被点击
     public void OnNodePressed(NodeItem_Battle _node)
     {
         //设定指令
@@ -291,12 +292,20 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
     }
 
     //寻找路径
-    bool FindPath(NodeItem _origin, NodeItem _target)
+    bool FindPath(Unit _unit, NodeItem _target)
     {
         if (path != null)
             ClearPath();
 
-        path = AStarManager.FindPath(BattleManager.instance.map, _origin, _target);
+		NodeItem unitNode = _unit.nodeItem;
+
+		//判断是双格单位，而且前方点更近，则使用前方点进行寻路
+		if(_unit.type.isTwoHexsUnit && (_target.pos - _unit.nodeAhead.pos).magnitude < (_target.pos - _unit.nodeItem.pos).magnitude)
+		{
+			unitNode = _unit.nodeAhead;
+		}
+
+        path = AStarManager.FindPath(BattleManager.instance.map, unitNode, _target);
         if (path == null)
         {
             //print("未能找到路径");

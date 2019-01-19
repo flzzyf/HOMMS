@@ -30,23 +30,8 @@ public class NodeSelector : MonoBehaviour
 		}
 		else
 		{
-			//是双格单位。先从源点选出行动范围，然后是前方的点
-			/*foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(_unit.nodeItem, speed, _unit.isWalker))
-			{
-				if (item.isEmpty)
-					reachableNodes.Add(item);
-			}*/
-			//前方的点
-			int offsetX = _unit.facingRight ? 1 : -1;
-			Vector2Int pos = _unit.nodeItem.pos;
-			pos.x += offsetX;
-			/*foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(BattleManager.instance.map.GetNodeItem(pos), speed, _unit.isWalker))
-			{
-				if (item.isEmpty && !reachableNodes.Contains(item))
-					reachableNodes.Add(item);
-			}*/
-
-			foreach (NodeItem item in BattleManager.instance.map.GetTwoHexUnitReachableNodeItemsWithinRange(_unit.nodeItem, BattleManager.instance.map.GetNodeItem(pos), speed, _unit.isWalker))
+			//是双格单位。先从源点和前方的点选出行动范围
+			foreach (NodeItem item in BattleManager.instance.map.GetTwoHexUnitReachableNodeItemsWithinRange(_unit.nodeItem, _unit.nodeAhead, speed, _unit.isWalker))
 			{
 				if (item.isEmpty)
 					reachableNodes.Add(item);

@@ -354,4 +354,14 @@ public class Unit : NodeObject, MovableNode
 			return false;
 		}
 	}
+	//单位前方的点
+	public NodeItem nodeAhead
+	{
+		get
+		{
+			Vector2Int pos = nodeItem.pos;
+			pos.x += facing;
+			return BattleManager.instance.map.GetNodeItem(pos);
+		}
+	}
 }
