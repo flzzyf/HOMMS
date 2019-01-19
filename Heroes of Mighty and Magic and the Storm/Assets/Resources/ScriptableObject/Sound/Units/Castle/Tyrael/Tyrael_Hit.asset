@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 161c1d29610771e41a72bc969d2b28e5, type: 3}
-  m_Name: Malthael_Walk
+  m_Name: Tyrael_Hit
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 366f0334b0d1d8e4aae238289760e229, type: 3}
+  - {fileID: 8300000, guid: b98d6f1fdbc6b034b96a62b103f17e9f, type: 3}
   volume: 1
   pitch: 1
-  loop: 1
-  group: 5
+  loop: 0
+  group: 3
   startingTime: 0

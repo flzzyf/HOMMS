@@ -81,11 +81,13 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
 
             if (order.origin.isWalker)
             {
+				//行走
                 NodeMovingMgr.instance.MoveObject(order.origin.gameObject, order.path,
                     order.origin.UnitActualSpeed, MapCoord.xy);
             }
             else if (TraitManager.PossessTrait(order.origin, "Flying"))
             {
+				//飞行
                 NodeMovingMgr.instance.MoveObjectFlying(order.origin.gameObject, order.targetNode,
                     order.origin.UnitActualSpeed, MapCoord.xy);
             }
@@ -181,11 +183,14 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
 		else
 		{
 			//否则持续播放（也应该根据单位速度播放
+			int speed = _unit.speed;
+			float waitTime = 0.2f + speed * 0.05f;
+
 			while (NodeMovingMgr.instance.moving)
 			{
 				SoundManager.instance.PlaySound(_unit.type.sound_walk);
 
-				yield return new WaitForSeconds(Random.Range(.35f, .45f));
+				yield return new WaitForSeconds(waitTime);
 			}
 
 			SoundManager.instance.StopPlay(_unit.type.sound_walk);

@@ -163,6 +163,9 @@ public class SoundManager : Singleton<SoundManager>
     //声音播放完毕，或被停止
     void RemoveSound(AudioSource _source)
     {
+		if (!soundDic.ContainsKey(_source) || !soundNumber.ContainsKey(soundDic[_source]))
+			return;
+
         //从音效数量字典移除
         if (soundNumber[soundDic[_source]] > 1)
             soundNumber[soundDic[_source]]--;

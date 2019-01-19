@@ -4,14 +4,15 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3a0936d33f8b4cdbba7137f15d68540, type: 3}
   m_Name: Tyrael
   m_EditorClassIdentifier: 
-  tab: 0
+  tab: 2
   icon: {fileID: 21300000, guid: 2e3eed8820e9c2b44bc6529d31b8a853, type: 3}
   race: {fileID: 11400000, guid: 830952885b93a426a8cf308f26070ed9, type: 2}
   animControl: {fileID: 22100000, guid: 2cc05ca09532e1948bcde8bf027a959f, type: 2}
@@ -33,12 +34,8 @@ MonoBehaviour:
   ammo: 12
   missile: {fileID: 0}
   launchPos: {x: 0, y: 0}
-  sound_attack: {fileID: 0}
+  sound_attack: {fileID: 11400000, guid: abd2f324605ef4c4ab22a5a0d08127c2, type: 2}
   sound_attackImpact: {fileID: 0}
-  sound_walk: []
-  sound_hit:
-    clip: {fileID: 0}
-    skipDuration: 0
-  sound_death:
-    clip: {fileID: 0}
-    skipDuration: 0
+  sound_walk: {fileID: 0}
+  sound_hit: {fileID: 11400000, guid: ad74cbb3ef197634c89e7de2ef709331, type: 2}
+  sound_death: {fileID: 0}

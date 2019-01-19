@@ -279,7 +279,8 @@ public class Unit : NodeObject, MovableNode
         BattleManager.Instance().UnlinkNodeWithUnit(this);
 
         //播放死亡音效
-        SoundManager.instance.PlaySound(type.sound_death);
+		if(type.sound_death != null)
+			SoundManager.instance.PlaySound(type.sound_death);
 
         UnitAnimMgr.instance.PlayAnimation(this, Anim.Death);
 

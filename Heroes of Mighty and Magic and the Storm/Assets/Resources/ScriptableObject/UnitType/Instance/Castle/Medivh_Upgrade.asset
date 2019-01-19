@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -31,10 +32,10 @@ MonoBehaviour:
   armorType: 0
   isTwoHexsUnit: 0
   ammo: 12
-  missile: {fileID: 1828026133859336, guid: af78f90a030be86438834bcfaa9c1b6a, type: 2}
+  missile: {fileID: 1828026133859336, guid: af78f90a030be86438834bcfaa9c1b6a, type: 3}
   launchPos: {x: 1.3, y: 2.35}
-  sound_attack: {fileID: 0}
-  sound_attackImpact: {fileID: 0}
+  sound_attack: {fileID: 11400000, guid: dd99e8983f5d2ad4e82deab4a6404a18, type: 2}
+  sound_attackImpact: {fileID: 11400000, guid: 2da92dcccdc7c5943a8931a5d8c4f1c9, type: 2}
   sound_walk: {fileID: 11400000, guid: fe955b8763d6f3545b58ca2009680b16, type: 2}
   sound_hit: {fileID: 11400000, guid: 81e7d5e795dc9fc4cbe75b4b2f141812, type: 2}
-  sound_death: {fileID: 11400000, guid: fe955b8763d6f3545b58ca2009680b16, type: 2}
+  sound_death: {fileID: 11400000, guid: bc07c6236b8ddd84880092fa88e16fbd, type: 2}
