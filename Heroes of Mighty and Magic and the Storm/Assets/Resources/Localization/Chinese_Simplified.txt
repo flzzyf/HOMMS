@@ -134,3 +134,4 @@ Falstad=弗斯塔德
 Varian=瓦里安
 Mage=法师
 RavenCourt=乌鸦庭
+Crusader=圣教军

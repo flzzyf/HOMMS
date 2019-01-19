@@ -19,12 +19,13 @@ public class NodeSelector : MonoBehaviour
 
 		int speed = _unit.GetComponent<Unit>().speed;
 
-		//选出可到达节点
-		foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(_unit.nodeItem, speed, true))
+		//选出可到达节点，判断是否是步行单位
+		foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(_unit.nodeItem, speed, _unit.isWalker))
 		{
 			if (item.nodeObject == null)
 				reachableNodes.Add(item);
 		}
+
 		//选出可攻击节点
 		//是近战，或者被近身的远程单位
 		if (!_unit.IsRangeAttack)

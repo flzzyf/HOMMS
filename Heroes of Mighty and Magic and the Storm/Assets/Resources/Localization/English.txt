@@ -69,3 +69,4 @@ Falstad=Falstad
 Varian=Varian
 Mage=Mage
 RavenCourt=RavenCourt
+Crusader=Crusader

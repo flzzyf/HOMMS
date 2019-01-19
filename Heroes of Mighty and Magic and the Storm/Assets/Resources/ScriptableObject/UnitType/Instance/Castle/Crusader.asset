@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3a0936d33f8b4cdbba7137f15d68540, type: 3}
-  m_Name: Crusader_Upgrade
+  m_Name: Crusader
   m_EditorClassIdentifier: 
   tab: 0
-  icon: {fileID: 21300000, guid: 7f50a5c21e963084baebb98d4d12d332, type: 3}
+  icon: {fileID: 21300000, guid: 82f72f823978d204490f5372bb83c2c4, type: 3}
   race: {fileID: 11400000, guid: 830952885b93a426a8cf308f26070ed9, type: 2}
   animControl: {fileID: 22100000, guid: 14e3827b00ec34580a24f36df87ba89f, type: 2}
   level: 1
