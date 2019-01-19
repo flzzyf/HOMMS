@@ -53,4 +53,6 @@ public class NodeItem : MonoBehaviour
 
         OnMouseOut(this);
     }
+
+	public bool isEmpty { get { return nodeObject == null; } }
 }

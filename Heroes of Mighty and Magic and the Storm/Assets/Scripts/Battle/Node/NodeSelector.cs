@@ -19,11 +19,32 @@ public class NodeSelector : MonoBehaviour
 
 		int speed = _unit.GetComponent<Unit>().speed;
 
-		//选出可到达节点，判断是否是步行单位
-		foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(_unit.nodeItem, speed, _unit.isWalker))
+		//选出可到达节点，（判断是否是步行单位，是否是双格单位
+		if(!_unit.type.isTwoHexsUnit)
 		{
-			if (item.nodeObject == null)
-				reachableNodes.Add(item);
+			foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(_unit.nodeItem, speed, _unit.isWalker))
+			{
+				if (item.isEmpty)
+					reachableNodes.Add(item);
+			}
+		}
+		else
+		{
+			//是双格单位。先从源点选出行动范围，然后是前方的点
+			foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(_unit.nodeItem, speed, _unit.isWalker))
+			{
+				if (item.isEmpty)
+					reachableNodes.Add(item);
+			}
+			//前方的点
+			int offsetX = _unit.facingRight ? 1 : -1;
+			Vector2Int pos = _unit.nodeItem.pos;
+			pos.x += offsetX;
+			foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(BattleManager.instance.map.GetNodeItem(pos), speed, _unit.isWalker))
+			{
+				if (item.isEmpty && !reachableNodes.Contains(item))
+					reachableNodes.Add(item);
+			}
 		}
 
 		//选出可攻击节点
@@ -31,10 +52,10 @@ public class NodeSelector : MonoBehaviour
 		if (!_unit.IsRangeAttack)
 		{
 			//可攻击节点
-			foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(_unit.nodeItem, speed + 1, false))
+			foreach (NodeItem item in BattleManager.instance.map.GetNodeItemsWithinRange(_unit.nodeItem, speed + 1, _unit.isWalker))
 			{
 				//是单位而且是敌对
-				if (item.nodeObject != null &&
+				if (!item.isEmpty &&
 					item.nodeObject.GetComponent<NodeObject>().nodeObjectType == NodeObjectType.unit &&
 					!BattleManager.instance.isSamePlayer(item.nodeObject.GetComponent<Unit>(), _unit))
 				{

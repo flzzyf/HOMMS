@@ -65,3 +65,4 @@ Varian=Varian
 Mage=Mage
 RavenCourt=RavenCourt
 Crusader=Crusader
+Amazon_2=Amazon_2
