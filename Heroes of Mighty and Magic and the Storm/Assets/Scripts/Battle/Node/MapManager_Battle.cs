@@ -107,4 +107,52 @@ public class MapManager_Battle : MapManager
     {
         BattleNodeMgr.instance.OnNodePressed(_node.GetComponent<NodeItem_Battle>());
     }
+
+	//获取双格单位可到达节点（效率并不高
+	public List<Node> GetTwoHexUnitReachableNodesWithinRange(Node _node1, Node _node2, int _range, bool _walkable)
+	{
+		List<Node> nodes = new List<Node>();
+		//加入初始节点
+		nodes.Add(_node1);
+		nodes.Add(_node2);
+
+		//遍历range次
+		while (_range > 0)
+		{
+			List<Node> temp = new List<Node>();
+
+			//挑选每个节点，判断相邻节点
+			foreach (var item in nodes)
+			{
+				foreach (var item2 in GetNearbyNodes(item))
+				{
+					//如果存在，不在表内，而且符合行走条件
+					if (item2 != null && !nodes.Contains(item2) && !temp.Contains(item2) && (!_walkable || (_walkable && item2.walkable)))
+						temp.Add(item2);
+				}
+			}
+
+			foreach (var item in temp)
+			{
+				nodes.Add(item);
+			}
+
+			_range--;
+		}
+
+		return nodes;
+	}
+	public List<NodeItem> GetTwoHexUnitReachableNodeItemsWithinRange(NodeItem _node1, NodeItem _node2, int _range, bool _walkable)
+	{
+		List<NodeItem> list = new List<NodeItem>();
+		foreach (var item in GetTwoHexUnitReachableNodesWithinRange(GetNode(_node1.pos), GetNode(_node2.pos), _range, _walkable))
+		{
+			list.Add(GetNodeItem(item.pos));
+		}
+
+		list.Remove(_node1);
+		list.Remove(_node2);
+
+		return list;
+	}
 }

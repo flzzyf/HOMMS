@@ -1,0 +1,574 @@
+fileFormatVersion: 2
+guid: 9d4ddb4f67cf9b846a011970ae0a8a5e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Varian_Attack
+    21300002: HOMMS00
+    21300004: HOMMS01
+    21300006: HOMMS02
+    21300008: HOMMS03
+    21300010: HOMMS04
+    21300012: HOMMS05
+    21300014: HOMMS06
+    21300016: HOMMS07
+    21300018: HOMMS08
+    21300020: HOMMS09
+    21300022: HOMMS10
+    21300024: HOMMS11
+    21300026: HOMMS12
+    21300028: HOMMS13
+    21300030: HOMMS14
+    21300032: HOMMS15
+    21300034: HOMMS16
+    21300036: HOMMS17
+    21300038: HOMMS18
+    21300040: HOMMS19
+    21300042: HOMMS20
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HOMMS00
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1127
+        width: 507
+        height: 494
+      alignment: 9
+      pivot: {x: 0.50690335, y: -0.008097166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2381914ae1d8aa543b6e17dfd352bf49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS01
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 3113
+        width: 544
+        height: 497
+      alignment: 9
+      pivot: {x: 0.4944853, y: -0.0060362173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7162b992953d74faccd43d0b718a63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS02
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 3612
+        width: 575
+        height: 483
+      alignment: 9
+      pivot: {x: 0.44695652, y: -0.0020703934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b414c843c173f6b4a944ab8ba63f32a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS03
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 3092
+        width: 541
+        height: 480
+      alignment: 9
+      pivot: {x: 0.39926064, y: -0.008333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c9980a10cb9bd4eb073911ebddecc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS04
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3569
+        width: 579
+        height: 526
+      alignment: 9
+      pivot: {x: 0.36442143, y: -0.02851711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c04a3a025e73864fa5751ff0782b82e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS05
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3064
+        width: 541
+        height: 503
+      alignment: 9
+      pivot: {x: 0.41219962, y: -0.021868788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e0d1ff588881f4c9d9157b04adb58b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS06
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 2608
+        width: 526
+        height: 503
+      alignment: 9
+      pivot: {x: 0.4353612, y: -0.021868788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036c26b84fb1d204b9e5edc7fe643ff7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS07
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 3574
+        width: 545
+        height: 521
+      alignment: 9
+      pivot: {x: 0.4788991, y: -0.0038387715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06cd6b3e3f81eb4a9e6a631ebef7988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1570
+        width: 513
+        height: 507
+      alignment: 9
+      pivot: {x: 0.4814815, y: -0.00591716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4731c1626474749a144c3fd5477ea9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS09
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1581
+        width: 510
+        height: 506
+      alignment: 9
+      pivot: {x: 0.5019608, y: -0.0059288535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5479144376d88b9499bc27cc19250992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS10
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2089
+        width: 518
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: -0.005905512}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86103b3896b74164a91a215e4b76b06f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS11
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 19
+        width: 497
+        height: 496
+      alignment: 9
+      pivot: {x: 0.49496982, y: -0.006048387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75addc17f984cc74d8d3659701ddf7d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS12
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 589
+        width: 498
+        height: 487
+      alignment: 9
+      pivot: {x: 0.49598393, y: -0.0061601643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedb260bdde8efa47ba0b02ad69cb41a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 496
+        height: 513
+      alignment: 9
+      pivot: {x: 0.49395162, y: -0.0058479533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb759b21e685ab949bf965c9ca1810e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 517
+        width: 498
+        height: 559
+      alignment: 9
+      pivot: {x: 0.49598393, y: -0.0053667263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a49af699334bd46818ac3aeeccc490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1078
+        width: 501
+        height: 490
+      alignment: 9
+      pivot: {x: 0.499002, y: -0.006122449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6498fd2fa659c4f8e6d5e67e006e94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS16
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1623
+        width: 517
+        height: 490
+      alignment: 9
+      pivot: {x: 0.51450676, y: -0.006122449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370ce1b16cccce24e81cb1fd533b89e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2079
+        width: 519
+        height: 490
+      alignment: 9
+      pivot: {x: 0.5163776, y: -0.006122449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d57d6f8d0325f544ae85d672730d123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS18
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 2115
+        width: 520
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5173077, y: -0.0061099795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a86652e3039ac4b8f3b6ef857da2c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2571
+        width: 523
+        height: 491
+      alignment: 9
+      pivot: {x: 0.52007645, y: -0.0061099795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b49f51787616242905aab8fd091000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HOMMS20
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 2599
+        width: 521
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5182342, y: -0.0061099795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17902426fc9a3ca4d97232301430409b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f4526ee83eaff8f489cbef66da0d330c
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

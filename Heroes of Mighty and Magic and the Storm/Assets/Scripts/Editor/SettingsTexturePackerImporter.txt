@@ -35,6 +35,9 @@ tpsheetFileNames:
 - Assets/Resources/Textures/Units/Castle/Tyrael/Tyrael_Hit.tpsheet
 - Assets/Resources/Textures/Units/Castle/Tyrael/Tyrael_Stand.tpsheet
 - Assets/Resources/Textures/Units/Castle/Tyrael/Tyrael_Walk.tpsheet
+- Assets/Resources/Textures/Units/Castle/Varian/Varian_Attack.tpsheet
+- Assets/Resources/Textures/Units/Castle/Varian/Varian_Stand.tpsheet
+- Assets/Resources/Textures/Units/Castle/Varian/Varian_Walk.tpsheet
 - Assets/Resources/Textures/Units/Hell/Diablo_Prime/Diablo_Prime_Stand.tpsheet
 - Assets/Resources/Textures/Units/Necro/Kel/Kel_Attack.tpsheet
 - Assets/Resources/Textures/Units/Necro/Kel/Kel_Death.tpsheet
@@ -116,6 +119,9 @@ textureFileNames:
 - Assets/Resources/Textures/Units/Castle/Tyrael/Tyrael_Hit.png
 - Assets/Resources/Textures/Units/Castle/Tyrael/Tyrael_Stand.png
 - Assets/Resources/Textures/Units/Castle/Tyrael/Tyrael_Walk.png
+- Assets/Resources/Textures/Units/Castle/Varian/Varian_Attack.png
+- Assets/Resources/Textures/Units/Castle/Varian/Varian_Stand.png
+- Assets/Resources/Textures/Units/Castle/Varian/Varian_Walk.png
 - Assets/Resources/Textures/Units/Hell/Diablo_Prime/Diablo_Prime_Stand.png
 - Assets/Resources/Textures/Units/Necro/Kel/Kel_Attack.png
 - Assets/Resources/Textures/Units/Necro/Kel/Kel_Death.png
@@ -164,6 +170,9 @@ textureFileNames:
 - Assets/Resources/Textures/Units/OrpheaCampaign/Orphea_Ad/Orphea_Ad_4_Walk.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
 - 
 - 
 - 

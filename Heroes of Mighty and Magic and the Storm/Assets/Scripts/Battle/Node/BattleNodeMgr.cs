@@ -303,6 +303,8 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
             return false;
         }
 
+		path.RemoveAt(0);
+
         foreach (var item in path)
         {
             item.GetComponent<NodeItem_Battle>().ChangeBackgoundColor("path");

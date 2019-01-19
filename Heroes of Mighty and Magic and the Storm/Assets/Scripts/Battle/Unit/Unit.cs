@@ -33,8 +33,12 @@ public class Unit : NodeObject, MovableNode
     public List<Behavior> behaviors = new List<Behavior>();
 
     public SortingOrderMgr sortingOrderMgr;
+	//单位数量UI偏移
+	public Vector2 UIOffset = new Vector2(100, 39);
 
-    public void Init()
+	public int facing { get { return facingRight ? 1 : -1; } }
+
+	public void Init()
     {
         if (type != null)
             InitUnitType();
@@ -44,6 +48,10 @@ public class Unit : NodeObject, MovableNode
         UI.GetComponent<RectTransform>().localPosition = pos;
 
         UpdateUI();
+
+		//如果是双格单位，偏移图像
+		if (type.isTwoHexsUnit)
+			sprite.transform.Translate(Vector3.right * BattleManager.instance.map.nodeSize.x / 2 * facing);
     }
 
     public void InitUnitType()
@@ -58,7 +66,6 @@ public class Unit : NodeObject, MovableNode
         ammo = type.ammo;
     }
 
-    public Vector2 UIOffset = new Vector2(100, 39);
     public void UpdateUI()
     {
         int offsetX = facingRight ? 1 : -1;
