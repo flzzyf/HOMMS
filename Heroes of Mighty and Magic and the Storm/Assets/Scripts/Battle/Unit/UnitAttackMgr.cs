@@ -141,7 +141,11 @@ public class UnitAttackMgr : Singleton<UnitAttackMgr>
     {
         waiting = true;
 
-        Anim attackAnim;
+		//播放攻击音效
+		if (_origin.type.sound_attack != null)
+			SoundManager.instance.PlaySound(_origin.type.sound_attack);
+
+		Anim attackAnim;
         //播放攻击动画，根据位置
         if (Mathf.Abs(_target.transform.position.y - _origin.transform.position.y) < 1)
             attackAnim = Anim.Attack;
@@ -173,10 +177,14 @@ public class UnitAttackMgr : Singleton<UnitAttackMgr>
             missile.Translate(dir.normalized * missileSpeed * Time.deltaTime, Space.World);
             yield return null;
         }
-
+		//摧毁飞弹
         Destroy(missile.gameObject);
 
-        ApplyDamage(_origin, _target, true);
+		//播放轰击音效
+		if (_origin.type.sound_attackImpact != null)
+			SoundManager.instance.PlaySound(_origin.type.sound_attackImpact);
+
+		ApplyDamage(_origin, _target, true);
 
         if (!_target.dead)
             UnitHit(_target);

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161c1d29610771e41a72bc969d2b28e5, type: 3}
+  m_Name: Leoric_Walk
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 130ad0199d13218489d0f2b0c1833f51, type: 3}
+  - {fileID: 8300000, guid: a9f3bd93066e736458fe22e8487643b3, type: 3}
+  - {fileID: 8300000, guid: bbec4dc909566504e986856b0a735188, type: 3}
+  - {fileID: 8300000, guid: 9769610614bc8d943be46b16e09b8343, type: 3}
+  - {fileID: 8300000, guid: 93c0a2ade0abea34781aaf998dc91123, type: 3}
+  - {fileID: 8300000, guid: 3c4e22a386a6fa64a9284a0e89aa3ed8, type: 3}
+  volume: 1
+  pitch: 1
+  loop: 0
+  group: 0
+  startingTime: 0

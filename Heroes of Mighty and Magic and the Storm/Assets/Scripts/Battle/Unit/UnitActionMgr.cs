@@ -165,20 +165,34 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
         if (BattleManager.currentActionUnit.type.sound_walk != null)
             StartCoroutine(PlayMoveSound(BattleManager.currentActionUnit));
     }
-
+	//播放单位行走音效
     IEnumerator PlayMoveSound(Unit _unit)
     {
-        while (NodeMovingMgr.instance.moving)
-        {
-            if (_unit.type.sound_walk != null)
-                SoundManager.instance.PlaySound(_unit.type.sound_walk);
+		//如果是循环音效则播放一次
+		if(_unit.type.sound_walk.loop)
+		{
+			SoundManager.instance.PlaySound(_unit.type.sound_walk);
 
-            yield return new WaitForSeconds(Random.Range(.35f, .45f));
+			while (NodeMovingMgr.instance.moving)
+				yield return null;
 
-        }
-    }
+			SoundManager.instance.StopPlay(_unit.type.sound_walk);
+		}
+		else
+		{
+			//否则持续播放（也应该根据单位速度播放
+			while (NodeMovingMgr.instance.moving)
+			{
+				SoundManager.instance.PlaySound(_unit.type.sound_walk);
 
-    void MoveToNode(NodeItem _node)
+				yield return new WaitForSeconds(Random.Range(.35f, .45f));
+			}
+
+			SoundManager.instance.StopPlay(_unit.type.sound_walk);
+		}
+	}
+
+	void MoveToNode(NodeItem _node)
     {
         //改变单位朝向
         BattleManager.currentActionUnit.FaceTarget(_node.transform.position);
