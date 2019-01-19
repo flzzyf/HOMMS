@@ -21,35 +21,6 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 
         playerHovered = _node;
 
-        //如果是单位
-        if (_node.nodeObject != null &&
-            _node.nodeObject.nodeObjectType == NodeObjectType.unit)
-        {
-            //显示并更新单位属性UI
-            //BattleManager.instance.ShowUnitStatUI(true, _node.unit);
-
-            //如果不是当前行动单位，开始闪烁
-            if (_node.nodeObject != BattleManager.currentActionUnit)
-            {
-                if (BattleManager.instance.isSamePlayer(_node.unit,
-                    BattleManager.currentActionUnit))
-                    UnitHaloMgr.instance.HaloFlashStart(_node.unit, "friend");
-                else
-                    UnitHaloMgr.instance.HaloFlashStart(_node.unit, "enemy");
-            }
-
-            //根据敌友改变指针
-            if (BattleManager.instance.isSamePlayer(_node.unit,
-                BattleManager.currentActionUnit))
-            {
-                CursorManager.instance.ChangeCursor("friend");
-            }
-            else
-            {
-                CursorManager.instance.ChangeCursor("enemy");
-            }
-        }
-
         //是可到达节点，则显示路径
         if (_node.battleNodeType == BattleNodeType.reachable)
         {
@@ -79,7 +50,43 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
             BattleInfoMgr.instance.SetText_Attack(BattleManager.currentActionUnit, _node.unit);
 
         }
+		else if (_node.battleNodeType == BattleNodeType.spellable)
+		{
+			CursorManager.instance.ChangeCursor("spell");
 
+		}
+		else
+		{
+			//如果不是可行动节点
+			//如果是单位
+			if (_node.nodeObject != null &&
+				_node.nodeObject.nodeObjectType == NodeObjectType.unit)
+			{
+				//显示并更新单位属性UI
+				//BattleManager.instance.ShowUnitStatUI(true, _node.unit);
+
+				//如果不是当前行动单位，开始闪烁
+				if (_node.nodeObject != BattleManager.currentActionUnit)
+				{
+					if (BattleManager.instance.isSamePlayer(_node.unit,
+						BattleManager.currentActionUnit))
+						UnitHaloMgr.instance.HaloFlashStart(_node.unit, "friend");
+					else
+						UnitHaloMgr.instance.HaloFlashStart(_node.unit, "enemy");
+				}
+
+				//根据敌友改变指针
+				if (BattleManager.instance.isSamePlayer(_node.unit,
+					BattleManager.currentActionUnit))
+				{
+					CursorManager.instance.ChangeCursor("friend");
+				}
+				else
+				{
+					CursorManager.instance.ChangeCursor("enemy");
+				}
+			}
+		}
 		//不可到达点
 		// else if (_node.battleNodeType == BattleNodeType.empty)
 		// {
@@ -87,7 +94,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 		// }
 	}
 
-    public void OnNodeUnhovered(NodeItem_Battle _node)
+	public void OnNodeUnhovered(NodeItem_Battle _node)
     {
         _node.RestoreBackgroundColor();
 

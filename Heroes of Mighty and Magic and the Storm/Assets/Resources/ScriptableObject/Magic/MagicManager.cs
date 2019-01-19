@@ -77,7 +77,14 @@ public class MagicManager : Singleton<MagicManager>
 	//施法后2秒完成施法
 	IEnumerator CastingMagic()
 	{
+		CursorManager.instance.ChangeCursor();
+		CursorManager.instance.ChangeCursorAngle();
+
+		GameManager.gameState = GameState.canNotControl;
+
 		yield return new WaitForSeconds(2);
+
+		GameManager.gameState = GameState.playerControl;
 
 		OnFinishCastingMagic();
 	}
