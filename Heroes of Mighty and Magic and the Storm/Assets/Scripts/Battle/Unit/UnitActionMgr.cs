@@ -18,14 +18,18 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
     {
         UnitHaloMgr.instance.HaloFlashStart(_unit, "action");
 
-        if (!PlayerManager.instance.players[BattleManager.players[_unit.side]].isAI)
+		//测试：永远是玩家控制
+		PlayerActionStart(_unit);
+
+		/*
+		if (!PlayerManager.instance.players[BattleManager.players[_unit.side]].isAI)
         {
             PlayerActionStart(_unit);
         }
         else
         {
             AIActionMgr.instance.AIActionStart(_unit);
-        }
+        }*/
 
         //在下令前暂停
         while (order == null)
@@ -202,7 +206,7 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
         //改变单位朝向
         BattleManager.currentActionUnit.FaceTarget(_node.transform.position);
 
-        BattleManager.instance.LinkNodeWithUnit(BattleManager.currentActionUnit, _node);
+        BattleManager.instance.map.LinkNodeWithUnit(BattleManager.currentActionUnit, _node);
     }
 
     void ReachTarget(NodeItem _node)

@@ -33,8 +33,7 @@ public class NodeSelector : MonoBehaviour
 			//是双格单位。先从源点和前方的点选出行动范围
 			foreach (NodeItem item in BattleManager.instance.map.GetTwoHexUnitReachableNodeItemsWithinRange(_unit.nodeItem, _unit.nodeAhead, speed, _unit.isWalker))
 			{
-				if (item.isEmpty)
-					reachableNodes.Add(item);
+				reachableNodes.Add(item);
 			}
 		}
 
@@ -62,6 +61,12 @@ public class NodeSelector : MonoBehaviour
 			foreach (Unit item in BattleManager.instance.units[enemyHero])
 			{
 				attackableNodes.Add(item.nodeItem);
+
+				//如果是双格单位，还要选中其前面的节点
+				if(item.type.isTwoHexsUnit)
+				{
+					attackableNodes.Add(item.nodeAhead);
+				}
 			}
 		}
 	}

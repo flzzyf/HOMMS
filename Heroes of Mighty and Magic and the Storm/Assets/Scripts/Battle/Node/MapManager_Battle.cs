@@ -111,48 +111,138 @@ public class MapManager_Battle : MapManager
 	//获取双格单位可到达节点（效率并不高
 	public List<Node> GetTwoHexUnitReachableNodesWithinRange(Node _node1, Node _node2, int _range, bool _walkable)
 	{
-		List<Node> nodes = new List<Node>();
-		//加入初始节点
-		nodes.Add(_node1);
-		nodes.Add(_node2);
+		Node[] nodes = { _node1, _node2 };
 
-		//遍历range次
-		while (_range > 0)
+		List<Node> nodeList = new List<Node>();
+
+		//头尾各搜索一次
+		for (int i = 0; i < nodes.Length; i++)
 		{
-			List<Node> temp = new List<Node>();
+			List<Node> open = new List<Node>();
+			List<Node> close = new List<Node>();
+			open.Add(nodes[i]);
 
-			//挑选每个节点，判断相邻节点
-			foreach (var item in nodes)
+			//搜索方向
+			int dir = i == 0 ? 1 : -1;
+
+			//遍历range次
+			for (int j = 0; j < _range; j++)
 			{
-				foreach (var item2 in GetNearbyNodes(item))
+				//挑选每个节点，判断相邻节点
+				int length = open.Count;
+				while(length > 0)
 				{
-					//如果存在，不在表内，而且符合行走条件
-					if (item2 != null && !nodes.Contains(item2) && !temp.Contains(item2) && (!_walkable || (_walkable && item2.walkable)))
-						temp.Add(item2);
+					length--;
+
+					Node curNode = open[0];
+					open.Remove(curNode);
+					close.Add(curNode);
+
+					foreach (var item in GetNearbyNodes(curNode))
+					{
+						if (item == null)
+							continue;
+
+						//如果已经在集合中
+						if (open.Contains(item) || close.Contains(item))
+							continue;
+
+						//walkable指的是碰到障碍物也将其作为搜索节点
+						if (!_walkable)
+							open.Add(item);
+
+						Vector2Int pos = item.pos;
+						pos.x += BattleManager.currentActionUnit.sideFacing * dir;
+
+						//加入最终输出节点
+						if (isNodeAvailable(pos) &&
+							(item.walkable && (GetNode(pos).walkable || GetNode(pos) == nodes[i])))
+						{
+							nodeList.Add(item);
+							open.Add(item);
+						}
+					}
 				}
 			}
-
-			foreach (var item in temp)
-			{
-				nodes.Add(item);
-			}
-
-			_range--;
 		}
 
-		return nodes;
+		return nodeList;
 	}
 	public List<NodeItem> GetTwoHexUnitReachableNodeItemsWithinRange(NodeItem _node1, NodeItem _node2, int _range, bool _walkable)
 	{
 		List<NodeItem> list = new List<NodeItem>();
+		//获取可移动范围
 		foreach (var item in GetTwoHexUnitReachableNodesWithinRange(GetNode(_node1.pos), GetNode(_node2.pos), _range, _walkable))
 		{
 			list.Add(GetNodeItem(item.pos));
 		}
 
+		//去除其中前方点不存在，或不可通行的节点
+		/*for (int i = list.Count - 1; i > 0; i--)
+		{
+			Vector2Int pos = list[i].pos;
+			pos.x += BattleManager.currentActionUnit.facing;
+			if (!isNodeAvailable(pos) || !GetNode(pos).walkable)
+				list.RemoveAt(i);
+		}*/
+
 		list.Remove(_node1);
 		list.Remove(_node2);
 
 		return list;
+	}
+
+	//链接单位和节点
+	public void LinkNodeWithUnit(Unit _unit, NodeItem _nodeItem)
+	{
+		//单位占据的所有节点
+		List<NodeItem> nodes = new List<NodeItem>();
+		nodes.Add(_nodeItem);
+
+		//如果是双格单位，同时修改前方节点
+		if (_unit.type.isTwoHexsUnit)
+		{
+			Vector2Int pos = _nodeItem.pos;
+			pos.x += _unit.sideFacing;
+			nodes.Add(GetNodeItem(pos));
+		}
+
+		//如果已经和节点链接，取消链接
+		if (_unit.GetComponent<Unit>().nodeItem != null)
+		{
+			UnlinkNodeWithUnit(_unit);
+		}
+
+		_unit.nodeItem = _nodeItem;
+
+		foreach (var item in nodes)
+		{
+			item.nodeObject = _unit;
+
+			GetNode(item.pos).walkable = false;
+		}
+	}
+	//取消链接单位和节点
+	public void UnlinkNodeWithUnit(Unit _unit)
+	{
+		//单位占据的所有节点
+		List<NodeItem> nodes = new List<NodeItem>();
+		nodes.Add(_unit.nodeItem);
+
+		//如果是双格单位，同时修改前方节点
+		if (_unit.type.isTwoHexsUnit)
+		{
+			Vector2Int pos = _unit.nodeItem.pos;
+			pos.x += _unit.sideFacing;
+			nodes.Add(GetNodeItem(pos));
+		}
+		//取消链接
+		foreach (var item in nodes)
+		{
+			item.nodeObject = null;
+			_unit.nodeItem = null;
+
+			GetNode(item.pos).walkable = true;
+		}
 	}
 }

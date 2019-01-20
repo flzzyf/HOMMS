@@ -6,7 +6,7 @@ public class AStarManager
 {
     public static MapManager map;
 
-    static List<Node> FindPath(Vector2Int _startPos, Vector2Int _endPos, bool _ignoreObstacle = false)
+    public static List<Node> FindPath(Vector2Int _startPos, Vector2Int _endPos, bool _ignoreObstacle = false, bool _specialRule = false)
     {
         Node startNode = map.GetNode(_startPos);
         Node endNode = map.GetNode(_endPos);
@@ -49,8 +49,8 @@ public class AStarManager
 
                     return GeneratePath(startNode, endNode);
                 }
-                //如果不可通行或在闭集中，则跳过
-                if ((!_ignoreObstacle && !item.walkable) || closeSet.Contains(item))
+                //如果不可通行或在闭集中，则跳过。加入特殊规则判定
+                if ((!_ignoreObstacle && !item.walkable) || closeSet.Contains(item) || (_specialRule && !SpecialRule(item)))
                 {
                     continue;
                 }
@@ -107,14 +107,14 @@ public class AStarManager
             return 14 * x + 10 * (y - x);
     }
 
-    static List<NodeItem> FindPath(NodeItem _start, NodeItem _end, bool _ignoreObstacle = false)
+    static List<NodeItem> FindPath(NodeItem _start, NodeItem _end, bool _ignoreObstacle = false, bool _specialRule = false)
     {
         List<NodeItem> list = new List<NodeItem>();
 
         Vector2Int startPos = _start.pos;
         Vector2Int endPos = _end.pos;
 
-        List<Node> path = FindPath(startPos, endPos, _ignoreObstacle);
+        List<Node> path = FindPath(startPos, endPos, _ignoreObstacle, _specialRule);
         if (path == null)
             return null;
 
@@ -126,10 +126,10 @@ public class AStarManager
         return list;
     }
 
-    public static List<NodeItem> FindPath(MapManager _map, NodeItem _start, NodeItem _end, bool _ignoreObstacle = false)
+    public static List<NodeItem> FindPath(MapManager _map, NodeItem _start, NodeItem _end, bool _ignoreObstacle = false, bool _specialRule = false)
     {
         map = _map;
-        return FindPath(_start, _end, _ignoreObstacle);
+        return FindPath(_start, _end, _ignoreObstacle, _specialRule);
     }
 
     //获取节点间距离
@@ -139,4 +139,19 @@ public class AStarManager
 
         return path.Count - 1;
     }
+
+	//特殊规则，该节点双格单位不可通行则True
+	static bool SpecialRule(Node _node)
+	{
+		//是双格单位，则判定前方节点也可通行
+		if(BattleManager.currentActionUnit.type.isTwoHexsUnit)
+		{
+			Vector2Int pos = _node.pos;
+			pos.x += BattleManager.currentActionUnit.sideFacing;
+			if (map.isNodeAvailable(pos) && !map.GetNode(pos).walkable)
+				return false;
+		}
+
+		return true;
+	}
 }

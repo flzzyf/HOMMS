@@ -37,6 +37,7 @@ public class Unit : NodeObject, MovableNode
 	public Vector2 UIOffset = new Vector2(100, 39);
 
 	public int facing { get { return facingRight ? 1 : -1; } }
+	public int sideFacing { get { return side == 0 ? 1 : -1; } }
 
 	public void Init()
     {
@@ -283,7 +284,7 @@ public class Unit : NodeObject, MovableNode
 
         BattleManager.instance.units[side].Remove(this);
 
-        BattleManager.Instance().UnlinkNodeWithUnit(this);
+        BattleManager.instance.map.UnlinkNodeWithUnit(this);
 
         //播放死亡音效
 		if(type.sound_death != null)

@@ -235,7 +235,7 @@ public class BattleManager : Singleton<BattleManager>
                        _hero.pocketUnits[i].num, _side);
 
             NodeItem nodeItem = map.GetNodeItem(new Vector2Int(x, unitPosIndex));
-            LinkNodeWithUnit(unit, nodeItem);
+            map.LinkNodeWithUnit(unit, nodeItem);
 
             AddUnitToActionList(ref unitActionOrder, unit);
         }
@@ -262,30 +262,7 @@ public class BattleManager : Singleton<BattleManager>
 
         return unit;
     }
-    //链接单位和节点
-    public void LinkNodeWithUnit(Unit _unit, NodeItem _nodeItem)
-    {
-        //如果已经和节点链接，取消链接
-        if (_unit.GetComponent<Unit>().nodeItem != null)
-        {
-            UnlinkNodeWithUnit(_unit);
-        }
 
-        _nodeItem.nodeObject = _unit;
-        _unit.GetComponent<Unit>().nodeItem = _nodeItem.GetComponent<NodeItem>();
-
-        map.GetNode(_nodeItem.pos).walkable = false;
-    }
-    //取消链接单位和节点
-    public void UnlinkNodeWithUnit(Unit _unit)
-    {
-        NodeItem nodeItem = _unit.GetComponent<Unit>().nodeItem;
-        nodeItem.nodeObject = null;
-        _unit.GetComponent<Unit>().nodeItem = null;
-
-        map.GetNode(nodeItem.pos).walkable = true;
-
-    }
 
     //胜负判定，如果有一方全灭
     public void CheckVictoryOrDeath()

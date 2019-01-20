@@ -305,7 +305,20 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 			unitNode = _unit.nodeAhead;
 		}
 
-        path = AStarManager.FindPath(BattleManager.instance.map, unitNode, _target);
+		if(_unit.type.isTwoHexsUnit)
+		{
+			//前方点不存在或被占用，则使用上个点为目的地
+			Vector2Int pos = _target.pos;
+			pos.x += _unit.sideFacing;
+			if(!BattleManager.instance.map.isNodeAvailable(pos) || !BattleManager.instance.map.GetNode(pos).walkable)
+			{
+				pos.x -= 2 * _unit.sideFacing;
+				_target = BattleManager.instance.map.GetNodeItem(pos);
+			}
+		}
+		
+        path = AStarManager.FindPath(BattleManager.instance.map, unitNode, _target, _unit.isWalker, _unit.type.isTwoHexsUnit);
+		//print(path.Count);
         if (path == null)
         {
             //print("未能找到路径");
