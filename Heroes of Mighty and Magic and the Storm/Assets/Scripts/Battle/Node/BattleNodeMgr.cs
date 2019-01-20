@@ -299,6 +299,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 
 		NodeItem unitNode = _unit.nodeItem;
 
+		/*
 		//判断是双格单位，而且前方点更近，则使用前方点进行寻路
 		if(_unit.type.isTwoHexsUnit && (_target.pos - _unit.nodeAhead.pos).magnitude < (_target.pos - _unit.nodeItem.pos).magnitude)
 		{
@@ -316,10 +317,23 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 				_target = BattleManager.instance.map.GetNodeItem(pos);
 			}
 		}
-		
-        path = AStarManager.FindPath(BattleManager.instance.map, unitNode, _target, _unit.isWalker, _unit.type.isTwoHexsUnit);
+		*/
+
+		//根据是否是双格单位，选中寻路方法
+		if (!_unit.type.isTwoHexsUnit)
+			path = AStarManager.FindPath(BattleManager.instance.map, unitNode, _target, _unit.isWalker);
+		else
+		{
+			path = new List<NodeItem>();
+			MapManager map = BattleManager.instance.map;
+			foreach (var item in AStarManager.FindPath(map, map.GetNode(unitNode.pos), map.GetNode(_unit.nodeAhead.pos), map.GetNode(_target.pos), !_unit.isWalker))
+			{
+				path.Add(map.GetNodeItem(item.pos));
+			}
+		}
+
 		//print(path.Count);
-        if (path == null)
+		if (path == null)
         {
             //print("未能找到路径");
             return false;

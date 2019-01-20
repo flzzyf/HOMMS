@@ -154,4 +154,84 @@ public class AStarManager
 
 		return true;
 	}
+
+	public static List<Node> FindPath(MapManager _map, Node _node1, Node _node2, Node _endNode, bool _ignoreObstacle = false)
+	{
+		map = _map;
+
+		//起始节点，选中最近的
+		Node startNode = _endNode.x > _node2.x ? _node2 : _node1;
+		//int offset = _endNode.x > _node2.x ? -1 : 1;
+
+		//开集和闭集
+		List<Node> openSet = new List<Node>();
+		List<Node> closeSet = new List<Node>();
+		//将开始节点介入开集
+		openSet.Add(startNode);
+		//开始搜索
+		while (openSet.Count > 0)
+		{
+			//当前所在节点
+			Node curNode = openSet[0];
+			//从开集中选出f和h最小的
+			for (int i = 0; i < openSet.Count; i++)
+			{
+				if (openSet[i].f <= curNode.f && openSet[i].h <= curNode.h)
+				{
+					curNode = openSet[i];
+				}
+			}
+			//把当前所在节点加入闭集
+			openSet.Remove(curNode);
+			closeSet.Add(curNode);
+			//如果就是终点
+			// if (curNode == endNode)
+			// {
+			//     //可通行
+			//     return GeneratePath(startNode, endNode);
+			// }
+			//判断周围节点
+			foreach (var item in map.GetNearbyNodes(curNode))
+			{
+				//如果是终点，结束
+				if (item == _endNode)
+				{
+					//可通行
+					item.parentNode = curNode;
+
+					return GeneratePath(startNode, _endNode);
+				}
+				//如果不可通行或在闭集中，则跳过
+				if ((!_ignoreObstacle && !item.walkable) || closeSet.Contains(item))
+				{
+					continue;
+				}
+
+
+				Vector2Int pos = item.pos;
+				int offset = item.pos.x > curNode.x ? -1 : 1;
+				pos.x -= offset;
+
+				if (!(map.isNodeAvailable(pos) && (item.walkable && (map.GetNode(pos).walkable || map.GetNode(pos) == startNode))))
+				{
+					continue;
+				}
+
+				//判断新节点耗费
+				int newH = GetNodeDistance(curNode, item);
+				int newCost = curNode.g + newH;
+				//耗费更低或不在开集中，则加入开集
+				if (newCost < item.g || !openSet.Contains(item))
+				{
+					item.g = newCost;
+					item.h = newH;
+					item.parentNode = curNode;
+
+					openSet.Add(item);
+				}
+			}
+		}
+		//无法通行
+		return null;
+	}
 }
