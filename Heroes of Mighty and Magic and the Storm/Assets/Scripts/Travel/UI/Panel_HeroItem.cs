@@ -34,7 +34,8 @@ public class Panel_HeroItem : MonoBehaviour, IPointerClickHandler
         }
         else
         {
-            Panel_HeroUI.instance.Enter(TravelManager.instance.currentHero);
+			//进入英雄UI
+			UIManager.instance.uis.GetUI("hero").Enter();
         }
     }
 

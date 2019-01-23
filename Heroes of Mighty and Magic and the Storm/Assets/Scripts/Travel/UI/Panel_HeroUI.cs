@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Panel_HeroUI : Singleton<Panel_HeroUI>
+public class Panel_HeroUI : CustomUI
 {
     public Image portrait;
     public Image portraitBG;
@@ -11,23 +11,19 @@ public class Panel_HeroUI : Singleton<Panel_HeroUI>
 
     public Panel_MoraleAndLuck moraleAndLuck;
 
-    public GameObject ui;
-
     public HeroUI_PocketUnit[] pocketUnits;
 
     //英雄属性：攻防、法力、知识
     public Text[] text_stats;
-
-    public LocalizationText text_bottomInfo;
 
     public HeroUI_Skill panel_exp;
     public HeroUI_Skill panel_mana;
 
     public HeroUI_Skill[] skills;
 
-    void Start()
+    protected override void Start()
     {
-        ui.SetActive(false);
+		base.Start();
 
         //设置单位UI的序号
         for (int i = 0; i < pocketUnits.Length; i++)
@@ -78,16 +74,16 @@ public class Panel_HeroUI : Singleton<Panel_HeroUI>
         panel_mana.text_name.SetText(_hero.mana + "/" + _hero.mana_max);
     }
 
-    public void Enter(Hero _hero)
+    public override void Enter()
     {
-        Set(_hero);
+		base.Enter();
 
-        ui.SetActive(true);
+        Set(TravelManager.instance.currentHero);
     }
 
-    public void Quit()
+    public override void Quit()
     {
-        ui.SetActive(false);
+		base.Quit();
 
         //退出英雄面板时再次刷新底部英雄信息栏
         Panel_HeroInfo.instance.Set(TravelManager.instance.currentHero);

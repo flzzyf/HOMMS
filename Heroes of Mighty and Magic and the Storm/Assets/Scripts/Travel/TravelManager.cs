@@ -38,6 +38,9 @@ public class TravelManager : Singleton<TravelManager>
 		cam.enabled = _enter;
 
 		parent_travelObject.SetActive(_enter);
+
+		//进入旅行模式界面
+		UIManager.instance.uis.GetUI("travel").Enter();
     }
 
     //玩家初始化，生成城镇和英雄

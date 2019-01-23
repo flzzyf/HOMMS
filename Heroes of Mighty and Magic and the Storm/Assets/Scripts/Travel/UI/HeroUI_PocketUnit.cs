@@ -73,8 +73,8 @@ public class HeroUI_PocketUnit : MonoBehaviour, IPointerEnterHandler, IPointerCl
     //鼠标进入
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (unit != null)
-            Panel_HeroUI.instance.text_bottomInfo.SetText(LocalizationMgr.instance.GetText("Select") + unit.type.unitName);
+		if (unit != null)
+			UIManager.text_bottomInfo.text = LocalizationMgr.instance.GetText("Select") + unit.type.unitName;
     }
     //鼠标点击
     public void OnPointerClick(PointerEventData eventData)

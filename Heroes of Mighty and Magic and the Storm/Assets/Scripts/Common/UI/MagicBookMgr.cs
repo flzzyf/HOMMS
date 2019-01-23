@@ -38,7 +38,7 @@ public class MagicBookMgr : Singleton<MagicBookMgr>
 
     public Text text_info;
 
-	public CustomColor[] textColors;
+	public CustomObject<Color>[] textColors;
 
     void Start()
     {
