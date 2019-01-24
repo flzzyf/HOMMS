@@ -10,7 +10,7 @@ public class CustomUI : MonoBehaviour
 	//每个界面的底部信息文本
 	public Text text_bottomInfo;
 
-	protected virtual void Start()
+	protected virtual void Awake()
 	{
 		ui.SetActive(false);
 	}

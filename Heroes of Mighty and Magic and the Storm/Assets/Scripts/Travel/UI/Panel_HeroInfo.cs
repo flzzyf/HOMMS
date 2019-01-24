@@ -5,12 +5,9 @@ using UnityEngine.UI;
 
 public class Panel_HeroInfo : Singleton<Panel_HeroInfo>
 {
-    public Image portrait;
-    public Image portraitBG;
-    public Image portraitBorder;
-    public Text heroName;
+	public Panel_HeroPortrait panel_heroPortrait;
 
-    public Sprite[] portraitBorders;
+    public Text heroName;
 
     public Panel_PocketUnit[] pocketUnits;
 
@@ -22,14 +19,11 @@ public class Panel_HeroInfo : Singleton<Panel_HeroInfo>
     //更新英雄信息面板
     public void Set(Hero _hero)
     {
-        portrait.sprite = _hero.heroType.icon;
-        //英雄头像背景
-        portraitBG.sprite = _hero.heroType.race.sprite_bg;
+		//设置英雄头像信息
+		panel_heroPortrait.Set(_hero);
 
+		//设置英雄名称文本
         heroName.text = _hero.heroType.heroName;
-
-        //根据等级更新头像框（0到3)
-        portraitBorder.sprite = portraitBorders[Mathf.Min(_hero.level / 5, 3)];
 
         //更新英雄携带单位信息
         for (int i = 0; i < 7; i++)

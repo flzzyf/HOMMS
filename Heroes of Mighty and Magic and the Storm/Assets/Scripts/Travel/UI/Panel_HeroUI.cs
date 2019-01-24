@@ -21,10 +21,8 @@ public class Panel_HeroUI : CustomUI
 
     public HeroUI_Skill[] skills;
 
-    protected override void Start()
+    void Start()
     {
-		base.Start();
-
         //设置单位UI的序号
         for (int i = 0; i < pocketUnits.Length; i++)
         {

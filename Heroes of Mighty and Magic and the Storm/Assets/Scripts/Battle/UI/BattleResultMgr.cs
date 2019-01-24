@@ -7,7 +7,8 @@ public class BattleResultMgr : Singleton<BattleResultMgr>
 {
     public GameObject resultUI;
     public Text[] text_heroName;
-    public Image[] image_portrait;
+	//英雄头像框
+	public Panel_HeroPortrait[] panel_heroPortraits;
     public Text[] text_role;
     public Text text_result;
     public Transform[] parent_units;
@@ -53,8 +54,11 @@ public class BattleResultMgr : Singleton<BattleResultMgr>
         for (int i = 0; i < 2; i++)
         {
             text_heroName[i].text = BattleManager.heroes[i].heroType.heroName;
-            //text_heroName[i].font = LocalizationMgr.instance.font;
-            image_portrait[i].sprite = BattleManager.heroes[i].heroType.icon;
+			//text_heroName[i].font = LocalizationMgr.instance.font;
+
+			//设置英雄头像框图
+			panel_heroPortraits[i].Set(BattleManager.heroes[i]);
+
             if (_winningSide == i)
                 text_role[i].text = LocalizationMgr.instance.GetText("victory");
             else
