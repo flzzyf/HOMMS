@@ -11,7 +11,9 @@ public class Panel_UnitPortrait : MonoBehaviour, IPointerEnterHandler, IPointerC
 
     public GameObject border_selected;
 
+	[HideInInspector]
 	public UnitType unitType;
+	[HideInInspector]
 	public int unitNum;
 
     public static Panel_UnitPortrait selectedPanel;
