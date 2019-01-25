@@ -25,9 +25,12 @@ public class BuildingObject : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		image_outline.sprite = building.icon;
 		image_outline.rectTransform.sizeDelta = new Vector2(building.icon.texture.width, building.icon.texture.height);
 
-		print("qwe");
-		//HaloStop();
 		//HaloStart();
+	}
+
+	void Start()
+	{
+		HaloStop();
 	}
 
 	//光晕开始
