@@ -11,7 +11,7 @@ public class Panel_HeroUI : CustomUI
 
     public Panel_MoraleAndLuck moraleAndLuck;
 
-    public HeroUI_PocketUnit[] pocketUnits;
+    public Panel_UnitPortrait[] pocketUnits;
 
     //英雄属性：攻防、法力、知识
     public Text[] text_stats;
@@ -47,7 +47,7 @@ public class Panel_HeroUI : CustomUI
         for (int i = 0; i < 7; i++)
         {
             if(_hero.pocketUnits[i] != null && _hero.pocketUnits[i].type != null)
-                pocketUnits[i].Set(_hero.pocketUnits[i]);
+                pocketUnits[i].Init(_hero.pocketUnits[i]);
             else
                 pocketUnits[i].Clear();
         }
@@ -87,31 +87,33 @@ public class Panel_HeroUI : CustomUI
         Panel_HeroInfo.instance.Set(TravelManager.instance.currentHero);
 
         //重置选中单位项
-        if(HeroUI_PocketUnit.selectedPanel != null)
-            HeroUI_PocketUnit.selectedPanel.Deselect();
+        if(Panel_UnitPortrait.selectedPanel != null)
+            Panel_UnitPortrait.selectedPanel.Deselect();
     }
 
     //一键分兵
     public void SmartSplit()
     {
-        if (HeroUI_PocketUnit.selectedPanel != null)
-        {
-            for (int i = 0; i < pocketUnits.Length && HeroUI_PocketUnit.selectedPanel.unit.num > 1; i++)
-            {
-                //单位栏为空则，选中的单位数量-1，在这一栏位创建1个副本
-                if (pocketUnits[i].unit == null)
-                {
-                    HeroUI_PocketUnit.selectedPanel.unit.num--;
+		if (Panel_UnitPortrait.selectedPanel == null)
+			return;
 
-                    PocketUnit unit = new PocketUnit(HeroUI_PocketUnit.selectedPanel.unit.type, 1);
-                    pocketUnits[i].Set(unit);
+		for (int i = 0; i < pocketUnits.Length && Panel_UnitPortrait.selectedPanel.unitNum > 1; i++)
+		{
+			//单位栏为空则，选中的单位数量-1，在这一栏位创建1个副本
+			if (pocketUnits[i].unitType == null)
+			{
+				Panel_UnitPortrait.selectedPanel.unitNum--;
 
-                    //在真正英雄单位栏创建单位
-                    TravelManager.instance.currentHero.pocketUnits[i] = unit;
+				pocketUnits[i].Set(Panel_UnitPortrait.selectedPanel.unitType, 1);
 
-                }
-            }
-            HeroUI_PocketUnit.selectedPanel.Refresh();
-        }
-    }
+				//在真正英雄单位栏创建单位
+				PocketUnit unit = new PocketUnit(Panel_UnitPortrait.selectedPanel.unitType, 1);
+				TravelManager.instance.currentHero.pocketUnits[i] = unit;
+			}
+		}
+		//更新数量
+		Panel_UnitPortrait.selectedPanel.Set(Panel_UnitPortrait.selectedPanel.unitType, Panel_UnitPortrait.selectedPanel.unitNum);
+		//取消选中
+		Panel_UnitPortrait.selectedPanel.Deselect();
+	}
 }

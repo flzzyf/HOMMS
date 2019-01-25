@@ -20,7 +20,8 @@ public class CustomUI : MonoBehaviour
 		ui.SetActive(true);
 
 		//设置底部文本
-		UIManager.text_bottomInfo = text_bottomInfo;
+		if(text_bottomInfo != null)
+			UIManager.text_bottomInfo = text_bottomInfo;
 	}
 
 	public virtual void Quit()

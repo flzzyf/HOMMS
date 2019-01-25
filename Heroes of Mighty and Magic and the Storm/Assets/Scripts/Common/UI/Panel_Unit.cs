@@ -27,8 +27,13 @@ public class Panel_Unit : MonoBehaviour
 		{
 			text_num.text = _num.ToString();
 		}
+		else
+		{
+			text_num.text = "";
+		}
 
 		//播放随机动画
+		StopAllCoroutines();
 		StartCoroutine(KeepPlayingRandomAnim());
 	}
 
