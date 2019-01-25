@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeee33070688f214695549125519f1b6, type: 3}
+  m_Name: Archers' Tower
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: ef5d10a573d7a484b9e4afabbffa6ff6, type: 3}
+  cost:
+    gold: 1000
+    wood: 5
+    ore: 5
+    mercury: 0
+    sulfur: 0
+    crystal: 0
+    gem: 0
+  requirement: []
+  type: 1

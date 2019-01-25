@@ -71,3 +71,4 @@ Mage=Mage
 RavenCourt=RavenCourt
 Crusader=Crusader
 Amazon_2=Amazon_2
+Building_Tavern=Building_Tavern
