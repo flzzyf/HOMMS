@@ -129,21 +129,23 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
             if (_node.nodeObject != null &&
                 _node.nodeObject.nodeObjectType == NodeObjectType.unit)
             {
-                UnitInfoPanelMgr.instance.UpdatePanel(_node.unit);
-
+				//显示并更新单位信息面板
+				BattleManager.instance.panel_unitInfo.Set(_node.unit);
+				//移动单位面板到鼠标位置
                 Vector3 pos = BattleManager.instance.cam.ScreenToWorldPoint(Input.mousePosition);
                 pos.z = 0;
-                UnitInfoPanelMgr.instance.panel.transform.position = pos;
+				BattleManager.instance.panel_unitInfo.transform.position = pos;
             }
 
             return;
         }
-
+		//右键起
         if (Input.GetMouseButtonUp(1))
         {
-            UnitInfoPanelMgr.instance.HidePanel();
+			//隐藏单位信息面板
+			BattleManager.instance.panel_unitInfo.Quit();
 
-            return;
+			return;
         }
 
         //可能有问题

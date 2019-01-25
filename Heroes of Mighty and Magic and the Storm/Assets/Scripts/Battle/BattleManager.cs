@@ -65,8 +65,9 @@ public class BattleManager : Singleton<BattleManager>
     public float unitSpeedMultipler = 0.5f;
     public float flyingSpeedmultipler = 3f;
 
+	public Panel_UnitInfo panel_unitInfo;
 
-    public List<Unit> allUnits
+	public List<Unit> allUnits
     {
         get
         {
@@ -93,8 +94,7 @@ public class BattleManager : Singleton<BattleManager>
         players = new int[2];
         heroes = new Hero[2];
         heroUnits = new GameObject[2];
-
-        UnitInfoPanelMgr.instance.HidePanel();
+		
     }
 
     void Update()

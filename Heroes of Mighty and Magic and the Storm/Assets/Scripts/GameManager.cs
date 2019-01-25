@@ -52,7 +52,13 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+		//退出游戏
+		if (Input.GetKeyDown(KeyCode.Q))
+		{
+			Application.Quit();
+		}
+
+		if (Input.GetKeyDown(KeyCode.F))
         {
             Hero attacker = testHeroes[0];
             Hero defender = testHeroes[1];
