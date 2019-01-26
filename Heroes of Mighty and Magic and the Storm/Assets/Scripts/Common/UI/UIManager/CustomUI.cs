@@ -15,7 +15,8 @@ public class CustomUI : MonoBehaviour
 		ui.SetActive(false);
 	}
 
-	public virtual void Enter()
+	//进入
+	public virtual void Enter(bool _quitCurrentUI = false)
 	{
 		ui.SetActive(true);
 
@@ -24,6 +25,7 @@ public class CustomUI : MonoBehaviour
 			UIManager.text_bottomInfo = text_bottomInfo;
 	}
 
+	//退出
 	public virtual void Quit()
 	{
 		ui.SetActive(false);

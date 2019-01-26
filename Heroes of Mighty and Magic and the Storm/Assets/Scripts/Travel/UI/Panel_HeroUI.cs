@@ -71,9 +71,9 @@ public class Panel_HeroUI : CustomUI
         panel_mana.text_name.SetText(_hero.mana + "/" + _hero.mana_max);
     }
 
-    public override void Enter()
+    public override void Enter(bool _quitCurrentUI = false)
     {
-		base.Enter();
+		base.Enter(_quitCurrentUI);
 
         Set(TravelManager.instance.currentHero);
     }

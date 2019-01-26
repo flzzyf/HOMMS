@@ -9,6 +9,31 @@ public class UIManager : Singleton<UIManager>
 
 	//每个界面的底部信息文本
 	public static Text text_bottomInfo;
+
+	//当前界面
+	public static CustomUI currentUI;
+
+	//进入UI
+	public void Enter(string _name, bool _quitCurrentUI = false)
+	{
+		//退出当前UI
+		if (_quitCurrentUI && currentUI != null)
+		{
+			Quit();
+		}
+
+		currentUI = uis.GetUI(_name);
+
+		currentUI.Enter(_quitCurrentUI);
+	}
+
+	//退出当前UI
+	public void Quit()
+	{
+		currentUI.Quit();
+
+		currentUI = null;
+	}
 }
 
 [System.Serializable]

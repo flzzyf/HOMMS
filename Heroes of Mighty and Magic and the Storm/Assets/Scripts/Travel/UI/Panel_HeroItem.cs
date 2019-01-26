@@ -35,8 +35,8 @@ public class Panel_HeroItem : MonoBehaviour, IPointerClickHandler
         else
         {
 			//进入英雄UI
-			UIManager.instance.uis.GetUI("hero").Enter();
-        }
+			UIManager.instance.Enter("hero");
+		}
     }
 
     public void Highlight(bool _highlight)
