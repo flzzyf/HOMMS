@@ -39,6 +39,9 @@ public class Unit : NodeObject, MovableNode
 	public int facing { get { return facingRight ? 1 : -1; } }
 	public int sideFacing { get { return side == 0 ? 1 : -1; } }
 
+	//士气和运气
+	public int morale, luck;
+
 	public void Init()
     {
         if (type != null)

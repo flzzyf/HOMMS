@@ -15,6 +15,8 @@ public class Panel_UnitInfo : CustomUI
 
     public Image[] image_behaviors;
 
+	public Panel_MoraleAndLuck panel_moraleLuck;
+
     //更新并显示UI
     public void Set(Unit _unit)
     {
@@ -35,6 +37,9 @@ public class Panel_UnitInfo : CustomUI
         text_damage.text = _unit.damage.x + "-" + _unit.damage.y;
         text_hpMax.text = _unit.type.hp + "";
         text_hp.text = _unit.currentHP + "";
+
+		//设置士气运气
+		panel_moraleLuck.Set(_unit);
 
 		//设置单位图面板
 		panel_unit.Set(_unit.type, _unit.num);

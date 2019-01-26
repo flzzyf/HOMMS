@@ -234,6 +234,11 @@ public class BattleManager : Singleton<BattleManager>
             Unit unit = CreateUnit(_hero.pocketUnits[i].type, new Vector2Int(x, unitPosIndex),
                        _hero.pocketUnits[i].num, _side);
 
+			//设置单位士气和运气
+			unit.morale = _hero.morale;
+			unit.luck = _hero.luck;
+
+			//链接单位和节点
             NodeItem nodeItem = map.GetNodeItem(new Vector2Int(x, unitPosIndex));
             map.LinkNodeWithUnit(unit, nodeItem);
 

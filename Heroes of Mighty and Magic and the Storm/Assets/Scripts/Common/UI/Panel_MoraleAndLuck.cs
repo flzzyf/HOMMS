@@ -47,4 +47,10 @@ public class Panel_MoraleAndLuck : MonoBehaviour
 		SetMorale(_hero.morale);
 		SetLuck(_hero.luck);
 	}
+	//输入单位
+	public void Set(Unit _unit)
+	{
+		SetMorale(_unit.morale);
+		SetLuck(_unit.luck);
+	}
 }
