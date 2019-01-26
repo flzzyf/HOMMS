@@ -13,8 +13,11 @@ public class Panel_HeroInfo : Singleton<Panel_HeroInfo>
 
     //英雄属性：攻防、法力、知识
     public Text[] text_stats;
-
+	//法力值
     public Text text_mana;
+
+	//士气运气面板
+	public Panel_MoraleAndLuck panel_moraleLuck;
 
     //更新英雄信息面板
     public void Set(Hero _hero)
@@ -42,5 +45,8 @@ public class Panel_HeroInfo : Singleton<Panel_HeroInfo>
 
         //魔法值
         text_mana.text = _hero.mana + "";
+
+		//设置士气运气
+		panel_moraleLuck.Set(_hero);
     }
 }

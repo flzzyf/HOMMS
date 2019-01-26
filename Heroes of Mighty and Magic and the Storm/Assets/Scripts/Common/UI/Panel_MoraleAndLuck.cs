@@ -32,7 +32,7 @@ public class Panel_MoraleAndLuck : MonoBehaviour
         currentMorale = morales[_level];
         currentMorale.SetActive(true);
     }
-    //	设置运气
+    //	设置运气，0-3
     public void SetLuck(int _level)
     {
         if (currentLuck != null)
@@ -41,5 +41,10 @@ public class Panel_MoraleAndLuck : MonoBehaviour
         currentLuck = lucks[_level];
         currentLuck.SetActive(true);
     }
-
+	//输入英雄
+	public void Set(Hero _hero)
+	{
+		SetMorale(_hero.morale);
+		SetLuck(_hero.luck);
+	}
 }

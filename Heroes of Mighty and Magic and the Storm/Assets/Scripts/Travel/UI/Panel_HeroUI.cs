@@ -40,8 +40,7 @@ public class Panel_HeroUI : CustomUI
         heroName.text = _hero.heroType.heroName;
 
         //士气和运气
-        moraleAndLuck.SetMorale(_hero.morale);
-        moraleAndLuck.SetLuck(_hero.luck);
+        moraleAndLuck.Set(_hero);
 
         //更新单位信息
         for (int i = 0; i < 7; i++)
