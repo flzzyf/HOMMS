@@ -93,11 +93,17 @@ public class TravelManager : Singleton<TravelManager>
     {
         GameManager.currentPlayer = PlayerManager.instance.players[_index];
 
-        HeroItemMgr.instance.UpdateItems(0);
-        HeroItemMgr.instance.heroItems[0].Highlight(true);
+		//更新英雄和城镇项，选中第一个
+		SliderItemManager.instance.sliderItem_hero.items[0].Highlight(true);
+		SliderItemManager.instance.sliderItem_hero.UpdateItems(0);
+		if(GameManager.currentPlayer.towns.Count > 0)
+		{
+			SliderItemManager.instance.sliderItem_town.items[0].Highlight(true);
+			SliderItemManager.instance.sliderItem_town.UpdateItems(0);
+		}
 
-        //高亮玩家的第一个英雄
-        HighlightHero(GameManager.currentPlayer.heroes[0]);
+		//高亮玩家的第一个英雄
+		HighlightHero(GameManager.currentPlayer.heroes[0]);
     }
 
     public void BattleBegin(Hero _attacker, Hero _defender)

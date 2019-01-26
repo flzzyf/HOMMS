@@ -18,6 +18,7 @@ public class Panel_TownItem : MonoBehaviour, IPointerClickHandler
 
 	public void Set(Town _town)
 	{
+		image_bg.enabled = true;
 		image_bg.sprite = _town.race.sprite_bg;
 	}
 
@@ -35,29 +36,32 @@ public class Panel_TownItem : MonoBehaviour, IPointerClickHandler
 		//如果高亮的是这个，则进入城镇界面。否则取消高亮项，并高亮这个
 		if(highlightedTownItem == this)
 		{
+			//UIManager.instance.Get("town").GetComponent<Panel_Town>().Set()
 			UIManager.instance.Enter("town", true);
 		}
 		else
 		{
-			highlightedTownItem.Dishighlight();
+			highlightedTownItem.Highlight(false);
 			Highlight();
 		}
 	}
 
 	//高亮
-	public void Highlight()
+	public void Highlight(bool _highlight = true)
 	{
-		highlightedTownItem = this;
+		if(_highlight)
+			highlightedTownItem = this;
+		else
+			highlightedTownItem = null;
 
 		//显示高亮边框
-		border_highlight.SetActive(true);
+		border_highlight.SetActive(_highlight);
 	}
-	//取消高亮
-	public void Dishighlight()
+	//清空
+	public void Clear()
 	{
-		highlightedTownItem = null;
+		image_bg.enabled = false;
 
-		//隐藏高亮边框
-		border_highlight.SetActive(false);
+		icon_finishBuilding.SetActive(false);
 	}
 }

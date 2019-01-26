@@ -34,6 +34,12 @@ public class UIManager : Singleton<UIManager>
 
 		currentUI = null;
 	}
+
+	//获取UI
+	public CustomUI Get(string _name)
+	{
+		return uis.GetUI(_name);
+	}
 }
 
 [System.Serializable]

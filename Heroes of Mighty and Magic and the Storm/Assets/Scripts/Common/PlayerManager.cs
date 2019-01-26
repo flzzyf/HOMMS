@@ -24,7 +24,9 @@ public class Player
 
     public Vector2Int startingPoint;
 
+	//玩家所有的英雄和城镇
     public List<Hero> heroes;
+    public List<Town> towns;
 
-    public int gold;
+	public int gold;
 }

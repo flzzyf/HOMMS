@@ -29,7 +29,7 @@ public class Panel_HeroItem : MonoBehaviour, IPointerClickHandler
             Highlight(true);
 
             //高亮英雄
-            int id = HeroItemMgr.instance.currentPages + index;
+            int id = SliderItemManager.instance.sliderItem_hero.currentPages + index;
             TravelManager.instance.HighlightHero(GameManager.currentPlayer.heroes[id]);
         }
         else
@@ -50,9 +50,7 @@ public class Panel_HeroItem : MonoBehaviour, IPointerClickHandler
     //更新图像
     public void Set(Hero _hero)
     {
-        if (image_portrait.enabled)
-            image_portrait.enabled = true;
-
+        image_portrait.enabled = true;
         image_portrait.sprite = _hero.heroType.icon;
 
         //更新移动力、魔法
