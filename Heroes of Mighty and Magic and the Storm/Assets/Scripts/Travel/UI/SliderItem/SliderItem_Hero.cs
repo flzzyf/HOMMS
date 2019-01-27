@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class SliderItem_Hero : SliderItem<Panel_HeroItem>
 {
+	void Start()
+	{
+		//初始化序号
+		for (int i = 0; i < items.Length; i++)
+		{
+			items[i].index = i;
+		}
+	}
+
 	public override void UpdateItems(int _page)
 	{
 		base.UpdateItems(_page);

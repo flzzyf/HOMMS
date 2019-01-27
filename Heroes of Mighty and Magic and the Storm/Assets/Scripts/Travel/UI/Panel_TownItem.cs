@@ -36,7 +36,8 @@ public class Panel_TownItem : MonoBehaviour, IPointerClickHandler
 		//如果高亮的是这个，则进入城镇界面。否则取消高亮项，并高亮这个
 		if(highlightedTownItem == this)
 		{
-			//UIManager.instance.Get("town").GetComponent<Panel_Town>().Set()
+            int id = SliderItemManager.instance.sliderItem_town.currentPages + index;
+			UIManager.instance.Get("town").GetComponent<Panel_Town>().Set(GameManager.currentPlayer.towns[id]);
 			UIManager.instance.Enter("town", true);
 		}
 		else

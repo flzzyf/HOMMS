@@ -40,11 +40,11 @@ public class TravelManager : Singleton<TravelManager>
 		parent_travelObject.SetActive(_enter);
 
 		//进入旅行模式界面
-		UIManager.instance.uis.GetUI("travel").Enter();
-    }
+		UIManager.instance.Enter("travel");
+	}
 
-    //玩家初始化，生成城镇和英雄
-    void InitPlayer(Player _player)
+	//玩家初始化，生成城镇和英雄
+	void InitPlayer(Player _player)
     {
         GameObject town = CreateObjectOnNode(prefab_town, _player.startingPoint);
         Vector2Int offset = town.GetComponent<Town>().interactPoint;

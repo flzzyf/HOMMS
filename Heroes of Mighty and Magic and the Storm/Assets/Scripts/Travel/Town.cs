@@ -10,6 +10,8 @@ public class Town : NodeObject
 
 	//城镇内外的英雄
 	public Hero hero_inside, hero_outside;
+	//城内驻军（只有城内没英雄时才有
+	public PocketUnit[] townUnits;
 
     void OnDrawGizmos()
     {

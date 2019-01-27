@@ -21,7 +21,6 @@ public class UIManager : Singleton<UIManager>
 		{
 			Quit();
 		}
-
 		currentUI = uis.GetUI(_name);
 
 		currentUI.Enter(_quitCurrentUI);

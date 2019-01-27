@@ -11,8 +11,6 @@ public class Panel_HeroUI : CustomUI
 
     public Panel_MoraleAndLuck moraleAndLuck;
 
-    public Panel_UnitPortrait[] pocketUnits;
-
     //英雄属性：攻防、法力、知识
     public Text[] text_stats;
 
@@ -21,14 +19,7 @@ public class Panel_HeroUI : CustomUI
 
     public HeroUI_Skill[] skills;
 
-    void Start()
-    {
-        //设置单位UI的序号
-        for (int i = 0; i < pocketUnits.Length; i++)
-        {
-            pocketUnits[i].index = i;
-        }
-    }
+	public Panel_HeroUnits panel_HeroUnits;
 
     //设置界面英雄
     public void Set(Hero _hero)
@@ -41,15 +32,6 @@ public class Panel_HeroUI : CustomUI
 
         //士气和运气
         moraleAndLuck.Set(_hero);
-
-        //更新单位信息
-        for (int i = 0; i < 7; i++)
-        {
-            if(_hero.pocketUnits[i] != null && _hero.pocketUnits[i].type != null)
-                pocketUnits[i].Init(_hero.pocketUnits[i]);
-            else
-                pocketUnits[i].Clear();
-        }
 
         //设置英雄属性
         text_stats[0].text = _hero.att + "";
@@ -69,6 +51,9 @@ public class Panel_HeroUI : CustomUI
 
         //经验值和魔法
         panel_mana.text_name.SetText(_hero.mana + "/" + _hero.mana_max);
+
+		//设置英雄单位栏
+		panel_HeroUnits.Set(_hero.pocketUnits);
     }
 
     public override void Enter(bool _quitCurrentUI = false)
@@ -96,14 +81,14 @@ public class Panel_HeroUI : CustomUI
 		if (Panel_UnitPortrait.selectedPanel == null)
 			return;
 
-		for (int i = 0; i < pocketUnits.Length && Panel_UnitPortrait.selectedPanel.unitNum > 1; i++)
+		for (int i = 0; i < 7 && Panel_UnitPortrait.selectedPanel.unitNum > 1; i++)
 		{
 			//单位栏为空则，选中的单位数量-1，在这一栏位创建1个副本
-			if (pocketUnits[i].unitType == null)
+			if (panel_HeroUnits.panel_UnitPortraits[i].unitType == null)
 			{
 				Panel_UnitPortrait.selectedPanel.unitNum--;
 
-				pocketUnits[i].Set(Panel_UnitPortrait.selectedPanel.unitType, 1);
+				panel_HeroUnits.panel_UnitPortraits[i].Set(Panel_UnitPortrait.selectedPanel.unitType, 1);
 
 				//在真正英雄单位栏创建单位
 				PocketUnit unit = new PocketUnit(Panel_UnitPortrait.selectedPanel.unitType, 1);

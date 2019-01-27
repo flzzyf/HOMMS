@@ -16,6 +16,8 @@ public class Panel_HeroPortrait : MonoBehaviour
 	//设置英雄
 	public void Set(Hero _hero)
 	{
+		gameObject.SetActive(true);
+
 		//设置头像和背景图
 		image_portrait.sprite = _hero.heroType.icon;
 		image_bg.sprite = _hero.heroType.race.sprite_bg;
@@ -31,5 +33,10 @@ public class Panel_HeroPortrait : MonoBehaviour
 
 			currentRank = rank;
 		}
+	}
+
+	public void Clear()
+	{
+		gameObject.SetActive(false);
 	}
 }
