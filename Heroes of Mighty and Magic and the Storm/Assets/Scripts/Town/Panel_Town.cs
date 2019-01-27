@@ -50,6 +50,8 @@ public class Panel_Town : CustomUI
 		int index = SliderItemManager.instance.sliderItem_town.currentPages + Panel_TownItem.highlightedTownItem.index;
 		sliderItem_Town.currentPages = index;
 		sliderItem_Town.UpdateItems(index);
+		//取消高亮之前高亮项，然后高亮第一个
+		Panel_TownItem.highlightedTownItem.Highlight(false);
 		sliderItem_Town.items[0].Highlight(true);
 
 		//设置资源

@@ -33,17 +33,17 @@ public class Panel_TownItem : MonoBehaviour, IPointerClickHandler
 			return;
 		}
 
-		//如果高亮的是这个，则进入城镇界面。否则取消高亮项，并高亮这个
+		//如果高亮的是这个，则进入城镇界面
 		if(highlightedTownItem == this)
 		{
-            int id = SliderItemManager.instance.sliderItem_town.currentPages + index;
+			int id = SliderItemManager.instance.sliderItem_town.currentPages + index;
 			UIManager.instance.Get("town").GetComponent<Panel_Town>().Set(GameManager.currentPlayer.towns[id]);
 			UIManager.instance.Enter("town", true);
-			//取消高亮
-			Highlight(false);
+			
 		}
 		else
 		{
+			//否则取消高亮项，并高亮这个
 			highlightedTownItem.Highlight(false);
 			Highlight();
 		}
@@ -53,12 +53,15 @@ public class Panel_TownItem : MonoBehaviour, IPointerClickHandler
 	public void Highlight(bool _highlight = true)
 	{
 		if(_highlight)
+		{
 			highlightedTownItem = this;
+		}
 		else
 			highlightedTownItem = null;
 
 		//显示高亮边框
 		border_highlight.SetActive(_highlight);
+
 	}
 	//清空
 	public void Clear()
