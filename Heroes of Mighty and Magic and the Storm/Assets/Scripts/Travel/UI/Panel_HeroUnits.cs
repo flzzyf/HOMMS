@@ -26,4 +26,12 @@ public class Panel_HeroUnits : MonoBehaviour
 				panel_UnitPortraits[i].Clear();
 		}
 	}
+
+	public void Clear()
+	{
+		for (int i = 0; i < 7; i++)
+		{
+			panel_UnitPortraits[i].Clear();
+		}
+	}
 }

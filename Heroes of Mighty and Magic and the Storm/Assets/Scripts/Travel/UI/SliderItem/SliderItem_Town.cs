@@ -25,19 +25,19 @@ public class SliderItem_Town : SliderItem<Panel_TownItem>
 		else
 			button_pageUp.interactable = false;
 
-		if (currentPages + 5 < num)
+		if (currentPages + items.Length < num)
 			button_pageDown.interactable = true;
 		else
 			button_pageDown.interactable = false;
 
 		//显示按钮并更新图像
-		int numberToShow = Mathf.Min(num - currentPages, 5);
+		int numberToShow = Mathf.Min(num - currentPages, items.Length);
 		for (int i = 0; i < numberToShow; i++)
 		{
 			items[i].enabled = true;
 			items[i].Set(GameManager.currentPlayer.towns[currentPages + i]);
 		}
-		for (int i = numberToShow; i < 5; i++)
+		for (int i = numberToShow; i < items.Length; i++)
 		{
 			items[i].Clear();
 			items[i].enabled = false;

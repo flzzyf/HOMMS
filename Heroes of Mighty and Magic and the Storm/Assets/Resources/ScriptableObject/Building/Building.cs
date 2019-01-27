@@ -8,7 +8,7 @@ public class Building : ScriptableObject
 	//图标
 	public Sprite icon;
 	//费用
-	public Cost cost;
+	public HOMMResource cost;
 	//需求的前置建筑
 	public Building[] requirement;
 	//建筑类型
@@ -31,7 +31,7 @@ public class Building : ScriptableObject
 public enum BuildingType { Null, Unit, Magic, Build, Castle, Blacksmith, Tavern}
 
 [System.Serializable]
-public struct Cost
+public struct HOMMResource
 {
 	public int gold, wood, ore, mercury, sulfur, crystal, gem;
 }

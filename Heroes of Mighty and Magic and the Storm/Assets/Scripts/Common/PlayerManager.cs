@@ -28,5 +28,6 @@ public class Player
     public List<Hero> heroes;
     public List<Town> towns;
 
-	public int gold;
+	//资源
+	public HOMMResource resources;
 }

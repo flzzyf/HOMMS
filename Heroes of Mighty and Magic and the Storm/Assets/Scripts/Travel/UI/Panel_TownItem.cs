@@ -39,6 +39,8 @@ public class Panel_TownItem : MonoBehaviour, IPointerClickHandler
             int id = SliderItemManager.instance.sliderItem_town.currentPages + index;
 			UIManager.instance.Get("town").GetComponent<Panel_Town>().Set(GameManager.currentPlayer.towns[id]);
 			UIManager.instance.Enter("town", true);
+			//取消高亮
+			Highlight(false);
 		}
 		else
 		{

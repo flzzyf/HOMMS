@@ -22,6 +22,8 @@ public class TravelManager : Singleton<TravelManager>
     public Camera cam;
     public GameObject parent_travelObject;
 
+	public Panel_Resources panel_Resources;
+
     public void Init()
     {
         map.GenerateMap();
@@ -101,6 +103,9 @@ public class TravelManager : Singleton<TravelManager>
 			SliderItemManager.instance.sliderItem_town.items[0].Highlight(true);
 			SliderItemManager.instance.sliderItem_town.UpdateItems(0);
 		}
+
+		//设置资源
+		panel_Resources.Set(PlayerManager.instance.players[_index].resources);
 
 		//高亮玩家的第一个英雄
 		HighlightHero(GameManager.currentPlayer.heroes[0]);
