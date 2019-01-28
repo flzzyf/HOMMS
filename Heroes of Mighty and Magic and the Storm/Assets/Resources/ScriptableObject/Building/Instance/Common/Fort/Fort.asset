@@ -23,4 +23,4 @@ MonoBehaviour:
     gem: 0
   requirement:
   - {fileID: 11400000, guid: e5931cf103b2f0f4a99b5a296b9de066, type: 2}
-  type: 0
+  type: 4

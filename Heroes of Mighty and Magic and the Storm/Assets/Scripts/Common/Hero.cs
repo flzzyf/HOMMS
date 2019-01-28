@@ -90,16 +90,3 @@ public class Hero : NodeObject
 		animator.SetFloat("isMoving", _status);
 	}
 }
-
-[System.Serializable]
-public class PocketUnit
-{
-    public UnitType type;
-    public int num;
-
-    public PocketUnit(UnitType _type, int _num)
-    {
-        type = _type;
-        num = _num;
-    }
-}

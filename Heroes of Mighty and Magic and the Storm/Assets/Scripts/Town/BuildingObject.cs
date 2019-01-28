@@ -28,11 +28,6 @@ public class BuildingObject : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		//HaloStart();
 	}
 
-	void Start()
-	{
-		HaloStop();
-	}
-
 	//光晕开始
 	public void HaloStart()
 	{
@@ -64,6 +59,15 @@ public class BuildingObject : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	//鼠标点击
 	public void OnPointerClick(PointerEventData eventData)
 	{
-		print(building.name);
+		if(building.type == BuildingType.Unit)
+		{
+			//获取城内单位组，英雄或者守城单位
+			PocketUnit[] units = Panel_Town.currentTown.hero_inside != null ? Panel_Town.currentTown.hero_inside.pocketUnits : Panel_Town.currentTown.townUnits;
+			if (units.AddUnit(building.unitType, 10))
+			{
+				print("加入成功");
+				UIManager.instance.Get("town").GetComponent<Panel_Town>().panel_HeroUnits_Inside.Set(units);
+			}
+		}
 	}
 }

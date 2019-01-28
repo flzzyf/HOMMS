@@ -23,3 +23,4 @@ MonoBehaviour:
     gem: 0
   requirement: []
   type: 1
+  unitType: {fileID: 11400000, guid: 551dbe36e82f55a49b7109981787f429, type: 2}

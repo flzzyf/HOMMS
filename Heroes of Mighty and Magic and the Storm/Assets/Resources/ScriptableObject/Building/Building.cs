@@ -14,6 +14,9 @@ public class Building : ScriptableObject
 	//建筑类型
 	public BuildingType type;
 
+	//可招募单位
+	public UnitType unitType;
+
 	//获取建筑
 	public static Building Get(string _name)
 	{

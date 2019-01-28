@@ -14,9 +14,13 @@ public class Panel_Town : CustomUI
 
 	public Panel_Resources panel_Resources;
 
+	public static Town currentTown;
+
 	//设置城镇
 	public void Set(Town _town)
 	{
+		currentTown = _town;
+
 		//如果城内有英雄，或者有驻军，设置单位栏和头像
 		if (_town.hero_inside != null)
 		{
