@@ -19,12 +19,10 @@ public class TravelManager : Singleton<TravelManager>
 
     public MapManager_Travel map;
 
-    public Camera cam;
-    public GameObject parent_travelObject;
+	public SliderItemManager_Hero sliderItemManager_hero;
+	public SliderItemManager_Town sliderItemManager_town;
 
-	public Panel_Resources panel_Resources;
-
-    public void Init()
+	public void Init()
     {
         map.GenerateMap();
 
@@ -34,16 +32,6 @@ public class TravelManager : Singleton<TravelManager>
             InitPlayer(PlayerManager.instance.players[i]);
         }
     }
-
-    public void EnterTravelMode(bool _enter = true)
-    {
-		cam.enabled = _enter;
-
-		parent_travelObject.SetActive(_enter);
-
-		//进入旅行模式界面
-		UIManager.instance.Enter("travel");
-	}
 
 	//玩家初始化，生成城镇和英雄
 	void InitPlayer(Player _player)
@@ -93,29 +81,28 @@ public class TravelManager : Singleton<TravelManager>
     //回合开始
     public void TurnStart(int _index)
     {
-        GameManager.currentPlayer = PlayerManager.instance.players[_index];
+		GameManager.actionPlayer = _index;
 
 		//更新英雄和城镇项，选中第一个
-		SliderItemManager.instance.sliderItem_hero.items[0].Highlight(true);
-		SliderItemManager.instance.sliderItem_hero.UpdateItems(0);
+		if (GameManager.currentPlayer.heroes.Count > 0)
+		{
+			sliderItemManager_hero.Highlight(0);
+			sliderItemManager_hero.MoveToPage(0);
+		}
 		if(GameManager.currentPlayer.towns.Count > 0)
 		{
-			SliderItemManager.instance.sliderItem_town.items[0].Highlight();
-			SliderItemManager.instance.sliderItem_town.UpdateItems(0);
+			sliderItemManager_town.Highlight(0);
+			sliderItemManager_town.MoveToPage(0);
 		}
 
-		//设置资源
-		panel_Resources.Set(PlayerManager.instance.players[_index].resources);
-
 		//高亮玩家的第一个英雄
-		//HighlightHero(GameManager.currentPlayer.heroes[0]);
+		HighlightHero(GameManager.currentPlayer.heroes[0]);
     }
 
     public void BattleBegin(Hero _attacker, Hero _defender)
     {
-        EnterTravelMode(false);
+		UIManager.instance.Enter("battle");
 
-        BattleManager.instance.EnterBattleMode();
         BattleManager.instance.BattleStart(_attacker, _defender);
     }
 }

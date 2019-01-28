@@ -10,7 +10,7 @@ public class Panel_Town : CustomUI
 	public Panel_HeroPortrait panel_HeroPortrait_Inside;
 	public Panel_HeroPortrait panel_HeroPortrait_Outside;
 
-	public SliderItem_Town sliderItem_Town;
+	public SliderItemManager_Town sliderItemManager_Town;
 
 	public Panel_Resources panel_Resources;
 
@@ -56,12 +56,12 @@ public class Panel_Town : CustomUI
 		base.Enter(_quitCurrentUI);
 
 		//进入城镇时，设置显示的城镇项页数和旅行界面选择的页数一样
-		int index = SliderItemManager.instance.sliderItem_town.currentPages + Panel_TownItem.highlightedTownItem.index;
-		sliderItem_Town.currentPages = index;
-		sliderItem_Town.UpdateItems(index);
+		int index = SliderItemManager_Town.highlightedItemIndex;
+		sliderItemManager_Town.currentPages = index;
+		sliderItemManager_Town.MoveToPage(index);
 		//取消高亮之前高亮项，然后高亮第一个
-		Panel_TownItem.highlightedTownItem.Highlight(false);
-		sliderItem_Town.items[0].Highlight(true);
+		//Panel_TownItem.highlightedTownItem.Highlight(false);
+		sliderItemManager_Town.items[0].Highlight(true);
 
 		//设置资源
 		panel_Resources.Set(GameManager.currentPlayer.resources);

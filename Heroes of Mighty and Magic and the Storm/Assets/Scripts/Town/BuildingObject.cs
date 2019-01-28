@@ -73,6 +73,7 @@ public class BuildingObject : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		//点击市政厅，建造
 		else if (building.type == BuildingType.Build)
 		{
+			//进入建造界面
 			UIManager.instance.Get("build").Enter();
 		}
 	}

@@ -12,8 +12,12 @@ public class GameManager : Singleton<GameManager>
 
     public Hero[] testHeroes;
 
-    public int player = 2;
-    public static Player currentPlayer;
+	//本地玩家序号
+    public static int player = 2;
+    public static Player currentPlayer { get { return PlayerManager.instance.players[player]; } }
+
+	//当前回合行动的玩家
+	public static int actionPlayer;
 
     public GameScene scene;
 
@@ -46,8 +50,10 @@ public class GameManager : Singleton<GameManager>
         SkillManager.AddSkill(testHeroes[0], "Magic_Earth", 2);
         SkillManager.AddSkill(testHeroes[0], "Magic_Water", 2);
 
-        TravelManager.instance.EnterTravelMode();
-        TravelManager.instance.TurnStart(GameManager.instance.player);
+		//进入旅行模式界面
+		UIManager.instance.Enter("travel");
+		//回合开始
+		TravelManager.instance.TurnStart(player);
     }
 
     void Update()

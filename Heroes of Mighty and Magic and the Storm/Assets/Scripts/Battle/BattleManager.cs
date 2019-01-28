@@ -41,8 +41,6 @@ public class BattleManager : Singleton<BattleManager>
 
     public GameObject heroUnitPrefab;
 
-    public GameObject battleObjectParent;
-
     public MapManager_Battle map;
 
     public BattleNodeBackground[] battleNodeBG;
@@ -99,14 +97,15 @@ public class BattleManager : Singleton<BattleManager>
 
     void Update()
     {
+		//判断正在战斗中
         if (Input.GetKeyDown(KeyCode.W))
         {
-            if (GameManager.gameState == GameState.playerControl && players[currentActionUnit.side] == GameManager.instance.player)
+            if (GameManager.gameState == GameState.playerControl && players[currentActionUnit.side] == GameManager.player)
                 Wait();
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            if (GameManager.gameState == GameState.playerControl && players[currentActionUnit.side] == GameManager.instance.player)
+            if (GameManager.gameState == GameState.playerControl && players[currentActionUnit.side] == GameManager.player)
                 Defend();
         }
     }
@@ -135,19 +134,8 @@ public class BattleManager : Singleton<BattleManager>
 
     }
 
-    public void EnterBattleMode(bool _enter = true)
-    {
-        battleObjectParent.SetActive(_enter);
-
-		cam.enabled = _enter;
-
-        map.parent.gameObject.SetActive(_enter);
-    }
-
     public void BattleStart(Hero _attacker, Hero _defender)
     {
-        EnterBattleMode();
-
         heroes[0] = _attacker;
         heroes[1] = _defender;
 

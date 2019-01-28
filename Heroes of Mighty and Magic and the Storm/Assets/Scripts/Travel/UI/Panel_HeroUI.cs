@@ -56,19 +56,9 @@ public class Panel_HeroUI : CustomUI
 		panel_HeroUnits.Set(_hero.pocketUnits);
     }
 
-    public override void Enter(bool _quitCurrentUI = false)
-    {
-		base.Enter(_quitCurrentUI);
-
-        Set(TravelManager.instance.currentHero);
-    }
-
     public override void Quit()
     {
 		base.Quit();
-
-        //退出英雄面板时再次刷新底部英雄信息栏
-        Panel_HeroInfo.instance.Set(TravelManager.instance.currentHero);
 
         //重置选中单位项
         if(Panel_UnitPortrait.selectedPanel != null)

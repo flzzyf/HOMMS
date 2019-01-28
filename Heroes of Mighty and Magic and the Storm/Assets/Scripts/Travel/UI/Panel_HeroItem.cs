@@ -11,40 +11,22 @@ public class Panel_HeroItem : MonoBehaviour, IPointerClickHandler
     public Slider slider_movementRate;
     public Slider slider_mana;
 
-    public static Panel_HeroItem highlightedHeroItem;
-
     [HideInInspector]
     public int index;
 
-    //鼠标点击
-    public void OnPointerClick(PointerEventData data)
+	//被点击事件
+	public delegate void ItemClick(int _index);
+	public ItemClick onClick;
+
+	//鼠标点击
+	public void OnPointerClick(PointerEventData data)
     {
-        //如果没高亮就高亮，已经高亮则打开英雄UI
-        if (highlightedHeroItem != this)
-        {
-            //解除之前高亮的英雄UI的高亮
-            if (highlightedHeroItem != null)
-                highlightedHeroItem.Highlight(false);
-            //高亮这个
-            Highlight(true);
+		onClick.Invoke(index);
+	}
 
-            //高亮英雄
-            int id = SliderItemManager.instance.sliderItem_hero.currentPages + index;
-            TravelManager.instance.HighlightHero(GameManager.currentPlayer.heroes[id]);
-        }
-        else
-        {
-			//进入英雄UI
-			UIManager.instance.Enter("hero");
-		}
-    }
-
-    public void Highlight(bool _highlight)
+	public void Highlight(bool _highlight)
     {
         border_highlight.SetActive(_highlight);
-
-        if (_highlight)
-            highlightedHeroItem = this;
     }
 
     //更新图像

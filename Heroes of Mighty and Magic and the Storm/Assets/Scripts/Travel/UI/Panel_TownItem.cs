@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -13,8 +14,9 @@ public class Panel_TownItem : MonoBehaviour, IPointerClickHandler
 	[HideInInspector]
 	public int index;
 
-	//当前高亮的项
-	public static Panel_TownItem highlightedTownItem;
+	//被点击事件
+	public delegate void ItemClick(int _index);
+	public ItemClick onClick;
 
 	public void Set(Town _town)
 	{
@@ -25,44 +27,16 @@ public class Panel_TownItem : MonoBehaviour, IPointerClickHandler
 	//鼠标点击
 	public void OnPointerClick(PointerEventData data)
 	{
-		//如果当前没有高亮项，则高亮这个，并结束
-		if(highlightedTownItem == null)
-		{
-			Highlight();
-
-			return;
-		}
-
-		//如果高亮的是这个，则进入城镇界面
-		if(highlightedTownItem == this)
-		{
-			int id = SliderItemManager.instance.sliderItem_town.currentPages + index;
-			UIManager.instance.Get("town").GetComponent<Panel_Town>().Set(GameManager.currentPlayer.towns[id]);
-			UIManager.instance.Enter("town", true);
-			
-		}
-		else
-		{
-			//否则取消高亮项，并高亮这个
-			highlightedTownItem.Highlight(false);
-			Highlight();
-		}
+		onClick.Invoke(index);
 	}
 
 	//高亮
 	public void Highlight(bool _highlight = true)
 	{
-		if(_highlight)
-		{
-			highlightedTownItem = this;
-		}
-		else
-			highlightedTownItem = null;
-
 		//显示高亮边框
 		border_highlight.SetActive(_highlight);
-
 	}
+
 	//清空
 	public void Clear()
 	{

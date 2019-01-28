@@ -4,14 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //旅行界面的英雄和城镇项管理器
-public class SliderItemManager : Singleton<SliderItemManager>
-{
-	public SliderItem_Hero sliderItem_hero;
-	public SliderItem_Town sliderItem_town;
-}
-
 [System.Serializable]
-public class SliderItem<T> : MonoBehaviour
+public class SliderItemManager<T> : MonoBehaviour
 {
 	public T[] items;
 	public Button button_pageUp;
@@ -20,23 +14,44 @@ public class SliderItem<T> : MonoBehaviour
 	[HideInInspector]
 	public int currentPages;
 
-	//更新按钮项
-	public virtual void UpdateItems(int _page)
-	{
+	//当前高亮项的序号
+	[HideInInspector]
+	public static int highlightedItemIndex = -1;
 
+	//翻到某页
+	public virtual void MoveToPage(int _page)
+	{
+		currentPages = _page;
+
+		int num;
+		if(GetType().Equals(typeof(SliderItemManager_Hero)))
+		{
+			num = GameManager.currentPlayer.heroes.Count;
+		}
+		else
+		{
+			num = GameManager.currentPlayer.towns.Count;
+		}
+
+		//显示/隐藏翻页按钮
+		if (currentPages > 0)
+			button_pageUp.interactable = true;
+		else
+			button_pageUp.interactable = false;
+
+		if (currentPages + items.Length < num)
+			button_pageDown.interactable = true;
+		else
+			button_pageDown.interactable = false;
 	}
 
 	//翻页
 	public void PageDown()
 	{
-		currentPages++;
-
-		UpdateItems(currentPages);
+		MoveToPage(currentPages + 1);
 	}
 	public void PageUp()
 	{
-		currentPages--;
-
-		UpdateItems(currentPages);
+		MoveToPage(currentPages - 1);
 	}
 }
