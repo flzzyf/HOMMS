@@ -49,6 +49,11 @@ public class Panel_Town : CustomUI
 			panel_HeroUnits_Outside.Clear();
 			panel_HeroPortrait_Outside.Clear();
 		}
+	}
+
+	public override void Enter(bool _quitCurrentUI = false)
+	{
+		base.Enter(_quitCurrentUI);
 
 		//进入城镇时，设置显示的城镇项页数和旅行界面选择的页数一样
 		int index = SliderItemManager.instance.sliderItem_town.currentPages + Panel_TownItem.highlightedTownItem.index;
