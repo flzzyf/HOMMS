@@ -59,15 +59,21 @@ public class BuildingObject : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	//鼠标点击
 	public void OnPointerClick(PointerEventData eventData)
 	{
+		//点击招兵建筑
 		if(building.type == BuildingType.Unit)
 		{
 			//获取城内单位组，英雄或者守城单位
-			PocketUnit[] units = Panel_Town.currentTown.hero_inside != null ? Panel_Town.currentTown.hero_inside.pocketUnits : Panel_Town.currentTown.townUnits;
+			PocketUnit[] units = Panel_Town.currentTown.inTownUnits;
 			if (units.AddUnit(building.unitType, 10))
 			{
 				print("加入成功");
 				UIManager.instance.Get("town").GetComponent<Panel_Town>().panel_HeroUnits_Inside.Set(units);
 			}
+		}
+		//点击市政厅，建造
+		else if (building.type == BuildingType.Build)
+		{
+
 		}
 	}
 }
