@@ -364,7 +364,7 @@ public class Unit : NodeObject, MovableNode
 		get
 		{
 			Vector2Int pos = nodeItem.pos;
-			pos.x += facing;
+			pos.x += sideFacing;
 			return BattleManager.instance.map.GetNodeItem(pos);
 		}
 	}

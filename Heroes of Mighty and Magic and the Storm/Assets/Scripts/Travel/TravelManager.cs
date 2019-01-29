@@ -101,7 +101,7 @@ public class TravelManager : Singleton<TravelManager>
 
     public void BattleBegin(Hero _attacker, Hero _defender)
     {
-		UIManager.instance.Enter("battle");
+		UIManager.instance.Enter("battle", true);
 
         BattleManager.instance.BattleStart(_attacker, _defender);
     }

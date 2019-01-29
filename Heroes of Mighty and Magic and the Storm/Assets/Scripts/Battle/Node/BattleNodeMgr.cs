@@ -328,7 +328,15 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 		{
 			path = new List<NodeItem>();
 			MapManager map = BattleManager.instance.map;
-			foreach (var item in AStarManager.FindPath(map, map.GetNode(unitNode.pos), map.GetNode(_unit.nodeAhead.pos), map.GetNode(_target.pos), !_unit.isWalker))
+
+			//如果目标点的前方点不存在，或者不在可到达节点，则目标点向后移动
+			Vector2Int ahead = new Vector2Int(_target.pos.x + _unit.sideFacing, _target.pos.y);
+			if (map.isNodeAvailable(ahead) || !NodeSelector.reachableNodes.Contains(map.GetNodeItem(ahead)))
+			{
+				_target = map.GetNodeItem(new Vector2Int(_target.pos.x - _unit.sideFacing, _target.pos.y));
+			}
+
+			foreach (var item in AStarManager.FindPath_TwoHex(map, map.GetNode(unitNode.pos), map.GetNode(_unit.nodeAhead.pos), map.GetNode(_target.pos), !_unit.isWalker))
 			{
 				path.Add(map.GetNodeItem(item.pos));
 			}

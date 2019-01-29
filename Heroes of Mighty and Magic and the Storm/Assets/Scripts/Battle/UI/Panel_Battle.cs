@@ -11,6 +11,8 @@ public class Panel_Battle : CustomUI
 		base.Enter(_quitCurrentUI);
 
 		battleObjectParent.SetActive(true);
+		//显示节点
+		ParentManager.instance.GetParent("MapManager_Battle").gameObject.SetActive(true);
 	}
 
 	public override void Quit()

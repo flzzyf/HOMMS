@@ -74,6 +74,7 @@ public class AStarManager
         return null;
     }
 
+	//生成路径
     static List<Node> GeneratePath(Node _startNode, Node _endNode)
     {
         Node curNode = _endNode;
@@ -153,6 +154,88 @@ public class AStarManager
 		}
 
 		return true;
+	}
+
+	//双格单位寻路
+	public static List<Node> FindPath_TwoHex(MapManager _map, Node _node1, Node _node2, Node _endNode, bool _ignoreObstacle = false)
+	{
+		map = _map;
+
+		Node startNode = _node1;
+
+		//单位前方点的偏移
+		int offset = _node2.pos.x - _node1.pos.x;
+
+		//开集和闭集
+		List<Node> openSet = new List<Node>();
+		List<Node> closeSet = new List<Node>();
+		//将开始节点介入开集
+		openSet.Add(startNode);
+		//开始搜索
+		while (openSet.Count > 0)
+		{
+			//当前所在节点
+			Node curNode = openSet[0];
+			//从开集中选出f和h最小的
+			for (int i = 0; i < openSet.Count; i++)
+			{
+				if (openSet[i].f <= curNode.f && openSet[i].h <= curNode.h)
+				{
+					curNode = openSet[i];
+				}
+			}
+			//把当前所在节点加入闭集
+			openSet.Remove(curNode);
+			closeSet.Add(curNode);
+			//如果就是终点
+			// if (curNode == endNode)
+			// {
+			//     //可通行
+			//     return GeneratePath(startNode, endNode);
+			// }
+			//判断周围节点
+			foreach (var item in map.GetNearbyNodes(curNode))
+			{
+				//如果是终点，结束
+				if (item == _endNode)
+				{
+					//可通行
+					item.parentNode = curNode;
+
+					return GeneratePath(startNode, _endNode);
+				}
+				//如果不可通行或在闭集中，则跳过
+				if ((!_ignoreObstacle && !(item.walkable || item == _node2)) || closeSet.Contains(item))
+				{
+					continue;
+				}
+
+
+				//判断偏移点是否可通行
+				Vector2Int pos = item.pos;
+				pos.x += offset;
+				//如果不存在、或者不可通行（而且不是单位前方点
+				if (!(map.isNodeAvailable(pos) && (map.GetNode(pos).walkable || map.GetNode(pos) == _node2)))
+				{
+					continue;
+				}
+
+				//判断新节点耗费
+				int newH = GetNodeDistance(curNode, item);
+				int newCost = curNode.g + newH;
+				//耗费更低或不在开集中，则加入开集
+				if (newCost < item.g || !openSet.Contains(item))
+				{
+					item.g = newCost;
+					item.h = newH;
+					item.parentNode = curNode;
+
+					openSet.Add(item);
+				}
+			}
+		}
+		//无法通行
+		return null;
 	}
 
 	public static List<Node> FindPath(MapManager _map, Node _node1, Node _node2, Node _endNode, bool _ignoreObstacle = false)
