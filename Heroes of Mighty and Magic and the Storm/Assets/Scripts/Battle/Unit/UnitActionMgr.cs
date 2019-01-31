@@ -163,7 +163,8 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
 
     void StartMoving()
     {
-        //GameManager.instance.gamePaused = true;
+		//GameManager.instance.gamePaused = true;
+
 
         //播放移动动画和音效
         UnitAnimMgr.instance.PlayAnimation(BattleManager.currentActionUnit, Anim.Walk);

@@ -293,7 +293,11 @@ public class Unit : NodeObject, MovableNode
 		if(type.sound_death != null)
 			SoundManager.instance.PlaySound(type.sound_death);
 
-        UnitAnimMgr.instance.PlayAnimation(this, Anim.Death);
+		//播放死亡动画，如果没有则隐藏
+		if (UnitAnimMgr.hasAnimation(this, Anim.Death))
+			UnitAnimMgr.instance.PlayAnimation(this, Anim.Death);
+		else
+			sprite.enabled = false;
 
         UI.SetActive(false);
 

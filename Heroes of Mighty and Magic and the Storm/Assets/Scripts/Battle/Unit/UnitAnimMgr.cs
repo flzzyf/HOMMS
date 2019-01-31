@@ -15,7 +15,12 @@ public class UnitAnimMgr : Singleton<UnitAnimMgr>
     {
         if (_anim == Anim.Walk)
         {
-            _unit.animator.SetBool("walking", _play);
+			//如果播放的是移动动画，设置动画速度
+			float animSpeed = Mathf.Clamp(_unit.speed / _unit.type.speed, .5f, 2f);
+			SetAnimSpeed(_unit, animSpeed);
+			print(animSpeed);
+
+			_unit.animator.SetBool("walking", _play);
 
             if (_play)
                 PlayAnimStart(_unit);
@@ -63,7 +68,7 @@ public class UnitAnimMgr : Singleton<UnitAnimMgr>
         PlayAnimEnd(_unit);
     }
 
-    bool hasAnimation(Unit _unit, Anim _anim)
+    public static bool hasAnimation(Unit _unit, Anim _anim)
     {
         AnimatorOverrideController ac = _unit.animator.runtimeAnimatorController as AnimatorOverrideController;
 #pragma warning disable 0618
@@ -78,6 +83,12 @@ public class UnitAnimMgr : Singleton<UnitAnimMgr>
 #pragma warning restore 0618
         return false;
     }
+
+	//设置动画速度
+	public static void SetAnimSpeed(Unit _unit, float _speed)
+	{
+		_unit.animator.SetFloat("animSpeed", _speed);
+	}
 
     void PlayAnimStart(Unit _unit)
     {
