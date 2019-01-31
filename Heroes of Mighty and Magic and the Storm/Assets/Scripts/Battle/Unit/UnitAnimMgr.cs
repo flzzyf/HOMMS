@@ -18,7 +18,7 @@ public class UnitAnimMgr : Singleton<UnitAnimMgr>
 			//如果播放的是移动动画，设置动画速度
 			float animSpeed = Mathf.Clamp(_unit.speed / _unit.type.speed, .5f, 2f);
 			SetAnimSpeed(_unit, animSpeed);
-			print(animSpeed);
+			//print(animSpeed);
 
 			_unit.animator.SetBool("walking", _play);
 
