@@ -149,8 +149,8 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
         }
 
         //判断玩家是当前行动者，可能有问题
-        if (BattleManager.players[BattleManager.currentActionUnit.side] != GameManager.player)
-            return;
+        //if (BattleManager.players[BattleManager.currentActionUnit.side] != GameManager.player)
+            //return;
 
         //不响应鼠标小范围移动
         if (Vector3.Distance(Input.mousePosition, lastMousePos) < mouseMoveSensitivity)
@@ -181,9 +181,9 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
             //计算箭头角度
             int arrowIndex = (int)angle / 60;
 
-            //攻击方向上的格子存在，且可到达便可发起攻击。（目前还没考虑多格单位）
-            targetNode = BattleManager.instance.map.
-                GetNearbyNodeItem(_node, arrowIndex);
+            //攻击方向上的格子存在，且可到达便可发起攻击。或者直接就是当前单位所在格子
+            targetNode = BattleManager.instance.map.GetNearbyNodeItem(_node, arrowIndex);
+
             if (targetNode != null &&
                (targetNode.GetComponent<NodeItem_Battle>().battleNodeType == BattleNodeType.reachable ||
                 targetNode.nodeObject == BattleManager.currentActionUnit))
@@ -195,12 +195,13 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
                 CursorManager.instance.ChangeCursor("sword");
                 CursorManager.instance.ChangeCursorAngle(arrowAngleFixed);
 
-                if (!targetNode.nodeObject == BattleManager.currentActionUnit)
+				//攻击方向上的节点不是当前行动单位，否则直接攻击无需寻路 
+                if (targetNode.nodeObject != BattleManager.currentActionUnit)
                 {
                     //是近战单位则显示路径
                     if (BattleManager.currentActionUnit.isWalker)
                     {
-						FindPath(BattleManager.currentActionUnit, _node);
+						FindPath(BattleManager.currentActionUnit, targetNode);
 					}
 				}
             }
@@ -331,7 +332,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 
 			//如果目标点的前方点不存在，或者不在可到达节点，则目标点向后移动
 			Vector2Int ahead = new Vector2Int(_target.pos.x + _unit.sideFacing, _target.pos.y);
-			if (map.isNodeAvailable(ahead) || !NodeSelector.reachableNodes.Contains(map.GetNodeItem(ahead)))
+			if (!map.isNodeAvailable(ahead) || !NodeSelector.reachableNodes.Contains(map.GetNodeItem(ahead)))
 			{
 				_target = map.GetNodeItem(new Vector2Int(_target.pos.x - _unit.sideFacing, _target.pos.y));
 			}
