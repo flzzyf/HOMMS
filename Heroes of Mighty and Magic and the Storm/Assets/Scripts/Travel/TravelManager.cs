@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum HighlightedItemType { Hero, Town }
+
 public class TravelManager : Singleton<TravelManager>
 {
     [HideInInspector]
@@ -19,10 +21,13 @@ public class TravelManager : Singleton<TravelManager>
 
     public MapManager_Travel map;
 
-	public SliderItemManager_Hero sliderItemManager_hero;
-	public SliderItemManager_Town sliderItemManager_town;
+    public SliderItemManager_Hero sliderItemManager_hero;
+    public SliderItemManager_Town sliderItemManager_town;
 
-	public void Init()
+    //高亮滑动项的类型
+    public static HighlightedItemType highlightedItemType;
+
+    public void Init()
     {
         map.GenerateMap();
 
@@ -33,8 +38,8 @@ public class TravelManager : Singleton<TravelManager>
         }
     }
 
-	//玩家初始化，生成城镇和英雄
-	void InitPlayer(Player _player)
+    //玩家初始化，生成城镇和英雄
+    void InitPlayer(Player _player)
     {
         GameObject town = CreateObjectOnNode(prefab_town, _player.startingPoint);
         Vector2Int offset = town.GetComponent<Town>().interactPoint;
@@ -81,27 +86,27 @@ public class TravelManager : Singleton<TravelManager>
     //回合开始
     public void TurnStart(int _index)
     {
-		GameManager.actionPlayer = _index;
+        GameManager.actionPlayer = _index;
 
-		//更新英雄和城镇项，选中第一个
-		if (GameManager.currentPlayer.heroes.Count > 0)
-		{
-			sliderItemManager_hero.Highlight(0);
-			sliderItemManager_hero.MoveToPage(0);
-		}
-		if(GameManager.currentPlayer.towns.Count > 0)
-		{
-			sliderItemManager_town.Highlight(0);
-			sliderItemManager_town.MoveToPage(0);
-		}
+        //更新英雄项，选中第一个
+        if (GameManager.currentPlayer.heroes.Count > 0)
+        {
+            sliderItemManager_hero.Highlight(0);
+            sliderItemManager_hero.MoveToPage(0);
+        }
+        // if (GameManager.currentPlayer.towns.Count > 0)
+        // {
+        //     sliderItemManager_town.Highlight(0);
+        //     sliderItemManager_town.MoveToPage(0);
+        // }
 
-		//高亮玩家的第一个英雄
-		HighlightHero(GameManager.currentPlayer.heroes[0]);
+        //高亮玩家的第一个英雄
+        HighlightHero(GameManager.currentPlayer.heroes[0]);
     }
 
     public void BattleBegin(Hero _attacker, Hero _defender)
     {
-		UIManager.instance.Enter("battle", true);
+        UIManager.instance.Enter("battle", true);
 
         BattleManager.instance.BattleStart(_attacker, _defender);
     }

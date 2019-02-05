@@ -4,76 +4,79 @@ using UnityEngine;
 
 public class Panel_Town : CustomUI
 {
-	public Panel_HeroUnits panel_HeroUnits_Inside;
-	public Panel_HeroUnits panel_HeroUnits_Outside;
+    public Panel_HeroUnits panel_HeroUnits_Inside;
+    public Panel_HeroUnits panel_HeroUnits_Outside;
 
-	public Panel_HeroPortrait panel_HeroPortrait_Inside;
-	public Panel_HeroPortrait panel_HeroPortrait_Outside;
+    public Panel_HeroPortrait panel_HeroPortrait_Inside;
+    public Panel_HeroPortrait panel_HeroPortrait_Outside;
 
-	public SliderItemManager_Town sliderItemManager_Town;
+    public SliderItemManager_Town sliderItemManager_Town;
 
-	public Panel_Resources panel_Resources;
+    public Panel_Resources panel_Resources;
 
-	public static Town currentTown;
+    public static Town currentTown;
 
-	//设置城镇
-	public void Set(Town _town)
-	{
-		currentTown = _town;
+    //设置城镇
+    public void Set(Town _town)
+    {
+        currentTown = _town;
 
-		//如果城内有英雄，或者有驻军，设置单位栏和头像
-		if (_town.hero_inside != null)
-		{
-			panel_HeroUnits_Inside.Set(_town.hero_inside.pocketUnits);
-			panel_HeroPortrait_Inside.Set(_town.hero_inside);
-		}
-		else if (_town.townUnits != null && _town.townUnits.Length > 0)
-		{
-			panel_HeroUnits_Inside.Set(_town.townUnits);
-			panel_HeroPortrait_Inside.Clear();
-		}
-		else
-		{
-			panel_HeroUnits_Inside.Clear();
-			panel_HeroPortrait_Inside.Clear();
-		}
+        //如果城内有英雄，或者有驻军，设置单位栏和头像
+        if (_town.hero_inside != null)
+        {
+            panel_HeroUnits_Inside.Set(_town.hero_inside.pocketUnits);
+            panel_HeroPortrait_Inside.Set(_town.hero_inside);
+        }
+        else if (_town.townUnits != null && _town.townUnits.Length > 0)
+        {
+            panel_HeroUnits_Inside.Set(_town.townUnits);
+            panel_HeroPortrait_Inside.Clear();
+        }
+        else
+        {
+            panel_HeroUnits_Inside.Clear();
+            panel_HeroPortrait_Inside.Clear();
+        }
 
-		//城外英雄
-		if (_town.hero_outside != null)
-		{
-			panel_HeroUnits_Outside.Set(_town.hero_outside.pocketUnits);
-			panel_HeroPortrait_Outside.Set(_town.hero_outside);
-		}
-		else
-		{
-			panel_HeroUnits_Outside.Clear();
-			panel_HeroPortrait_Outside.Clear();
-		}
-	}
+        //城外英雄
+        if (_town.hero_outside != null)
+        {
+            panel_HeroUnits_Outside.Set(_town.hero_outside.pocketUnits);
+            panel_HeroPortrait_Outside.Set(_town.hero_outside);
+        }
+        else
+        {
+            panel_HeroUnits_Outside.Clear();
+            panel_HeroPortrait_Outside.Clear();
+        }
+    }
 
-	public override void Enter(bool _quitCurrentUI = false)
-	{
-		base.Enter(_quitCurrentUI);
+    public override void Enter(bool _quitCurrentUI = false)
+    {
+        base.Enter(_quitCurrentUI);
 
-		//进入城镇时，设置显示的城镇项页数和旅行界面选择的页数一样
-		int index = SliderItemManager_Town.highlightedItemIndex;
-		sliderItemManager_Town.currentPages = index;
-		sliderItemManager_Town.MoveToPage(index);
-		//取消高亮之前高亮项，然后高亮第一个
-		//Panel_TownItem.highlightedTownItem.Highlight(false);
-		sliderItemManager_Town.items[0].Highlight(true);
+        //进入城镇时，设置显示的城镇项页数和旅行界面选择的页数一样
+        int index = SliderItemManager_Town.highlightedItemIndex;
+        SliderItemManager_Town.currentPages = index;
+        sliderItemManager_Town.MoveToPage(index);
+        //取消高亮之前高亮项，然后高亮第一个
+        //Panel_TownItem.highlightedTownItem.Highlight(false);
+        sliderItemManager_Town.items[0].Highlight(true);
 
-		//设置资源
-		panel_Resources.Set(GameManager.currentPlayer.resources);
-	}
+        //设置资源
+        panel_Resources.Set(GameManager.currentPlayer.resources);
+    }
 
-	//退出
-	public override void Quit()
-	{
-		//隐藏这个界面
-		base.Quit();
+    //退出
+    public override void Quit()
+    {
+        //隐藏这个界面
+        base.Quit();
 
-		//进入冒险界面
-		UIManager.instance.Enter("travel");
-	}
+        //进入冒险界面
+        UIManager.instance.Enter("travel");
+
+        //更新选中城镇
+        //
+    }
 }
