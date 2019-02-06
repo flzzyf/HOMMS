@@ -12,12 +12,12 @@ public class GameManager : Singleton<GameManager>
 
     public Hero[] testHeroes;
 
-	//本地玩家序号
+    //本地玩家序号
     public static int player = 2;
     public static Player currentPlayer { get { return PlayerManager.instance.players[player]; } }
 
-	//当前回合行动的玩家
-	public static int actionPlayer;
+    //当前回合行动的玩家
+    public static int actionPlayer;
 
     public GameScene scene;
 
@@ -50,21 +50,21 @@ public class GameManager : Singleton<GameManager>
         SkillManager.AddSkill(testHeroes[0], "Magic_Earth", 2);
         SkillManager.AddSkill(testHeroes[0], "Magic_Water", 2);
 
-		//进入旅行模式界面
-		UIManager.instance.Enter("travel");
-		//回合开始
-		TravelManager.instance.TurnStart(player);
+        //进入旅行模式界面
+        UIManager.instance.Enter("travel");
+        //回合开始
+        TravelManager.instance.TurnStart(player);
     }
 
     void Update()
     {
-		//退出游戏
-		if (Input.GetKeyDown(KeyCode.Q))
-		{
-			Application.Quit();
-		}
+        //退出游戏
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Application.Quit();
+        }
 
-		if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             Hero attacker = testHeroes[0];
             Hero defender = testHeroes[1];
@@ -73,9 +73,11 @@ public class GameManager : Singleton<GameManager>
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
-            SoundManager.instance.PlaySound("Combat02");
+            //SoundManager.instance.PlaySound("Combat02");
             //TravelManager.instance.EnterTravelMode();
             //LocalizationMgr.instance.ChangeToLanguage(Language.English);
+
+            Time.timeScale = 2f;
         }
         if (Input.GetKeyDown(KeyCode.H))
         {

@@ -38,7 +38,7 @@ public class MapManager_Travel : MapManager
         NodeItem_Travel node = (NodeItem_Travel)_node;
         NodeObject_Travel obj = (NodeObject_Travel)node.nodeObject;
 
-        Hero hero = TravelManager.instance.currentHero;
+        Hero hero = TravelManager.currentHero;
 
         if (hero == null)
             Debug.LogError("当前英雄为空");
@@ -154,20 +154,20 @@ public class MapManager_Travel : MapManager
     #region 移动节点物体事件
     void MoveToNode(NodeItem _node)
     {
-        Hero hero = TravelManager.instance.currentHero;
+        Hero hero = TravelManager.currentHero;
 
-		//播放移动动画
-		hero.SetMovingDir(_node.transform.position - hero.transform.position);
-		hero.SetMovingStatus(1);
+        //播放移动动画
+        hero.SetMovingDir(_node.transform.position - hero.transform.position);
+        hero.SetMovingStatus(1);
 
-		//行动力不足停止移动
-		if (!hasMovementToReachNode(hero, _node))
+        //行动力不足停止移动
+        if (!hasMovementToReachNode(hero, _node))
         {
             NodeMovingMgr.instance.StopMoving();
 
-			//停止移动动画
-			hero.SetMovingStatus(0);
-		}
+            //停止移动动画
+            hero.SetMovingStatus(0);
+        }
 
         //英雄扣除移动力
         hero.movementRate -= GetNodeDistance(hero.nodeItem, _node);
@@ -188,7 +188,7 @@ public class MapManager_Travel : MapManager
 
     void ReachNode(NodeItem _node)
     {
-        Hero hero = TravelManager.instance.currentHero;
+        Hero hero = TravelManager.currentHero;
 
         //设置英雄所在节点
         hero.nodeItem = _node;
@@ -202,13 +202,13 @@ public class MapManager_Travel : MapManager
         //清除路径
         ClearPath();
 
-		//停止移动动画
-        Hero hero = TravelManager.instance.currentHero;
-		hero.SetMovingStatus(0);
+        //停止移动动画
+        Hero hero = TravelManager.currentHero;
+        hero.SetMovingStatus(0);
 
-		hero.transform.position = _node.transform.position;
+        hero.transform.position = _node.transform.position;
 
-		GameManager.gameState = GameState.playerControl;
+        GameManager.gameState = GameState.playerControl;
 
         if (targetNodeObject != null)
         {

@@ -10,8 +10,8 @@ public class TravelManager : Singleton<TravelManager>
     public GameObject lastHighlightNode;
     List<GameObject> lastPath;
 
-    [HideInInspector]
-    public Hero currentHero;
+    //当前英雄
+    public static Hero currentHero;
 
     public Transform[] spawnPoints;
     public GameObject prefab_town;
@@ -72,17 +72,6 @@ public class TravelManager : Singleton<TravelManager>
         return go;
     }
 
-    //高亮英雄（移动镜头，选中英雄）
-    public void HighlightHero(Hero _hero)
-    {
-        TravelCamMgr.instance.MoveCamera(_hero.transform.position);
-
-        currentHero = _hero;
-
-        //更新右下角英雄信息
-        Panel_HeroInfo.instance.Set(_hero);
-    }
-
     //回合开始
     public void TurnStart(int _index)
     {
@@ -101,7 +90,7 @@ public class TravelManager : Singleton<TravelManager>
         // }
 
         //高亮玩家的第一个英雄
-        HighlightHero(GameManager.currentPlayer.heroes[0]);
+        sliderItemManager_hero.Highlight(0);
     }
 
     public void BattleBegin(Hero _attacker, Hero _defender)

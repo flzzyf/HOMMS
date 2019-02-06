@@ -12,7 +12,7 @@ public class Obj_Units : AdvantureObject
         base.OnInteracted(_hero);
 
         Debug.Log("进入战斗");
-        Hero attacker = TravelManager.instance.currentHero;
+        Hero attacker = TravelManager.currentHero;
 
         //
         attacker = GameManager.instance.testHeroes[0];

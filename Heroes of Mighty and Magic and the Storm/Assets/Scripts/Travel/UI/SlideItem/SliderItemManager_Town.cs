@@ -33,6 +33,7 @@ public class SliderItemManager_Town : SliderItemManager<Panel_TownItem>
                     SliderItemManager_Hero.highlightedItemIndex - SliderItemManager_Hero.currentPages, false);
             }
 
+            //高亮项
             Highlight(index);
         }
         else
@@ -52,7 +53,13 @@ public class SliderItemManager_Town : SliderItemManager<Panel_TownItem>
 
         //设置当前高亮滑动项的类型
         if (_highlight)
+        {
             TravelManager.highlightedItemType = HighlightedItemType.Town;
+
+            //移动镜头
+            TravelCamMgr.instance.MoveCamera(GameManager.currentPlayer.towns[
+                highlightedItemIndex - currentPages].transform.position);
+        }
     }
 
     //翻到某页

@@ -35,8 +35,7 @@ public class SliderItemManager_Hero : SliderItemManager<Panel_HeroItem>
                     SliderItemManager_Town.highlightedItemIndex - SliderItemManager_Town.currentPages, false);
             }
 
-            //高亮英雄
-            TravelManager.instance.HighlightHero(GameManager.currentPlayer.heroes[index]);
+            //高亮项
             Highlight(index);
         }
         else
@@ -54,9 +53,19 @@ public class SliderItemManager_Hero : SliderItemManager<Panel_HeroItem>
 
         highlightedItemIndex = _highlight ? _index : -1;
 
-        //设置当前高亮滑动项的类型
         if (_highlight)
+        {
+            //设置当前高亮滑动项的类型
             TravelManager.highlightedItemType = HighlightedItemType.Hero;
+
+            //设置当前英雄
+            TravelManager.currentHero = GameManager.currentPlayer.heroes[highlightedItemIndex - currentPages];
+
+            //移动镜头
+            TravelCamMgr.instance.MoveCamera(TravelManager.currentHero.transform.position);
+            //更新右下角英雄信息
+            Panel_HeroInfo.instance.Set(TravelManager.currentHero);
+        }
     }
 
     //翻到某页
