@@ -65,10 +65,13 @@ public class Panel_Town : CustomUI
 
         //设置资源
         panel_Resources.Set(GameManager.currentPlayer.resources);
-    }
 
-    //退出
-    public override void Quit()
+		//播放音乐
+		SoundManager.instance.PlaySound("BGM_Castle");
+	}
+
+	//退出
+	public override void Quit()
     {
         //隐藏这个界面
         base.Quit();
@@ -76,7 +79,10 @@ public class Panel_Town : CustomUI
         //进入冒险界面
         UIManager.instance.Enter("travel");
 
-        //更新选中城镇
-        //
-    }
+		//更新选中城镇
+		//
+
+		//暂停播放BGM
+		SoundManager.instance.StopPlay("BGM_Castle");
+	}
 }
