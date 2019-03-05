@@ -9,6 +9,8 @@ public class Panel_HeroItem : SliderItem
     public Slider slider_movementRate;
     public Slider slider_mana;
 
+	public bool enable { get { return image_portrait.enabled; } }
+
     //更新图像
     public void Set(Hero _hero)
     {

@@ -9,12 +9,13 @@ public class SliderItem : MonoBehaviour, IPointerClickHandler
     public GameObject border_highlight;
 
     //序号
-    [HideInInspector]
     public int index;
 
     //被点击事件
     public delegate void ItemClick(int _index);
     public ItemClick onClick;
+
+	public bool isHighlighted { get { return border_highlight.activeSelf; } }
 
     //鼠标点击
     public void OnPointerClick(PointerEventData data)

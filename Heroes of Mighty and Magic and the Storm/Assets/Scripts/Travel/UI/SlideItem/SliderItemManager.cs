@@ -18,6 +18,8 @@ public class SliderItemManager<T> : MonoBehaviour
     [HideInInspector]
     public static int highlightedItemIndex = -1;
 
+	public int itemCount { get { return items.Length; } }
+
     //翻到某页
     public virtual void MoveToPage(int _page)
     {

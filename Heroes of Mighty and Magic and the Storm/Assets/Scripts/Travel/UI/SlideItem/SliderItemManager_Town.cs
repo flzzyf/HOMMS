@@ -34,7 +34,7 @@ public class SliderItemManager_Town : SliderItemManager<Panel_TownItem>
             }
 
             //高亮项
-            Highlight(index);
+            Highlight(_index);
         }
         else
         {

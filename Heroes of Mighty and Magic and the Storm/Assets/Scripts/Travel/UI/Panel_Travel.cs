@@ -18,7 +18,7 @@ public class Panel_Travel : CustomUI
         //刷新底部英雄信息栏
         if (SliderItemManager_Hero.highlightedItemIndex != -1)
         {
-            Panel_HeroInfo.instance.Set(GameManager.currentPlayer.heroes[SliderItemManager_Hero.highlightedItemIndex]);
+            Panel_HeroInfo.instance.Set(TravelManager.currentHero);
         }
 
         //设置资源
