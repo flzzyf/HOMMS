@@ -36,7 +36,14 @@ public class TravelManager : Singleton<TravelManager>
         {
             InitPlayer(PlayerManager.instance.players[i]);
         }
-    }
+
+		//更新英雄项，高亮玩家的第一个英雄
+		if (GameManager.currentPlayer.heroes.Count > 0)
+		{
+			sliderItemManager_hero.MoveToPage(0);
+			sliderItemManager_hero.Highlight(0);
+		}
+	}
 
     //玩家初始化，生成城镇和英雄
     void InitPlayer(Player _player)
@@ -77,20 +84,16 @@ public class TravelManager : Singleton<TravelManager>
     {
         GameManager.actionPlayer = _index;
 
-        //更新英雄项，选中第一个
-        if (GameManager.currentPlayer.heroes.Count > 0)
-        {
-            sliderItemManager_hero.Highlight(0);
-            sliderItemManager_hero.MoveToPage(0);
-        }
+
+
+		//更新城镇
         // if (GameManager.currentPlayer.towns.Count > 0)
         // {
         //     sliderItemManager_town.Highlight(0);
         //     sliderItemManager_town.MoveToPage(0);
         // }
 
-        //高亮玩家的第一个英雄
-        sliderItemManager_hero.Highlight(0);
+
     }
 
     public void BattleBegin(Hero _attacker, Hero _defender)

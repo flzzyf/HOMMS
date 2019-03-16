@@ -14,8 +14,8 @@ public class Obj_Units : AdvantureObject
         Debug.Log("进入战斗");
         Hero attacker = TravelManager.currentHero;
 
-        //
-        attacker = GameManager.instance.testHeroes[0];
+		//攻击者为当前玩家英雄
+		attacker = TravelManager.currentHero;
 
         Hero defender = Instantiate(TravelManager.instance.prefab_hero).GetComponent<Hero>();
         defender.player = 1;

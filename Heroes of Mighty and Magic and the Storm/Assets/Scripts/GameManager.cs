@@ -10,8 +10,6 @@ public class GameManager : Singleton<GameManager>
 {
     public static GameState gameState;
 
-    public Hero[] testHeroes;
-
     //本地玩家序号
     public static int player = 2;
     public static Player currentPlayer { get { return PlayerManager.instance.players[player]; } }
@@ -32,23 +30,6 @@ public class GameManager : Singleton<GameManager>
         // else
         //     ChangeToLocalLanguage();
 
-        PlayerManager.instance.players[0].heroes.Add(testHeroes[0]);
-        PlayerManager.instance.players[1].heroes.Add(testHeroes[1]);
-
-        //给测试英雄加上所有魔法
-        MagicManager.AddAllMagic(testHeroes[0]);
-
-        AdvantureObjectMgr.CreateAdvantureObject("Chest", new Vector2Int(23, 19));
-        AdvantureObjectMgr.CreateAdvantureObject("Leorics", new Vector2Int(19, 17));
-        AdvantureObjectMgr.CreateAdvantureObject("Chest", new Vector2Int(23, 14));
-        AdvantureObjectMgr.CreateAdvantureObject("Gold", new Vector2Int(19, 14));
-        AdvantureObjectMgr.CreateAdvantureObject("Gold", new Vector2Int(17, 14));
-        AdvantureObjectMgr.CreateAdvantureObject("Gold", new Vector2Int(15, 14));
-
-        SkillManager.AddSkill(testHeroes[0], "Magic_Air", 2);
-        SkillManager.AddSkill(testHeroes[0], "Magic_Fire", 2);
-        SkillManager.AddSkill(testHeroes[0], "Magic_Earth", 2);
-        SkillManager.AddSkill(testHeroes[0], "Magic_Water", 2);
 
         //进入旅行模式界面
         UIManager.instance.Enter("travel");
@@ -58,19 +39,6 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
-        //退出游戏
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Application.Quit();
-        }
-
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Hero attacker = testHeroes[0];
-            Hero defender = testHeroes[1];
-            TravelManager.instance.BattleBegin(attacker, defender);
-
-        }
         if (Input.GetKeyDown(KeyCode.G))
         {
             //SoundManager.instance.PlaySound("Combat02");
