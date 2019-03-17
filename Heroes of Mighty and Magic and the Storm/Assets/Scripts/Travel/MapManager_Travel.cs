@@ -22,7 +22,7 @@ public class MapManager_Travel : MapManager
         //判定节点类型：空则可到达，物品则显示名称，单位显示剑
         if (node.nodeObject == null)
         {
-            CursorManager.instance.ChangeCursor("sword");
+            CursorManager.instance.ChangeCursor("reachable");
         }
     }
 
@@ -175,7 +175,7 @@ public class MapManager_Travel : MapManager
         slider_movementRate.value = hero.movementRate / 1000f;
 
         //移动镜头到英雄
-        TravelCamMgr.instance.MoveCamera(hero.transform.position);
+        //TravelCamMgr.instance.MoveCamera(hero.transform.position);
     }
 
     bool hasMovementToReachNode(Hero _hero, NodeItem _node)
