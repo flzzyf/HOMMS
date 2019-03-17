@@ -64,7 +64,7 @@ public class Panel_Town : CustomUI
         panel_Resources.Set(GameManager.currentPlayer.resources);
 
 		//播放音乐
-		SoundManager.instance.PlaySound("BGM_Castle");
+		SoundManager.instance.PlayBGM("BGM_Castle");
 	}
 
 	//退出

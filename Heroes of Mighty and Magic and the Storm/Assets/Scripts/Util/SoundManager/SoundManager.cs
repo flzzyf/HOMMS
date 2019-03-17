@@ -22,6 +22,9 @@ public class SoundManager : Singleton<SoundManager>
     //用来保存某种音效的同时播放数量
     Dictionary<Sound, int> soundNumber;
 
+	//播放BGM专用
+	public AudioSource audioSource_BGM;
+
     //初始化
     void Awake()
     {
@@ -175,4 +178,16 @@ public class SoundManager : Singleton<SoundManager>
         //从字典移除
         soundDic.Remove(_source);
     }
+
+	public void PlayBGM(string _name)
+	{
+		audioSource_BGM.clip = GetSound(_name).clips[0];
+
+		audioSource_BGM.Play();
+	}
+
+	public void StopBGM()
+	{
+		audioSource_BGM.Stop();
+	}
 }

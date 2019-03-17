@@ -27,7 +27,7 @@ public class Panel_Travel : CustomUI
 		panel_Resources.Set(GameManager.currentPlayer.resources);
 
 		//播放BGM
-		SoundManager.instance.PlaySound("BGM_Grass");
+		SoundManager.instance.PlayBGM("BGM_Grass");
     }
 
     public override void Quit()
