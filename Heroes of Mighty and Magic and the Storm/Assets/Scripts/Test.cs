@@ -61,5 +61,7 @@ public class Test : MonoBehaviour
 		{
 			PlayerManager.instance.players[GameManager.player].towns.Add(item);
 		}
+
+		TravelManager.instance.sliderItemManager_town.MoveToPage(0);
 	}
 }

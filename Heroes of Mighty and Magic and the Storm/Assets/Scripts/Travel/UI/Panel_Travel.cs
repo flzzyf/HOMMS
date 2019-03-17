@@ -15,14 +15,16 @@ public class Panel_Travel : CustomUI
         //显示旅行模式物体
         parent_travelObject.SetActive(true);
 
-        //刷新底部英雄信息栏
-        if (SliderItemManager_Hero.highlightedItemIndex != -1)
-        {
-            Panel_HeroInfo.instance.Set(TravelManager.currentHero);
-        }
+		//进入旅行界面，刷新右下角信息栏
 
-        //设置资源
-        panel_Resources.Set(GameManager.currentPlayer.resources);
+		//刷新底部英雄信息栏
+		//if (SliderItemManager_Hero.highlightedItemIndex != -1)
+		//{
+		//	Panel_HeroInfo.instance.Set(TravelManager.currentHero);
+		//}
+
+		//设置资源
+		panel_Resources.Set(GameManager.currentPlayer.resources);
 
 		//播放BGM
 		SoundManager.instance.PlaySound("BGM_Grass");

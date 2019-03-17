@@ -56,12 +56,9 @@ public class Panel_Town : CustomUI
         base.Enter(_quitCurrentUI);
 
         //进入城镇时，设置显示的城镇项页数和旅行界面选择的页数一样
-        int index = SliderItemManager_Town.highlightedItemIndex;
-        SliderItemManager_Town.currentPages = index;
+        int index = SliderItemManager.highlightedItemIndex;
         sliderItemManager_Town.MoveToPage(index);
-        //取消高亮之前高亮项，然后高亮第一个
-        //Panel_TownItem.highlightedTownItem.Highlight(false);
-        sliderItemManager_Town.items[0].Highlight(true);
+
 
         //设置资源
         panel_Resources.Set(GameManager.currentPlayer.resources);

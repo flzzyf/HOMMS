@@ -9,7 +9,7 @@ public class Panel_HeroItem : SliderItem
     public Slider slider_movementRate;
     public Slider slider_mana;
 
-	public bool enable { get { return image_portrait.enabled; } }
+	public override bool IsEnabled() { return image_portrait.enabled; }
 
     //更新图像
     public void Set(Hero _hero)
@@ -21,6 +21,7 @@ public class Panel_HeroItem : SliderItem
         slider_movementRate.value = _hero.movementRate / 2000f;
         slider_mana.value = _hero.mana / 50f;
     }
+
     //重置
     public void Clear()
     {

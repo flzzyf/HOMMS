@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum HighlightedItemType { Hero, Town }
-
 public class TravelManager : Singleton<TravelManager>
 {
     [HideInInspector]
@@ -24,9 +22,6 @@ public class TravelManager : Singleton<TravelManager>
     public SliderItemManager_Hero sliderItemManager_hero;
     public SliderItemManager_Town sliderItemManager_town;
 
-    //高亮滑动项的类型
-    public static HighlightedItemType highlightedItemType;
-
     public void Init()
     {
         map.GenerateMap();
@@ -43,13 +38,21 @@ public class TravelManager : Singleton<TravelManager>
 			sliderItemManager_hero.MoveToPage(0);
 			sliderItemManager_hero.Highlight(0);
 		}
+
+		//更新城镇
+		if (GameManager.currentPlayer.towns.Count > 0)
+		{
+			sliderItemManager_town.MoveToPage(0);
+		}
 	}
 
-    //玩家初始化，生成城镇和英雄
-    void InitPlayer(Player _player)
+	//玩家初始化，生成城镇和英雄
+	void InitPlayer(Player _player)
     {
-        GameObject town = CreateObjectOnNode(prefab_town, _player.startingPoint);
-        Vector2Int offset = town.GetComponent<Town>().interactPoint;
+        Town town = CreateObjectOnNode(prefab_town, _player.startingPoint).GetComponent<Town>();
+		_player.towns.Add(town);
+
+		Vector2Int offset = town.interactPoint;
         Hero hero = CreateObjectOnNode(prefab_hero, _player.startingPoint + offset).GetComponent<Hero>();
         //英雄类型
         hero.heroType = HeroType.GetHeroType("Jaina");
@@ -83,16 +86,6 @@ public class TravelManager : Singleton<TravelManager>
     public void TurnStart(int _index)
     {
         GameManager.actionPlayer = _index;
-
-
-
-		//更新城镇
-        // if (GameManager.currentPlayer.towns.Count > 0)
-        // {
-        //     sliderItemManager_town.Highlight(0);
-        //     sliderItemManager_town.MoveToPage(0);
-        // }
-
 
     }
 

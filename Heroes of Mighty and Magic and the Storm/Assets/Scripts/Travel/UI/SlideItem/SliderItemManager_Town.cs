@@ -2,84 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SliderItemManager_Town : SliderItemManager<Panel_TownItem>
+public class SliderItemManager_Town : SliderItemManager
 {
-    void Start()
+	public override void ClickHighlightedItem(int _index)
+	{
+		base.ClickHighlightedItem(_index);
+
+		//当前高亮的是这个，则进入城镇界面
+		UIManager.instance.Get("town").GetComponent<Panel_Town>().Set(GameManager.currentPlayer.towns[_index]);
+		UIManager.instance.Enter("town");
+	}
+
+	//高亮项
+	public override void Highlight(int _index)
     {
-        //初始化序号
-        for (int i = 0; i < items.Length; i++)
-        {
-            items[i].index = i;
-            items[i].onClick += ItemClicked;
-        }
-    }
+		//如果城镇的高亮项不是-1，就取消然后刷新
+		if (highlightedItemType != HighlightedItemType.Town)
+		{
+			highlightedItemType = HighlightedItemType.Town;
 
-    //项被点击
-    void ItemClicked(int _index)
-    {
-        int index = currentPages + _index;
+			TravelManager.instance.sliderItemManager_hero.DishighlightAll();
+		}
 
-        //如果当前高亮项不是这个
-        if (highlightedItemIndex != index)
-        {
-            //如果当前有高亮项，则取消高亮
-            if (highlightedItemIndex != -1)
-                Highlight(highlightedItemIndex - currentPages, false);
+		base.Highlight(_index);
 
-            //如果当前高亮滑动项类型不同，取消另一种项的高亮
-            if (TravelManager.highlightedItemType != HighlightedItemType.Town)
-            {
-                TravelManager.instance.sliderItemManager_hero.Highlight(
-                    SliderItemManager_Hero.highlightedItemIndex - SliderItemManager_Hero.currentPages, false);
-            }
+		//移动镜头
+		TravelCamMgr.instance.MoveCamera(GameManager.currentPlayer.towns[
+			highlightedItemIndex - currentPages].transform.position);
+	}
 
-            //高亮项
-            Highlight(_index);
-        }
-        else
-        {
-            //当前高亮的是这个，则进入城镇界面
-            UIManager.instance.Get("town").GetComponent<Panel_Town>().Set(GameManager.currentPlayer.towns[index]);
-            UIManager.instance.Enter("town");
-        }
-    }
+	public override int ObjectCount()
+	{
+		return GameManager.currentPlayer.towns.Count;
+	}
 
-    //高亮项
-    public void Highlight(int _index, bool _highlight = true)
-    {
-        items[_index].Highlight(_highlight);
+	public override void SetItem(int _index)
+	{
+		base.SetItem(_index);
 
-        highlightedItemIndex = _highlight ? _index : -1;
+		items[_index].GetComponent<Panel_TownItem>().Set(GameManager.currentPlayer.towns[currentPages + _index]);
+	}
 
-        //设置当前高亮滑动项的类型
-        if (_highlight)
-        {
-            TravelManager.highlightedItemType = HighlightedItemType.Town;
+	public override void ClearItem(int _index)
+	{
+		base.ClearItem(_index);
 
-            //移动镜头
-            TravelCamMgr.instance.MoveCamera(GameManager.currentPlayer.towns[
-                highlightedItemIndex - currentPages].transform.position);
-        }
-    }
+		items[_index].GetComponent<Panel_TownItem>().Clear();
+	}
 
-    //翻到某页
-    public override void MoveToPage(int _page)
-    {
-        base.MoveToPage(_page);
-
-        int num = GameManager.currentPlayer.towns.Count;
-
-        //显示按钮并更新图像
-        int numberToShow = Mathf.Min(num - currentPages, items.Length);
-        for (int i = 0; i < numberToShow; i++)
-        {
-            items[i].enabled = true;
-            items[i].Set(GameManager.currentPlayer.towns[currentPages + i]);
-        }
-        for (int i = numberToShow; i < items.Length; i++)
-        {
-            items[i].Clear();
-            items[i].enabled = false;
-        }
-    }
+	public override bool IsHightlightedItemType()
+	{
+		return highlightedItemType == HighlightedItemType.Town;
+	}
 }
