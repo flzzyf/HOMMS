@@ -150,6 +150,9 @@ public class MapManager_Travel : MapManager
         NodeMovingMgr.instance.Event_ReachTarget += ReachTarget;
 
         NodeMovingMgr.instance.MoveObject(_go, _path, TravelManager.instance.heroSpeed, coord);
+
+		//镜头跟随
+		TravelCamMgr.instance.FocusTarget(_go.transform);
     }
     #region 移动节点物体事件
     void MoveToNode(NodeItem _node)
@@ -167,7 +170,10 @@ public class MapManager_Travel : MapManager
 
             //停止移动动画
             hero.SetMovingStatus(0);
-        }
+
+			//镜头停止跟随
+			TravelCamMgr.instance.StopFocus();
+		}
 
         //英雄扣除移动力
         hero.movementRate -= GetNodeDistance(hero.nodeItem, _node);
@@ -219,8 +225,11 @@ public class MapManager_Travel : MapManager
 
             Destroy(obj.gameObject);
         }
-    }
 
-    #endregion
+		//镜头停止跟随
+		TravelCamMgr.instance.StopFocus();
+	}
+
+	#endregion
 
 }
