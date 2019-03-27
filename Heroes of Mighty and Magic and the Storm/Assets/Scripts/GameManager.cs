@@ -9,6 +9,7 @@ public enum GameState { playerControl, canNotControl }
 public class GameManager : Singleton<GameManager>
 {
     public static GameState gameState;
+	public static GameScene currentScene;
 
 	//本地玩家
 	public int localPlayerIndex;
@@ -33,6 +34,12 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
+		//退出游戏键
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.Quit();
+		}
+
         if (Input.GetKeyDown(KeyCode.G))
         {
             //SoundManager.instance.PlaySound("Combat02");

@@ -118,7 +118,9 @@ public class BattleManager : Singleton<BattleManager>
 
 	bool IsLocalPlayerTurn
 	{
-		get { return GameManager.gameState == GameState.playerControl && 
+		get {
+			return GameManager.currentScene == GameScene.Battle &&
+				GameManager.gameState == GameState.playerControl && 
 					 players[currentActionUnit.side] == GameManager.instance.localPlayerIndex; }
 	}
 

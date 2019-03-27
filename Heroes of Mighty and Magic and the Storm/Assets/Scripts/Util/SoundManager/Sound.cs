@@ -14,7 +14,7 @@ public class Sound : ScriptableObject
 
     public bool loop;
 
-    public SoundGroup group;
+    public SoundCategory group;
 
     public float startingTime;
 }

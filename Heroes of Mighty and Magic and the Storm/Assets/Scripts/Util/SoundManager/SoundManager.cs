@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public enum SoundGroup { Music, Effect, Death, Hit, Attack, Walk, UI, Impact }
+public enum SoundCategory { Music, Effect, Death, Hit, Attack, Walk, UI, Impact }
 
 public class SoundManager : Singleton<SoundManager>
 {
@@ -22,11 +22,12 @@ public class SoundManager : Singleton<SoundManager>
     //用来保存某种音效的同时播放数量
     Dictionary<Sound, int> soundNumber;
 
-	//播放BGM专用
-	public AudioSource audioSource_BGM;
+	//各声音类别的声道数量
+	[HideInInspector]
+	public int[] soundCategoryTrackNum = new int[System.Enum.GetValues(typeof(SoundCategory)).Length];
 
-    //初始化
-    void Awake()
+	//初始化
+	void Awake()
     {
         //创建音效播放器
         audioSources = new List<AudioSource>();
@@ -37,6 +38,12 @@ public class SoundManager : Singleton<SoundManager>
 
         soundDic = new Dictionary<AudioSource, Sound>();
         soundNumber = new Dictionary<Sound, int>();
+
+		//为每种声音创造其播放器组
+		for (int i = 0; i < System.Enum.GetValues(typeof(SoundCategory)).Length; i++)
+		{
+
+		}
     }
 
     //播放音效
@@ -94,7 +101,7 @@ public class SoundManager : Singleton<SoundManager>
         _source.loop = _sound.loop;
 
         //设置声音组
-        if (_sound.group == SoundGroup.Music)
+        if (_sound.group == SoundCategory.Music)
             _source.outputAudioMixerGroup = audioGroup_music;
         else
             _source.outputAudioMixerGroup = audioGroup_effect;
