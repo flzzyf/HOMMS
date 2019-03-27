@@ -24,7 +24,7 @@ public class Panel_Travel : CustomUI
 		//}
 
 		//设置资源
-		panel_Resources.Set(GameManager.currentPlayer.resources);
+		panel_Resources.Set(GameManager.instance.localPlayer.resources);
 
 		//播放BGM
 		SoundManager.instance.PlayBGM("BGM_Grass");

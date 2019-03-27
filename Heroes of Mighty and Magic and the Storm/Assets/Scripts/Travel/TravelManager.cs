@@ -22,25 +22,36 @@ public class TravelManager : Singleton<TravelManager>
     public SliderItemManager_Hero sliderItemManager_hero;
     public SliderItemManager_Town sliderItemManager_town;
 
-    public void Init()
+	void Start()
+	{
+		Init();
+
+        //进入旅行模式界面
+		UIManager.instance.Enter("travel");
+
+		//回合开始
+		TurnStart(GameManager.instance.localPlayerIndex);
+	}
+
+	public void Init()
     {
         map.GenerateMap();
 
         //玩家初始设置
-        for (int i = 0; i < PlayerManager.instance.players.Length; i++)
+        for (int i = 0; i < GameManager.instance.players.Length; i++)
         {
-            InitPlayer(PlayerManager.instance.players[i]);
+            InitPlayer(GameManager.instance.players[i]);
         }
 
 		//更新英雄项，高亮玩家的第一个英雄
-		if (GameManager.currentPlayer.heroes.Count > 0)
+		if (GameManager.instance.localPlayer.heroes.Count > 0)
 		{
 			sliderItemManager_hero.MoveToPage(0);
 			sliderItemManager_hero.Highlight(0);
 		}
 
 		//更新城镇
-		if (GameManager.currentPlayer.towns.Count > 0)
+		if (GameManager.instance.localPlayer.towns.Count > 0)
 		{
 			sliderItemManager_town.MoveToPage(0);
 		}

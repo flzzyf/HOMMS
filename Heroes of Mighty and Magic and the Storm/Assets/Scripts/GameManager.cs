@@ -10,31 +10,25 @@ public class GameManager : Singleton<GameManager>
 {
     public static GameState gameState;
 
-    //本地玩家序号
-    public static int player = 2;
-    public static Player currentPlayer { get { return PlayerManager.instance.players[player]; } }
+	//本地玩家
+	public int localPlayerIndex;
+	public Player localPlayer { get { return players[localPlayerIndex]; } }
 
-    //当前回合行动的玩家
-    public static int actionPlayer;
+	//当前回合行动的玩家
+	public static int actionPlayer;
 
     public GameScene scene;
 
-    void Start()
-    {
-        TravelManager.instance.Init();
-        BattleManager.instance.Init();
+	public Player[] players;
 
+
+	void Start()
+    {
         //之前有保存语言则直接设置，否则根据本地语言设置
         // if (PlayerPrefs.HasKey("Language"))
         //     ChangeLanguage(PlayerPrefs.GetString("Language"));
         // else
         //     ChangeToLocalLanguage();
-
-
-        //进入旅行模式界面
-        UIManager.instance.Enter("travel");
-        //回合开始
-        TravelManager.instance.TurnStart(player);
     }
 
     void Update()
@@ -71,12 +65,14 @@ public class GameManager : Singleton<GameManager>
         }
         if (Input.GetKeyDown(KeyCode.N))
         {
-            SkillManager.AddSkill(PlayerManager.instance.players[0].heroes[0], "Sorcery", 1);
-            SkillManager.AddSkill(PlayerManager.instance.players[0].heroes[0], "Wisdom", 2);
-            SkillManager.AddSkill(PlayerManager.instance.players[0].heroes[0], "Magic_Air", 2);
-            SkillManager.AddSkill(PlayerManager.instance.players[0].heroes[0], "Magic_Fire", 2);
-            SkillManager.AddSkill(PlayerManager.instance.players[0].heroes[0], "Magic_Water", 2);
-            SkillManager.AddSkill(PlayerManager.instance.players[0].heroes[0], "Magic_Earth", 2);
+			Hero hero = GameManager.instance.players[0].heroes[0];
+
+			SkillManager.AddSkill(hero, "Sorcery", 1);
+            SkillManager.AddSkill(hero, "Wisdom", 2);
+            SkillManager.AddSkill(hero, "Magic_Air", 2);
+            SkillManager.AddSkill(hero, "Magic_Fire", 2);
+            SkillManager.AddSkill(hero, "Magic_Water", 2);
+            SkillManager.AddSkill(hero, "Magic_Earth", 2);
 
             //SkillManager.AddSkill(testHeroes[0], "Magic_Earth", 3);
             //MagicManager.instance.CastMagic(testHeroes[0], testHeroes[0].magics[1]);

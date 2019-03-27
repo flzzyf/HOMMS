@@ -9,7 +9,7 @@ public class SliderItemManager_Hero : SliderItemManager
 		base.ClickHighlightedItem(_index);
 
 		//设置英雄，进入界面
-		UIManager.instance.Get("hero").GetComponent<Panel_HeroUI>().Set(GameManager.currentPlayer.heroes[_index]);
+		UIManager.instance.Get("hero").GetComponent<Panel_HeroUI>().Set(GameManager.instance.localPlayer.heroes[_index]);
 		UIManager.instance.Enter("hero");
 	}
 
@@ -27,7 +27,7 @@ public class SliderItemManager_Hero : SliderItemManager
 		base.Highlight(_index);
 
 		//设置当前英雄
-		TravelManager.currentHero = GameManager.currentPlayer.heroes[_index];
+		TravelManager.currentHero = GameManager.instance.localPlayer.heroes[_index];
 
 		//移动镜头
 		TravelCamMgr.instance.MoveCamera(TravelManager.currentHero.transform.position);
@@ -43,13 +43,13 @@ public class SliderItemManager_Hero : SliderItemManager
 
 	public override int ObjectCount()
 	{
-		return GameManager.currentPlayer.heroes.Count;
+		return GameManager.instance.localPlayer.heroes.Count;
 	}
 
 	public override void SetItem(int _index)
 	{
 		base.SetItem(_index);
-		items[_index].GetComponent<Panel_HeroItem>().Set(GameManager.currentPlayer.heroes[currentPages + _index]);
+		items[_index].GetComponent<Panel_HeroItem>().Set(GameManager.instance.localPlayer.heroes[currentPages + _index]);
 	}
 
 	public override void ClearItem(int _index)

@@ -51,7 +51,7 @@ public class Test : MonoBehaviour
 		//添加测试英雄和城镇，然后刷新
 		foreach (var item in heroes)
 		{
-			PlayerManager.instance.players[GameManager.player].heroes.Add(item);
+			GameManager.instance.localPlayer.heroes.Add(item);
 		}
 
 		TravelManager.instance.sliderItemManager_hero.MoveToPage(0);
@@ -59,7 +59,7 @@ public class Test : MonoBehaviour
 
 		foreach (var item in towns)
 		{
-			PlayerManager.instance.players[GameManager.player].towns.Add(item);
+			GameManager.instance.localPlayer.towns.Add(item);
 		}
 
 		TravelManager.instance.sliderItemManager_town.MoveToPage(0);

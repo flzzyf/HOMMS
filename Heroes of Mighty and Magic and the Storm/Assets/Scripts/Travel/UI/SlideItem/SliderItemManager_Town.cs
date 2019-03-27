@@ -9,7 +9,7 @@ public class SliderItemManager_Town : SliderItemManager
 		base.ClickHighlightedItem(_index);
 
 		//当前高亮的是这个，则进入城镇界面
-		UIManager.instance.Get("town").GetComponent<Panel_Town>().Set(GameManager.currentPlayer.towns[_index]);
+		UIManager.instance.Get("town").GetComponent<Panel_Town>().Set(GameManager.instance.localPlayer.towns[_index]);
 		UIManager.instance.Enter("town");
 	}
 
@@ -27,20 +27,20 @@ public class SliderItemManager_Town : SliderItemManager
 		base.Highlight(_index);
 
 		//移动镜头
-		TravelCamMgr.instance.MoveCamera(GameManager.currentPlayer.towns[
+		TravelCamMgr.instance.MoveCamera(GameManager.instance.localPlayer.towns[
 			highlightedItemIndex - currentPages].transform.position);
 	}
 
 	public override int ObjectCount()
 	{
-		return GameManager.currentPlayer.towns.Count;
+		return GameManager.instance.localPlayer.towns.Count;
 	}
 
 	public override void SetItem(int _index)
 	{
 		base.SetItem(_index);
 
-		items[_index].GetComponent<Panel_TownItem>().Set(GameManager.currentPlayer.towns[currentPages + _index]);
+		items[_index].GetComponent<Panel_TownItem>().Set(GameManager.instance.localPlayer.towns[currentPages + _index]);
 	}
 
 	public override void ClearItem(int _index)

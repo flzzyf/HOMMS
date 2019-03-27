@@ -23,7 +23,7 @@ public class ObjectPoolManager : Singleton<ObjectPoolManager>
 
         foreach (Pool pool in pools)
         {
-            Transform parent = ParentManager.Instance().GetParent(pool.tag);
+            Transform parent = ParentManager.instance.GetParent(pool.tag);
             poolParent.Add(pool.tag, parent);
 
             Queue<GameObject> objPool = new Queue<GameObject>();

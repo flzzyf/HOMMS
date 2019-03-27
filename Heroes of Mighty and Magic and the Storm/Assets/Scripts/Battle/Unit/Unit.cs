@@ -279,9 +279,9 @@ public class Unit : NodeObject, MovableNode
         SetNum(0);
         SetHp(0);
 
-        BattleManager.Instance().unitActionList.Remove(this);
-        BattleManager.Instance().unitActionOrder.Remove(this);
-        BattleManager.Instance().waitingUnitList.Remove(this);
+        BattleManager.instance.unitActionList.Remove(this);
+        BattleManager.instance.unitActionOrder.Remove(this);
+        BattleManager.instance.waitingUnitList.Remove(this);
 
         dead = true;
 
