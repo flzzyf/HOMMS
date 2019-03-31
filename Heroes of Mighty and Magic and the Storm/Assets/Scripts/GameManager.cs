@@ -50,9 +50,9 @@ public class GameManager : Singleton<GameManager>
         }
         if (Input.GetKeyDown(KeyCode.H))
         {
-            SoundManager.instance.StopPlay("Combat02");
-            //LocalizationMgr.instance.ChangeToLanguage(Language.Chinese_Simplified);
-        }
+			SoundManager.instance.StopCategory(SoundCategory.Music);
+			//LocalizationMgr.instance.ChangeToLanguage(Language.Chinese_Simplified);
+		}
         if (Input.GetKeyDown(KeyCode.V))
         {
             //SoundManager.instance.PlaySound("PickUp");
@@ -63,7 +63,7 @@ public class GameManager : Singleton<GameManager>
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
-            SoundManager.instance.StopPlay("PickUp");
+            //SoundManager.instance.StopPlay("PickUp");
             //MagicBookMgr.instance.ShowMagics(MagicSchool.All, MagicType.All, 1);
 
             //MagicBookMgr.instance.Show();

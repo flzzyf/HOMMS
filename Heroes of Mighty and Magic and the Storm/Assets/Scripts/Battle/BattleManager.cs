@@ -274,24 +274,29 @@ public class BattleManager : Singleton<BattleManager>
 	//胜负判定，如果有一方全灭
 	public void CheckVictoryOrDeath()
 	{
-		if (units[0].Count == 0 && units[1].Count == 0)
+		//如果有一方全灭
+		if (units[0].Count == 0 || units[1].Count == 0)
 		{
-			print("平局");
-			BattleResultMgr.instance.ShowResultUI(0);
-		}
-		else if (units[0].Count == 0)
-		{
-			print("玩家1获胜");
-			SoundManager.instance.StopPlay("Combat02");
-			BattleResultMgr.instance.ShowResultUI(1);
-			SoundManager.instance.PlaySound("LoseBattle");
-		}
-		else if (units[1].Count == 0)
-		{
-			print("玩家0获胜");
-			SoundManager.instance.StopPlay("Combat02");
-			BattleResultMgr.instance.ShowResultUI(0);
-			SoundManager.instance.PlaySound("WinBattle");
+			//停止播放BGM
+			SoundManager.instance.StopCategory(SoundCategory.Music);
+
+			if (units[0].Count == 0)
+			{
+				print("玩家1获胜");
+				BattleResultMgr.instance.ShowResultUI(1);
+				SoundManager.instance.PlaySound("LoseBattle");
+			}
+			else if (units[1].Count == 0)
+			{
+				print("玩家0获胜");
+				BattleResultMgr.instance.ShowResultUI(0);
+				SoundManager.instance.PlaySound("WinBattle");
+			}
+			else
+			{
+				print("平局");
+				BattleResultMgr.instance.ShowResultUI(0);
+			}
 		}
 	}
 

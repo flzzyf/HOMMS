@@ -3,46 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public enum SoundCategory { Music, Effect, Death, Hit, Attack, Walk, UI, Impact }
+public enum SoundCategory { Effect, Music, Vox, Walk, UI, Impact }
 
 public class SoundManager : Singleton<SoundManager>
 {
-    //同时最大播放音效的数量
-    public int maxAudioPlayCountAtOneTime = 12;
     //同时播放的最大同种音效数量
     public int maxSameAudioPlayCountAtOneTime = 5;
-
-    List<AudioSource> audioSources;
-
-    Dictionary<AudioSource, Sound> soundDic;
 
     public AudioMixerGroup audioGroup_music;
     public AudioMixerGroup audioGroup_effect;
 
-    //用来保存某种音效的同时播放数量
-    Dictionary<Sound, int> soundNumber;
-
 	//各声音类别的声道数量
 	[HideInInspector]
 	public int[] soundCategoryTrackNum = new int[System.Enum.GetValues(typeof(SoundCategory)).Length];
+	//音效类别和播放器的字典
+	Dictionary<SoundCategory, List<AudioSource>> soundCategoryDic;
 
 	//初始化
 	void Awake()
     {
-        //创建音效播放器
-        audioSources = new List<AudioSource>();
-        for (int i = 0; i < maxAudioPlayCountAtOneTime; i++)
-        {
-            audioSources.Add(gameObject.AddComponent<AudioSource>());
-        }
-
-        soundDic = new Dictionary<AudioSource, Sound>();
-        soundNumber = new Dictionary<Sound, int>();
+		soundCategoryDic = new Dictionary<SoundCategory, List<AudioSource>>();
 
 		//为每种声音创造其播放器组
 		for (int i = 0; i < System.Enum.GetValues(typeof(SoundCategory)).Length; i++)
 		{
+			List<AudioSource> sources = new List<AudioSource>();
 
+			for (int j = 0; j < soundCategoryTrackNum[i]; j++)
+			{
+				sources.Add(gameObject.AddComponent<AudioSource>());
+			}
+
+			soundCategoryDic.Add((SoundCategory)i, sources);
 		}
     }
 
@@ -52,18 +44,8 @@ public class SoundManager : Singleton<SoundManager>
         if (_sound.clips == null || _sound.clips.Length == 0 || _sound.clips[0] == null)
             Debug.LogError("空的声音：" + _sound.name);
 
-        //同时播放的这种音效数量超过限制，则不播放
-        if (soundNumber.ContainsKey(_sound) && soundNumber[_sound] >= maxSameAudioPlayCountAtOneTime)
-            return;
-
-        //否则加入键或者键值+1
-        if (soundNumber.ContainsKey(_sound))
-            soundNumber[_sound]++;
-        else
-            soundNumber.Add(_sound, 1);
-
         //获取闲置的声音组件并初始化
-        AudioSource source = GetAvailableSource();
+        AudioSource source = GetAvailableSource(_sound.category);
         if (source == null)
             return;
 
@@ -83,9 +65,6 @@ public class SoundManager : Singleton<SoundManager>
         //播放
         source.Play();
 
-        //加入声音字典
-        soundDic.Add(source, _sound);
-
         StartCoroutine(FinishPlaying(source));
     }
     public void PlaySound(string _name)
@@ -101,7 +80,7 @@ public class SoundManager : Singleton<SoundManager>
         _source.loop = _sound.loop;
 
         //设置声音组
-        if (_sound.group == SoundCategory.Music)
+        if (_sound.category == SoundCategory.Music)
             _source.outputAudioMixerGroup = audioGroup_music;
         else
             _source.outputAudioMixerGroup = audioGroup_effect;
@@ -124,42 +103,52 @@ public class SoundManager : Singleton<SoundManager>
         return null;
     }
 
-    //停止播放
-    public void StopPlay(Sound _sound)
-    {
-        List<AudioSource> sourceList = new List<AudioSource>();
-        foreach (var item in soundDic)
-        {
-            if (item.Value == _sound)
-            {
-                sourceList.Add(item.Key);
-            }
-        }
+	//停止某个类别的声音
+	public void StopCategory(SoundCategory _Cat)
+	{
+		foreach (var item in soundCategoryDic[_Cat])
+		{
+			item.Stop();
+		}
+	}
 
-        foreach (var item in sourceList)
-        {
-            item.Stop();
+    //停止播放某种声音
+    //public void StopPlay(Sound _sound)
+    //{
+    //    List<AudioSource> sourceList = new List<AudioSource>();
+    //    foreach (var item in soundDic)
+    //    {
+    //        if (item.Value == _sound)
+    //        {
+    //            sourceList.Add(item.Key);
+    //        }
+    //    }
 
-            RemoveSound(item);
-        }
-    }
-    public void StopPlay(string _name)
-    {
-        StopPlay(GetSound(_name));
-    }
+    //    foreach (var item in sourceList)
+    //    {
+    //        item.Stop();
+
+    //        RemoveSound(item);
+    //    }
+    //}
+    //public void StopPlay(string _name)
+    //{
+    //    StopPlay(GetSound(_name));
+    //}
 
     //获取闲置的音效播放器
-    AudioSource GetAvailableSource()
+    AudioSource GetAvailableSource(SoundCategory _Cat)
     {
-        for (int i = 0; i < maxAudioPlayCountAtOneTime; i++)
-        {
-            if (!soundDic.ContainsKey(audioSources[i]))
-            {
-                return (audioSources[i]);
-            }
-        }
+		//找到音效类别里没在播放的播放器
+		List<AudioSource> sources = soundCategoryDic[_Cat];
+		for (int i = 0; i < sources.Count; i++)
+		{
+			if (!sources[i].isPlaying)
+				return sources[i];
+		}
 
-        return null;
+		//如果没有闲置的，返回第一个
+        return sources[0];
     }
 
     //等待音效播放完毕
@@ -167,34 +156,7 @@ public class SoundManager : Singleton<SoundManager>
     {
         yield return new WaitForSeconds(_source.clip.length - _source.time);
 
-        RemoveSound(_source);
+        //RemoveSound(_source);
     }
 
-    //声音播放完毕，或被停止
-    void RemoveSound(AudioSource _source)
-    {
-		if (!soundDic.ContainsKey(_source) || !soundNumber.ContainsKey(soundDic[_source]))
-			return;
-
-        //从音效数量字典移除
-        if (soundNumber[soundDic[_source]] > 1)
-            soundNumber[soundDic[_source]]--;
-        else
-            soundNumber.Remove(soundDic[_source]);
-
-        //从字典移除
-        soundDic.Remove(_source);
-    }
-
-	public void PlayBGM(string _name)
-	{
-		audioSource_BGM.clip = GetSound(_name).clips[0];
-
-		audioSource_BGM.Play();
-	}
-
-	public void StopBGM()
-	{
-		audioSource_BGM.Stop();
-	}
 }

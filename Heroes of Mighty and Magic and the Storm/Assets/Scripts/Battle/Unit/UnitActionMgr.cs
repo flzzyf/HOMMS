@@ -183,7 +183,7 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
 			while (NodeMovingMgr.instance.moving)
 				yield return null;
 
-			SoundManager.instance.StopPlay(_unit.type.sound_walk);
+			SoundManager.instance.StopCategory(SoundCategory.Walk);
 		}
 		else
 		{
@@ -198,7 +198,7 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
 				yield return new WaitForSeconds(waitTime);
 			}
 
-			SoundManager.instance.StopPlay(_unit.type.sound_walk);
+			SoundManager.instance.StopCategory(SoundCategory.Walk);
 		}
 	}
 

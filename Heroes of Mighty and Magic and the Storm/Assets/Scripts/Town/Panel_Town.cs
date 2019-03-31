@@ -64,7 +64,7 @@ public class Panel_Town : CustomUI
         panel_Resources.Set(GameManager.instance.localPlayer.resources);
 
 		//播放音乐
-		SoundManager.instance.PlayBGM("BGM_Castle");
+		SoundManager.instance.PlaySound("BGM_Castle");
 	}
 
 	//退出
@@ -80,6 +80,6 @@ public class Panel_Town : CustomUI
 		//
 
 		//暂停播放BGM
-		SoundManager.instance.StopPlay("BGM_Castle");
+		SoundManager.instance.StopCategory(SoundCategory.Music);
 	}
 }

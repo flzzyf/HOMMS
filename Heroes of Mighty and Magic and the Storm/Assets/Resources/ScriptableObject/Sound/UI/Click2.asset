@@ -17,5 +17,5 @@ MonoBehaviour:
   volume: 1
   pitch: 1
   loop: 0
-  group: 6
+  category: 4
   startingTime: 0

@@ -27,7 +27,7 @@ public class Panel_Travel : CustomUI
 		panel_Resources.Set(GameManager.instance.localPlayer.resources);
 
 		//播放BGM
-		SoundManager.instance.PlayBGM("BGM_Grass");
+		SoundManager.instance.PlaySound("BGM_Grass");
     }
 
     public override void Quit()
@@ -38,6 +38,6 @@ public class Panel_Travel : CustomUI
         parent_travelObject.SetActive(false);
 
 		//暂停播放BGM
-		SoundManager.instance.StopPlay("BGM_Grass");
+		SoundManager.instance.StopCategory(SoundCategory.Music);
 	}
 }

@@ -7,7 +7,7 @@ using UnityEditor;
 [CanEditMultipleObjects]
 public class SoundEditor : Editor
 {
-	string[] attributes = { "clips", "volume", "pitch", "loop", "group", "startingTime" };
+	string[] attributes = { "clips", "volume", "pitch", "loop", "category", "startingTime" };
 
 	public override void OnInspectorGUI()
 	{
