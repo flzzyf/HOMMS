@@ -26,6 +26,8 @@ public class Test : MonoBehaviour
 		SkillManager.AddSkill(heroes[0], "Magic_Water", 2);
 
 		StartCoroutine(DelayStart());
+
+
     }
 
     void Update()
@@ -44,6 +46,10 @@ public class Test : MonoBehaviour
 		yield return new WaitForSeconds(.1f);
 
 		RealStart();
+
+		Hero attacker = heroes2[0];
+		Hero defender = heroes2[1];
+		TravelManager.instance.BattleBegin(attacker, defender);
 	}
 
 	void RealStart()

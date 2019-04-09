@@ -32,7 +32,7 @@ public class NodeItem_Battle : NodeItem
         {
             return;
         }
-
+		
         if (battleNodeType == BattleNodeType.empty)
             ChangeBackgoundColor();
         else
@@ -52,7 +52,9 @@ public class NodeItem_Battle : NodeItem
             return;
         }
 
-        for (int i = 0; i < BattleManager.instance.battleNodeBG.Length; i++)
+		bg.color = BattleManager.instance.battleNodeBG[1].color;
+		return;
+		for (int i = 0; i < BattleManager.instance.battleNodeBG.Length; i++)
         {
             if (_color == BattleManager.instance.battleNodeBG[i].name)
             {

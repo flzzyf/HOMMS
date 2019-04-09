@@ -14,9 +14,9 @@ public class Hero : NodeObject
         get
         {
             int a = 0;
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < pocketUnits.Length; i++)
             {
-                if (pocketUnits[i].type != null)
+                if (pocketUnits[i] != null && pocketUnits[i].type != null)
                     a++;
             }
 

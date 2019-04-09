@@ -36,6 +36,6 @@ MonoBehaviour:
   launchPos: {x: 1.3, y: 2.35}
   sound_attack: {fileID: 11400000, guid: edab5776433bdf64d8fc6db61ad3ae4b, type: 2}
   sound_attackImpact: {fileID: 11400000, guid: e2ef9e6539cb20b4a9a2aa3b5f1b12c6, type: 2}
-  sound_walk: {fileID: 11400000, guid: dfc220033d1c08a459901ee3ce439685, type: 2}
+  sound_walk: {fileID: 0}
   sound_hit: {fileID: 11400000, guid: 25ca957b4c3431b40acbf35b1ba65d72, type: 2}
   sound_death: {fileID: 11400000, guid: 6452a05f598cd214782719108c0d8ecd, type: 2}

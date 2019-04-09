@@ -19,17 +19,17 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
         UnitHaloMgr.instance.HaloFlashStart(_unit, "action");
 
 		//测试：永远是玩家控制
-		PlayerActionStart(_unit);
+		//PlayerActionStart(_unit);
 
-		/*
-		if (!PlayerManager.instance.players[BattleManager.players[_unit.side]].isAI)
+		
+		if (!GameManager.instance.players[BattleManager.players[_unit.side]].isAI)
         {
             PlayerActionStart(_unit);
         }
         else
         {
             AIActionMgr.instance.AIActionStart(_unit);
-        }*/
+        }
 
         //在下令前暂停
         while (order == null)
@@ -38,6 +38,7 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
         //发出指令后，开始执行命令
         UnitHaloMgr.instance.HaloFlashStop(_unit);
 		//重置所有可行动节点
+		if (!GameManager.instance.players[BattleManager.players[_unit.side]].isAI)
 		NodeSelector.HideActionNodes();
 		//执行指令
         InvokeOrder();
@@ -60,7 +61,6 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
 		//获取并高亮单位可行动的节点
 		NodeSelector.GetUnitActionNodes(_unit);
 		NodeSelector.HighlightUnitActionNodes();
-
 
 		//将当前鼠标高亮节点，触发高亮事件
 		MapManager_Battle map = BattleManager.instance.map;

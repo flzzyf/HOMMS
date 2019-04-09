@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -17,7 +18,7 @@ MonoBehaviour:
   level: 1
   mana: 0600000005000000
   targetType: 010000000100000000000000
-  targetFliter: 02000000
+  targetFliter: 01000000
   effects:
   - {fileID: 11400000, guid: fd599964617734f5b9e45a28fc212ab5, type: 2}
   - {fileID: 11400000, guid: 2ac037e790eae42c18f03bd19af6c458, type: 2}

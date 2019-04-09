@@ -24,13 +24,13 @@ public class TravelManager : Singleton<TravelManager>
 
 	void Start()
 	{
-		Init();
+		//Init();
 
         //进入旅行模式界面
-		UIManager.instance.Enter("travel");
+		//UIManager.instance.Enter("travel");
 
 		//回合开始
-		TurnStart(GameManager.instance.localPlayerIndex);
+		//TurnStart(GameManager.instance.localPlayerIndex);
 	}
 
 	public void Init()

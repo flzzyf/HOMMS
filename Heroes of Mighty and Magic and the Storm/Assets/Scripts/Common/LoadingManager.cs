@@ -28,7 +28,7 @@ public class LoadingManager : Singleton<LoadingManager>
 
 	IEnumerator LoadLevelAsync()
 	{
-		AsyncOperation operation = SceneManager.LoadSceneAsync("Travel");
+		AsyncOperation operation = SceneManager.LoadSceneAsync("TestBattle");
 
 		int currentProgress = 0;
 

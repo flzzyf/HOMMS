@@ -16,6 +16,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 366f0334b0d1d8e4aae238289760e229, type: 3}
   volume: 1
   pitch: 1
-  loop: 1
-  group: 5
+  loop: 0
+  category: 0
   startingTime: 0
