@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    public AudioSource audio_BGM;
+
     public void GameStart()
     {
+        audio_BGM.Stop();
+
 		LoadingManager.instance.LoadScene();
     }
 

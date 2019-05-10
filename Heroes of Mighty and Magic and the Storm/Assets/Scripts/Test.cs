@@ -45,12 +45,15 @@ public class Test : MonoBehaviour
 	{
 		yield return new WaitForSeconds(.1f);
 
-		RealStart();
+		//RealStart();
 
 		Hero attacker = heroes2[0];
 		Hero defender = heroes2[1];
-		TravelManager.instance.BattleBegin(attacker, defender);
-	}
+		//TravelManager.instance.BattleBegin(attacker, defender);
+        UIManager.instance.Enter("battle", true);
+
+        BattleManager.instance.BattleStart(attacker, defender);
+    }
 
 	void RealStart()
 	{

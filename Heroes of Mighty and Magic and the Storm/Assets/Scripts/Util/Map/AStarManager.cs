@@ -6,7 +6,7 @@ public class AStarManager
 {
     public static MapManager map;
 
-    public static List<Node> FindPath(Vector2Int _startPos, Vector2Int _endPos, bool _ignoreObstacle = false, bool _specialRule = false)
+    public static List<Node> FindPath(Vector2Int _startPos, Vector2Int _endPos, bool _ignoreObstacle = false)
     {
         Node startNode = map.GetNode(_startPos);
         Node endNode = map.GetNode(_endPos);
@@ -50,7 +50,7 @@ public class AStarManager
                     return GeneratePath(startNode, endNode);
                 }
                 //如果不可通行或在闭集中，则跳过。加入特殊规则判定
-                if ((!_ignoreObstacle && !item.walkable) || closeSet.Contains(item) || (_specialRule && !SpecialRule(item)))
+                if ((!_ignoreObstacle && !item.walkable) || closeSet.Contains(item))
                 {
                     continue;
                 }
@@ -108,14 +108,14 @@ public class AStarManager
             return 14 * x + 10 * (y - x);
     }
 
-    static List<NodeItem> FindPath(NodeItem _start, NodeItem _end, bool _ignoreObstacle = false, bool _specialRule = false)
+    static List<NodeItem> FindPath(NodeItem _start, NodeItem _end, bool _ignoreObstacle = false)
     {
         List<NodeItem> list = new List<NodeItem>();
 
         Vector2Int startPos = _start.pos;
         Vector2Int endPos = _end.pos;
 
-        List<Node> path = FindPath(startPos, endPos, _ignoreObstacle, _specialRule);
+        List<Node> path = FindPath(startPos, endPos, _ignoreObstacle);
         if (path == null)
             return null;
 
@@ -127,10 +127,10 @@ public class AStarManager
         return list;
     }
 
-    public static List<NodeItem> FindPath(MapManager _map, NodeItem _start, NodeItem _end, bool _ignoreObstacle = false, bool _specialRule = false)
+    public static List<NodeItem> FindPath(MapManager _map, NodeItem _start, NodeItem _end, bool _ignoreObstacle = false)
     {
         map = _map;
-        return FindPath(_start, _end, _ignoreObstacle, _specialRule);
+        return FindPath(_start, _end, _ignoreObstacle);
     }
 
     //获取节点间距离

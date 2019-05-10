@@ -52,12 +52,13 @@ public class NodeItem_Battle : NodeItem
             return;
         }
 
-		bg.color = BattleManager.instance.battleNodeBG[1].color;
+		//bg.color = BattleManager.instance.battleNodeBG[1].color;
 		//return;
 		for (int i = 0; i < BattleManager.instance.battleNodeBG.Length; i++)
         {
             if (_color == BattleManager.instance.battleNodeBG[i].name)
             {
+
                 bg.color = BattleManager.instance.battleNodeBG[i].color;
                 return;
             }

@@ -30,6 +30,7 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
             //是地面移动单位，则计算路径
             if (BattleManager.currentActionUnit.isWalker)
             {
+                //print("hover");
                 FindPath(BattleManager.currentActionUnit, _node);
             }
         }
@@ -324,8 +325,11 @@ public class BattleNodeMgr : Singleton<BattleNodeMgr>
 
 		//根据是否是双格单位，选中寻路方法
 		if (!_unit.type.isTwoHexsUnit)
-			path = AStarManager.FindPath(BattleManager.instance.map, unitNode, _target, _unit.isWalker);
-		else
+        {
+            path = AStarManager.FindPath(BattleManager.instance.map, unitNode, _target, !_unit.isWalker);
+
+        }
+        else
 		{
 			path = new List<NodeItem>();
 			MapManager map = BattleManager.instance.map;
