@@ -50,6 +50,8 @@ public class UnitActionMgr : Singleton<UnitActionMgr>
 
         //命令执行完毕
 
+        yield return new WaitForSeconds(.5f);
+
         ActionEnd();
     }
 

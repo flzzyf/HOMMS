@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a0936d33f8b4cdbba7137f15d68540, type: 3}
   m_Name: Tyrael
   m_EditorClassIdentifier: 
-  tab: 2
+  tab: 0
   icon: {fileID: 21300000, guid: 2e3eed8820e9c2b44bc6529d31b8a853, type: 3}
   race: {fileID: 11400000, guid: 830952885b93a426a8cf308f26070ed9, type: 2}
   animControl: {fileID: 22100000, guid: 2cc05ca09532e1948bcde8bf027a959f, type: 2}
@@ -21,7 +21,7 @@ MonoBehaviour:
   def: 20
   hp: 200
   damage: {x: 50, y: 50}
-  speed: 12
+  speed: 5
   attackType: 0
   traits:
   - {fileID: 11400000, guid: 8d29db8314585433086022487b87e65b, type: 2}

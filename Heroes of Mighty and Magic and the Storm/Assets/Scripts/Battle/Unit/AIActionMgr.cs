@@ -28,7 +28,7 @@ public class AIActionMgr : Singleton<AIActionMgr>
                 //攻击范围内有目标
                 target = GetMaxDamageUnit(_unit, targetList, isRangeAttack);
                 List<NodeItem> path = AStarManager.FindPath(BattleManager.instance.map,
-                            _unit.nodeItem, target.nodeItem);
+                            _unit.nodeItem, target.nodeItem, false);
                 path.RemoveAt(path.Count - 1);
 
                 if (_unit.isWalker)
@@ -47,7 +47,7 @@ public class AIActionMgr : Singleton<AIActionMgr>
                 //且可到达
 
                 List<NodeItem> path = AStarManager.FindPath(BattleManager.instance.map,
-                        _unit.nodeItem, target.nodeItem, true);
+                        _unit.nodeItem, target.nodeItem, false);
 
                 //去掉移动力之外的部分
                 path.RemoveRange(speed, path.Count - speed);

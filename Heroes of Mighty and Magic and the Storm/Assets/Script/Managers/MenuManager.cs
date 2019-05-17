@@ -48,7 +48,7 @@ public class MenuManager : MonoBehaviour
 
         List<string> options = new List<string>();
 
-        //int currentResolutionIndex = 0;
+        int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + " X " + resolutions[i].height;
@@ -57,7 +57,7 @@ public class MenuManager : MonoBehaviour
             if (resolutions[i].width == Screen.currentResolution.width &&
                resolutions[i].height == Screen.currentResolution.height)
             {
-                //currentResolutionIndex = i;
+                currentResolutionIndex = i;
             }
         }
 
@@ -66,11 +66,14 @@ public class MenuManager : MonoBehaviour
 
         //根据用户数据进行初始设置
         //toggle_fullScreen.isOn = PlayerPrefs.GetInt("fullScreen") == 1;
+        toggle_fullScreen.isOn = Screen.fullScreen;
         //if(PlayerPrefs.GetFloat("volume_bgm") != 0)
         //    slider_volume_bgm.value = PlayerPrefs.GetFloat("volume_bgm");
         //if(PlayerPrefs.GetFloat("volume_effect") != 0)
         //    slider_volume_effect.value = PlayerPrefs.GetFloat("volume_effect");
         //dropdown_resolution.value = PlayerPrefs.GetInt("resolution");
+
+        dropdown_resolution.value = currentResolutionIndex;
         //dropdown_quality.value = PlayerPrefs.GetInt("quality");
 
         //if(PlayerPrefs.GetFloat("volume_bgm") != 0)

@@ -15,7 +15,7 @@ MonoBehaviour:
   tab: 0
   icon: {fileID: 21300000, guid: 0e3c962550750b2428a12f878d6a9e0d, type: 3}
   race: {fileID: 11400000, guid: 830952885b93a426a8cf308f26070ed9, type: 2}
-  animControl: {fileID: 22100000, guid: f6755f011343a3d48a40cc78742b3c3c, type: 2}
+  animControl: {fileID: 22100000, guid: 2c08322721f84aa4fa6be6c7410648bb, type: 2}
   level: 1
   att: 6
   def: 3

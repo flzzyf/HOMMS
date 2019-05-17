@@ -43,12 +43,14 @@ public class BattleResultMgr : Singleton<BattleResultMgr>
 
     void UpdateResultUI(int _winningSide)
     {
-        if (_winningSide == 0)
-            text_result.text = string.Format(LocalizationMgr.instance.GetText("battleResult_victory"),
-                BattleManager.heroes[0].heroType.heroName, 2000);
-        else
-            text_result.text = string.Format(LocalizationMgr.instance.GetText("battleResult_defeated"),
-                BattleManager.heroes[0].heroType.heroName);
+        //text_result.text = "辉煌的胜利！";
+
+        //if (_winningSide == 1)
+        //    text_result.text = string.Format(LocalizationMgr.instance.GetText("battleResult_victory"),
+        //        BattleManager.heroes[0].heroType.heroName, 2000);
+        //else
+        //text_result.text = string.Format(LocalizationMgr.instance.GetText("battleResult_defeated"),
+        //BattleManager.heroes[0].heroType.heroName);
 
 
         for (int i = 0; i < 2; i++)

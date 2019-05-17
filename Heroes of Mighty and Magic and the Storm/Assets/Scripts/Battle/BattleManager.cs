@@ -102,8 +102,8 @@ public class BattleManager : Singleton<BattleManager>
 
 	void Update()
 	{
-		if (!IsLocalPlayerTurn)
-			return;
+		//if (!IsLocalPlayerTurn)
+			//return;
 
 		//判断正在战斗中
 		if (Input.GetKeyDown(KeyCode.W))
@@ -126,8 +126,11 @@ public class BattleManager : Singleton<BattleManager>
 
 	public void Wait()
 	{
-		//不在等待队列才能等待
-		if (!button_wait.interactable)
+        if (GameManager.gameState != GameState.playerControl)
+            return;
+
+        //不在等待队列才能等待
+        if (!button_wait.interactable)
 			return;
 
 		BattleInfoMgr.instance.AddText(string.Format(LocalizationMgr.instance.GetText("battleInfo_pause"),
@@ -138,6 +141,9 @@ public class BattleManager : Singleton<BattleManager>
 
 	public void Defend()
 	{
+        if (GameManager.gameState != GameState.playerControl)
+            return;
+
 		int def = BattleManager.currentActionUnit.type.def;
 		def = Mathf.Max(1, def / 5);
 
@@ -284,15 +290,15 @@ public class BattleManager : Singleton<BattleManager>
 			{
 				print("玩家1获胜");
 				BattleResultMgr.instance.ShowResultUI(1);
-				SoundManager.instance.PlaySound("LoseBattle");
+                SoundManager.instance.PlaySound("WinBattle");
 			}
 			else if (units[1].Count == 0)
 			{
 				print("玩家0获胜");
 				BattleResultMgr.instance.ShowResultUI(0);
-				SoundManager.instance.PlaySound("WinBattle");
-			}
-			else
+                SoundManager.instance.PlaySound("LoseBattle");
+            }
+            else
 			{
 				print("平局");
 				BattleResultMgr.instance.ShowResultUI(0);
