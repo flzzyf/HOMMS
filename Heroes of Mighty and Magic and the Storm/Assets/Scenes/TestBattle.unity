@@ -7243,7 +7243,7 @@ Transform:
   - {fileID: 1394630170}
   - {fileID: 1077109397}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &769886401
 GameObject:
@@ -11326,7 +11326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12514,7 +12514,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1262136343
 GameObject:
@@ -12876,7 +12876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4912642036706332, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37ccb3bc95d1e477ba14c64877197e3d, type: 3}
@@ -13992,7 +13992,6 @@ GameObject:
   - component: {fileID: 1365613200}
   - component: {fileID: 1365613197}
   - component: {fileID: 1365613199}
-  - component: {fileID: 1365613198}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -14022,32 +14021,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: b8f02cb0009374c10870cb7349f06c22, type: 3}
-    m_FontSize: 23
+    m_FontSize: 38
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 25
+    m_MaxSize: 45
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "\u8F89\u714C\u7684\u80DC\u5229\uFF01\n\u56E0\u4E3A\u82F1\u52C7\u4F5C\u6218,\u5C0F\u9E7F\u5A1C\u62C9\u83B7\u5F97\u4E863000\u7ECF\u9A8C\u503C"
---- !u!114 &1365613198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365613196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c9036df96c1d44fab54e88e12d33c70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: battleResult_victory
-  args: []
+  m_Text: "\u8F89\u714C\u7684\u80DC\u5229\uFF01"
 --- !u!114 &1365613199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15939,7 +15924,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1505980727
 MonoBehaviour:

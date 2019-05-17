@@ -290,15 +290,15 @@ public class BattleManager : Singleton<BattleManager>
 			{
 				print("玩家1获胜");
 				BattleResultMgr.instance.ShowResultUI(1);
-				SoundManager.instance.PlaySound("LoseBattle");
+                SoundManager.instance.PlaySound("WinBattle");
 			}
 			else if (units[1].Count == 0)
 			{
 				print("玩家0获胜");
 				BattleResultMgr.instance.ShowResultUI(0);
-				SoundManager.instance.PlaySound("WinBattle");
-			}
-			else
+                SoundManager.instance.PlaySound("LoseBattle");
+            }
+            else
 			{
 				print("平局");
 				BattleResultMgr.instance.ShowResultUI(0);
